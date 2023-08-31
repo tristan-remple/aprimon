@@ -97,7 +97,7 @@ h1 {
 .pokemon {
     width: 80px;
     position: relative;
-    left: 20px;
+    left: 15px;
 }
 
 .ball {
@@ -272,41 +272,54 @@ input, select {
     border-radius: 5px;
     font-family: 'Sriracha', cursive;
     font-size: 16px;
+    width: 200px;
+    margin: 5px;
+}
+
+select {
+    width: 208px;
+}
+
+input[type=checkbox] {
+    width: 20px;
+    margin-right: 20px;
 }
 
 option {
     background-color: #809A81;
 }
 
+.field > label {
+    display: inline-block;
+    width: 200px;
+    text-align: right;
+}
+
 .compact > .card {
-    width: 85px;
-    height: 85px;
-    min-height: 85px;
+    width: 250px;
+    height: 50px;
+    min-height: 50px;
     position: relative;
     padding: 0px;
     display: flex;
-    justify-content: center;
+    flex-flow: row nowrap;
+    justify-content: space-between;
     align-items: center;
 }
 
 .compact > .card > .pokemon {
-    width: 80px;
+    width: 50px;
     left: 0px;
 }
 
 .compact > .card > .ball {
     position: absolute;
-    right: 0px;
     bottom: 0px;
-    left: auto;
-}
-
-.compact > .card > h3, .compact > .card > .small-row {
-    display: none;
+    left: 35px;
 }
 
 .hidden {
-    display: none;
+    display: none !important;
 }
 
 @media only screen and (max-width: 800px) {

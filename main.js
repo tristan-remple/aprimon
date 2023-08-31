@@ -2,6 +2,8 @@
 
     const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
+    const ballTypes = ["beast", "dream", "fast", "friend", "heavy", "level", "love", "lure", "moon", "safari", "sport"];
+
     function capitalize(str) {
 
         // check if it's blank (loose equality intentional)
@@ -113,7 +115,7 @@
     }
     sizeButton.addEventListener("click", toggleSize);
 
-    fetch("aprimon.json")
+    fetch("aprimon.json", {cache: "no-store"})
     .then(response => response.json())
     .then(json => {
 
@@ -381,7 +383,7 @@
             const overlay = document.createElement("div");
             overlay.id = "overlay";
             overlay.appendChild(element);
-            element.classList.add("box", "popup");
+            element.classList.add("box");
             document.body.appendChild(overlay);
             return overlay;
         }
@@ -439,6 +441,142 @@
             });
         }
 
+        function addPokemon() {
+
+            const pkmnName = document.getElementById("name").value;
+            let pkmnForm = document.getElementById("form").value;
+            const pkmnNum = parseInt(document.getElementById("natdex").value);
+            const pkmnBall = document.getElementById("ball").value;
+            let pkmnNature = document.getElementById("nature").value;
+            const ivCheck = document.getElementById("five-iv").checked;
+            const haCheck = document.getElementById("hidden-ab").checked;
+            const targetCheck = document.getElementById("target-pk").checked;
+
+            if (pkmnName === "" || isNaN(pkmnNum) ) {
+                alert("Pokemon name and number required.");
+                popdown();
+                return;
+            }
+
+            let pkmnSuffix;
+            if (pkmnForm == "") {
+                pkmnForm = null;
+                pkmnSuffix = null;
+            } else {
+                pkmnSuffix = "-" + pkmnForm.split("")[0]
+            }
+
+            if (pkmnNature == "") {
+                pkmnNature = "random";
+            }
+
+            const entry = {
+                "pokemon": {
+                    "name": pkmnName.toLowerCase(),
+                    "natdex": pkmnNum,
+                    "form": pkmnForm,
+                    "form-suffix": pkmnSuffix
+                },
+                "ball": pkmnBall,
+                "nature": pkmnNature,
+                "eggs": 0,
+                "on-hand": 0,
+                "final": null,
+                "ha": haCheck,
+                "5iv": ivCheck,
+                "target": targetCheck
+            };
+            
+            json.push(entry);
+            displayCards(json);
+            popdown();
+
+        }
+
+        function createFormField(name, type) {
+            const nameField = document.createElement("div");
+            nameField.classList.add("field");
+
+            const nameLabel = document.createElement("label");
+            nameLabel.setAttribute("for", name);
+            nameLabel.innerText = capitalize(name) + ":";
+            nameField.appendChild(nameLabel);
+
+            const nameEntry = document.createElement("input");
+            nameEntry.name = name;
+            nameEntry.id = name;
+            nameEntry.type = type;
+            nameField.appendChild(nameEntry);
+
+            return nameField;
+        }
+
+        function createCheck(title, id, location) {
+            const label = document.createElement("label");
+            label.setAttribute("for", id);
+            label.innerText = title;
+            location.appendChild(label);
+
+            const check = document.createElement("input");
+            check.type = "checkbox";
+            check.name = id;
+            check.id = id;
+            location.appendChild(check);
+        }
+
+        function addPokemonDialog() {
+
+            const box = document.createElement("div");
+            
+            const form = document.createElement("form");
+            box.appendChild(form);
+
+            form.appendChild(createFormField("name", "text"));
+            form.appendChild(createFormField("form", "text"));
+            form.appendChild(createFormField("natdex", "number"));
+
+            const ballField = document.createElement("div");
+            ballField.classList.add("field");
+            form.appendChild(ballField);
+
+            const ballLabel = document.createElement("label");
+            ballLabel.setAttribute("for", "ball");
+            ballLabel.innerText = "Ball:";
+            ballField.appendChild(ballLabel);
+
+            const ballDrop = document.createElement("select");
+            ballDrop.name = "ball";
+            ballDrop.id = "ball";
+            ballField.appendChild(ballDrop);
+
+            ballTypes.forEach(function(ball){
+                const option = document.createElement("option");
+                option.value = ball;
+                option.innerText = capitalize(ball) + " ball";
+                ballDrop.appendChild(option);
+            });
+
+            form.appendChild(createFormField("nature", "text"));
+
+            const checksRow = document.createElement("div");
+            form.appendChild(checksRow);
+
+            createCheck("5+ IVs?", "five-iv", checksRow);
+            createCheck("Hidden ability?", "hidden-ab", checksRow);
+            createCheck("Shiny hunting target?", "target-pk", checksRow);
+
+            const decision = document.createElement("div");
+            decision.classList.add("nav-row");
+            confirmOrDeny(decision, addPokemon);
+            box.appendChild(decision);
+
+            popup(box);
+
+        }
+
+        const addPkmnBtn = document.getElementById("add-pkmn");
+        addPkmnBtn.addEventListener("click", addPokemonDialog);
+
         // adds tallies and form functionality
         function insertTallies() {
             fetch("tallies.html", {cache: "no-store"})
@@ -455,7 +593,7 @@
                 let queuePokemon = queue.dataset.pkmn;
 
                 // change tallies
-                function updateQueue() {
+                function addQueue() {
 
                     const num = parseInt(document.getElementById("add-q-eggs").value);
                     const pkmn = document.getElementById("add-q-pkmn").value;
@@ -469,9 +607,10 @@
                 } 
 
                 // add to queue
-                function addQueue() {
+                function addQueueDialog() {
 
                     const Qcheck = document.createElement("div");
+                    Qcheck.classList.add("popup");
 
                     const Qnumber = document.createElement("input");
                     Qnumber.type = "number";
@@ -491,17 +630,23 @@
                         Qdropdown.appendChild(option);
                     });
 
-                    confirmOrDeny(Qcheck, updateQueue);
+                    if (queueEggs > 0) {
+                        const overwrite = document.createElement("p");
+                        overwrite.innerText = "Overwrite queue?";
+                        Qcheck.appendChild(overwrite);
+                    }
+
+                    confirmOrDeny(Qcheck, addQueue);
 
                     popup(Qcheck);
 
                 }
 
                 const addButton = document.getElementById("add-queue");
-                addButton.addEventListener("click", addQueue);
+                addButton.addEventListener("click", addQueueDialog);
 
                 // confirm queue hatched
-                function confirmQueue() {
+                function confirmHatch() {
                     since += queueEggs;
                     const pkmnArr = queuePokemon.split("-");
                     const ball = pkmnArr[0];
@@ -527,11 +672,12 @@
                 function confirmHatchDialog() {
 
                     const confirm = document.createElement("div");
+                    confirm.classList.add("popup");
                     const text = document.createElement("p");
                     text.innerText = "Confirm queue eggs as hatched?";
                     confirm.appendChild(text);
 
-                    confirmOrDeny(confirm, confirmQueue);
+                    confirmOrDeny(confirm, confirmHatch);
                     popup(confirm);
 
                 }
@@ -569,6 +715,7 @@
 
                 function confirmShinyDialog() {
                     const confirm = document.createElement("div");
+                    confirm.classList.add("popup");
                     const text = document.createElement("p");
                     const pokemon = document.getElementById("queue").dataset.pkmn;
                     const pokemonTitle = capitalize(pokemon.replace(/-/g, " "));
@@ -596,6 +743,7 @@
                     const submit = document.getElementById("submit");
                     submit.click();
                 }
+
                 const saveButton = document.getElementById("save");
                 saveButton.addEventListener("click", save);
             })
