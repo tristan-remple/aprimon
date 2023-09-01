@@ -4,6 +4,12 @@
 
     const ballTypes = ["beast", "dream", "fast", "friend", "heavy", "level", "love", "lure", "moon", "safari", "sport"];
 
+    const natures = ["random", "hardy", "lonely", "adamant", "naughty", "brave",
+                    "bold", "docile", "impish", "lax", "relaxed",
+                    "modest", "mild", "bashful", "rash", "quiet",
+                    "calm", "gentle", "careful", "quirky", "sassy",
+                    "timid", "hasty", "jolly", "naive", "serious"];
+
     const users = [
         {
             "name": "knifecat",
@@ -216,11 +222,13 @@
 
                 const image = document.createElement("img");
                 image.classList.add("pokemon");
-                if (pkmn.pokemon["form-suffix"] === null) {
+                
+                if (pkmn.pokemon["form"] === null) {
                     image.src = `img/${addLeadingZeros(pkmn.pokemon.natdex)}.png`;
                 } else {
-                    image.src = `img/${addLeadingZeros(pkmn.pokemon.natdex)}${pkmn.pokemon["form-suffix"]}.png`;
-                    id += pkmn.pokemon["form-suffix"];
+                    let suffix = "-" + pkmn.pokemon.form.split("")[0];
+                    image.src = `img/${addLeadingZeros(pkmn.pokemon.natdex)}${suffix}.png`;
+                    id += suffix;
                 }
                 image.alt = title;
                 card.appendChild(image);
@@ -510,41 +518,45 @@
             });
         }
 
+        function getPossible() {
+            fetch("data/_possible.json")
+            .then(response => response.json())
+            .then(possible => {
+
+
         function addPokemon() {
 
-            const pkmnName = document.getElementById("name").value;
-            let pkmnForm = document.getElementById("form").value;
-            const pkmnNum = parseInt(document.getElementById("natdex").value);
+            let pkmnName = document.getElementById("pokemon").value.toLowerCase();
             const pkmnBall = document.getElementById("ball").value;
-            let pkmnNature = document.getElementById("nature").value;
+            const pkmnNature = document.getElementById("nature").value;
             const ivCheck = document.getElementById("five-iv").checked;
             const haCheck = document.getElementById("hidden-ab").checked;
             const targetCheck = document.getElementById("target-pk").checked;
 
-            if (pkmnName === "" || isNaN(pkmnNum) ) {
-                alert("Pokemon name and number required.");
+            if (pkmnName === "") {
+                alert("Pokemon name required.");
                 popdown();
                 return;
             }
 
-            let pkmnSuffix;
-            if (pkmnForm == "") {
-                pkmnForm = null;
-                pkmnSuffix = null;
+            let pkmnForm;
+            if (pkmnName.includes(" ")) {
+                pkmnArr = pkmnName.split(" ");
+                pkmnForm = pkmnArr[0];
+                pkmnName = pkmnArr[1];
             } else {
-                pkmnSuffix = "-" + pkmnForm.split("")[0]
+                pkmnForm = null;
             }
 
-            if (pkmnNature == "") {
-                pkmnNature = "random";
-            }
+            const pkmnDetails = possible.filter(function(pkmn){
+                return (pkmn.name === pkmnName && pkmn.form === pkmnForm);
+            })[0];
 
             const entry = {
                 "pokemon": {
-                    "name": pkmnName.toLowerCase(),
-                    "natdex": pkmnNum,
-                    "form": pkmnForm,
-                    "form-suffix": pkmnSuffix
+                    "name": pkmnName,
+                    "natdex": pkmnDetails.natdex,
+                    "form": pkmnForm
                 },
                 "ball": pkmnBall,
                 "nature": pkmnNature,
@@ -593,39 +605,112 @@
             location.appendChild(check);
         }
 
+        function createDrop(title, id, list) {
+            const ballField = document.createElement("div");
+            ballField.classList.add("field");
+
+            const ballLabel = document.createElement("label");
+            ballLabel.setAttribute("for", id);
+            ballLabel.innerText = capitalize(title) + ":";
+            ballField.appendChild(ballLabel);
+
+            const ballDrop = document.createElement("select");
+            ballDrop.name = id;
+            ballDrop.id = id;
+            ballField.appendChild(ballDrop);
+            console.log(list);
+
+            list.forEach(function(ball){
+                const option = document.createElement("option");
+                option.value = ball;
+                let ballArr = ball.split("-");
+                let ballTitle = capitalize(ballArr.join(" "));
+                option.innerText = ballTitle;
+                ballDrop.appendChild(option);
+            });
+
+            return ballField;
+        }
+
+        function acceptSuggestion(e) {
+            const sug = e.target.innerText;
+            const field = document.getElementById("pokemon");
+            field.value = sug;
+
+            const location = document.getElementById("auto-suggest");
+            location.classList.add("hidden");
+        }
+
+        function autoComplete(e, list) {
+            const value = e.target.value.toLowerCase();
+            const length = value.length;
+            const location = document.getElementById("auto-suggest");
+
+            if (value !== null && value !== "") {
+                location.innerHTML = "";
+                const suggests = list.filter(function(pkmn){
+                    return pkmn.includes(capitalize(value));
+                }).sort(function(a, b){
+                    if (a.substr(0, length) === capitalize(value)) {
+                        return -1;
+                    } else {
+                        return 1;
+                    }
+                });
+                suggests.forEach(function(sug){
+                    const disp = document.createElement("div");
+                    disp.classList.add("suggest");
+                    disp.innerText = sug;
+                    location.appendChild(disp);
+                    disp.addEventListener("click", function(e){
+                        acceptSuggestion(e);
+                    });
+                });
+                location.classList.remove("hidden");
+            } else {
+                location.classList.add("hidden");
+            }
+
+        }
+
         function addPokemonDialog() {
 
             const box = document.createElement("div");
+            box.id = "zoom";
+
+            const title = document.createElement("h2");
+            title.innerText = "Add an aprimon to your collection";
+            box.appendChild(title);
             
             const form = document.createElement("form");
             box.appendChild(form);
 
-            form.appendChild(createFormField("name", "text"));
-            form.appendChild(createFormField("form", "text"));
-            form.appendChild(createFormField("natdex", "number"));
-
-            const ballField = document.createElement("div");
-            ballField.classList.add("field");
-            form.appendChild(ballField);
-
-            const ballLabel = document.createElement("label");
-            ballLabel.setAttribute("for", "ball");
-            ballLabel.innerText = "Ball:";
-            ballField.appendChild(ballLabel);
-
-            const ballDrop = document.createElement("select");
-            ballDrop.name = "ball";
-            ballDrop.id = "ball";
-            ballField.appendChild(ballDrop);
-
-            ballTypes.forEach(function(ball){
-                const option = document.createElement("option");
-                option.value = ball;
-                option.innerText = capitalize(ball) + " ball";
-                ballDrop.appendChild(option);
+            console.log(possible);
+            const nameList = possible.map(function(pkmn){
+                if (pkmn.form === null) {
+                    return capitalize(pkmn.name);
+                } else {
+                    return capitalize(pkmn.form + " " + pkmn.name);
+                }
             });
+            console.log(nameList);
 
-            form.appendChild(createFormField("nature", "text"));
+            // form.appendChild(createDrop("pokemon", "form-name", nameList));
+            const nameField = createFormField("pokemon", "text");
+            nameField.id = "name-field";
+            nameField.addEventListener("input", function(e) {
+                autoComplete(e, nameList);
+            });
+            form.appendChild(nameField);
+
+            const autoSuggest = document.createElement("div");
+            autoSuggest.id = "auto-suggest";
+            autoSuggest.classList.add("hidden");
+            nameField.appendChild(autoSuggest);
+
+            form.appendChild(createDrop("pokeball", "ball", ballTypes));
+
+            form.appendChild(createDrop("nature", "nature", natures));
 
             const checksRow = document.createElement("div");
             form.appendChild(checksRow);
@@ -646,15 +731,6 @@
         const addPkmnBtn = document.getElementById("add-pkmn");
         addPkmnBtn.addEventListener("click", addPokemonDialog);
 
-        function getPossible() {
-            fetch("possible.json")
-            .then(response => response.json())
-            .then(possibleAprimon => {
-
-                return possibleAprimon;
-                
-            });
-        }
 
         function zoomIn(e) {
             
@@ -857,9 +933,12 @@
                 saveButton.addEventListener("click", saveDialog);
             })
         }
+        insertTallies();
+    });
+}
 
         // initial activation
-        insertTallies();
+        getPossible();
         displayCards(json);
 
     });
