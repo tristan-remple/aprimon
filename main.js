@@ -4,6 +4,37 @@
 
     const ballTypes = ["beast", "dream", "fast", "friend", "heavy", "level", "love", "lure", "moon", "safari", "sport"];
 
+    const users = [
+        {
+            "name": "knifecat",
+            "pref": {
+                "collapse": false,
+                "style": "driftwood"
+            }
+        },
+        {
+            "name": "test",
+            "pref": {
+                "collapse": true,
+                "style": "driftwood"
+            }
+        }
+    ];
+
+    // check the url params
+    const qString = new Proxy(new URLSearchParams(window.location.search), {
+        get: (searchParams, prop) => searchParams.get(prop),
+    });
+    let userInfo = users[0];
+    if (qString.user) {
+        userInfo = users.filter(function(user){
+            return user.name === qString.user;
+        })[0];
+        if (userInfo === undefined) {
+            userInfo = users[0];
+        }
+    }
+
     function capitalize(str) {
 
         // check if it's blank (loose equality intentional)
@@ -115,7 +146,45 @@
     }
     sizeButton.addEventListener("click", toggleSize);
 
-    fetch("aprimon.json", {cache: "no-store"})
+    function menuToggle(item) {
+        const menuSection = document.getElementById(item);
+        const menuButton = document.getElementById(item + "-menu");
+
+        if (menuSection.classList.contains("hidden")) {
+            menuSection.classList.remove("hidden");
+            menuButton.classList.add("shiny");
+        } else {
+            menuSection.classList.add("hidden");
+            menuButton.classList.remove("shiny");
+        }
+    }
+
+    function menuHandler(e) {
+        if (e.type === "keydown" && e.key !== "Enter") {
+            return;
+        }
+
+        const item = e.target.id.split("-")[0];
+        menuToggle(item);
+    }
+
+    const menuSections = document.getElementsByClassName("menu");
+    for (section of menuSections) {
+        section.addEventListener("click", function(e){
+            menuHandler(e);
+        });
+        section.addEventListener("keydown", function(e){
+            menuHandler(e);
+        });
+    }
+
+    menuToggle("control");
+    menuToggle("sort");
+    menuToggle("filter");
+
+    const url = "data/" + userInfo.name + ".json";
+    console.log(url);
+    fetch(url, {cache: "no-store"})
     .then(response => response.json())
     .then(json => {
 
@@ -592,8 +661,9 @@
         }
 
         // adds tallies and form functionality
+        const tallyURL = "data/" + userInfo.name + ".html";
         function insertTallies() {
-            fetch("tallies.html", {cache: "no-store"})
+            fetch(tallyURL, {cache: "no-store"})
             .then(response => response.text())
             .then(html => {
                 const table = document.getElementById("stats");
@@ -748,18 +818,43 @@
                     const fieldQueuePokemon = document.getElementById("in-queue-pokemon");
                     const fieldSince = document.getElementById("in-since-last");
                     const fieldJSON = document.getElementById("in-json");
+                    const fieldUser = document.getElementById("in-user");
+                    const fieldPass = document.getElementById("in-password");
+                    const otherPass = document.getElementById("password");
 
                     fieldQueueEggs.value = queueEggs;
                     fieldQueuePokemon.value = queuePokemon;
                     fieldSince.value = since;
                     fieldJSON.value = JSON.stringify(json);
+                    fieldUser.value = userInfo.name;
+                    fieldPass.value = otherPass.value;
 
                     const submit = document.getElementById("submit");
                     submit.click();
+                    popdown();
+                }
+
+                function saveDialog() {
+                    console.log("hey listen");
+                    const box = document.createElement("div");
+                    box.classList.add("popup");
+
+                    const text = document.createElement("p");
+                    text.innerText = "Enter your password to save:";
+                    box.appendChild(text);
+
+                    const field = document.createElement("input");
+                    field.type = "password";
+                    field.id = "password";
+                    field.name = "password";
+                    box.appendChild(field);
+
+                    confirmOrDeny(box, save);
+                    popup(box);
                 }
 
                 const saveButton = document.getElementById("save");
-                saveButton.addEventListener("click", save);
+                saveButton.addEventListener("click", saveDialog);
             })
         }
 

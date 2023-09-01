@@ -42,7 +42,7 @@
         </article>
 
         <nav class="box">
-            <h2>Stats</h2>
+            <button id="stats-menu" class="small-button wide-button menu shiny">STATS</button>
             <table id="stats">
                 <tr>
                     <td id="apri-total" class="num">54</td>
@@ -62,8 +62,39 @@
                 </tr>
             </table>
 
-            <label for="sort">Sort</label>
-            <div id="sort" name="sort" class="nav-row">
+            <button id="control-menu" class="small-button wide-button menu shiny">CONTROL</button>
+            <div id="control" class="nav-row">
+                <button id="size-toggle" class="small-button control" title="toggle collapsed tiles">
+                    <img class="symbol" src="img/collapse.png" alt="arrows pointing inwards">
+                </button>
+                <button id="add-pkmn" class="small-button control" title="add pokemon">
+                    <img class="symbol" src="img/addmon.png" alt="plus sign over pokeball">
+                </button>
+                <button id="add-queue" class="small-button control" title="add to queue">
+                    <img class="symbol" src="img/addeggs.png" alt="plus sign over eggs">
+                </button>
+                <button id="queue-hatched" class="small-button control" title="confirm queue hatched">
+                    <img class="symbol" src="img/check.png" alt="checkmark">
+                </button>
+                <button id="shiny-hatched" class="small-button control" title="hatched a shiny">
+                    <img class="symbol" src="img/sparkle.png" alt="mint-colored sparkle emoji">
+                </button>
+                <button id="save" class="small-button control" title="save your progress">
+                    <img class="symbol" src="img/save.png" alt="save floppy icon">
+                </button>
+                <form action="update.php" method="post">
+                    <input type="hidden" id="in-queue-eggs" name="in-queue-eggs">
+                    <input type="hidden" id="in-queue-pokemon" name="in-queue-pokemon">
+                    <input type="hidden" id="in-since-last" name="in-since-last">
+                    <input type="hidden" id="in-json" name="in-json">
+                    <input type="hidden" id="in-user" name="in-user">
+                    <input type="hidden" id="in-password" name="in-password">
+                    <input type="submit" id="submit" value="" class="hidden">
+                </form>
+            </div>
+
+            <button id="sort-menu" class="small-button wide-button menu shiny">SORT</button>
+            <div id="sort" class="nav-row">                
                 <button id="alpha" class="small-button sort" title="alphabetical">
                     A-Z
                 </button>
@@ -87,9 +118,9 @@
                 </button>
             </div>
 
-            <label for="filter">Filter</label>
+            <button id="filter-menu" class="small-button wide-button menu shiny">FILTER</button>
             <div id="filter" name="filter" class="nav-row">
-                <button id="all" class="small-button wide-button filter shiny">ALL</button>
+                <button id="all" class="small-button filter shiny">ALL</button>
                 <button id="beast" class="small-button filter" title="beast ball">
                     <img class="icon" src="img/beastball.png" alt="beast ball">
                 </button>
@@ -121,33 +152,7 @@
         </nav>
 
         <footer class="box">
-            <div id="controls" name="controls" class="nav-row">
-                <button id="size-toggle" class="small-button control" title="toggle collapsed tiles">
-                    <img class="symbol" src="img/collapse.png" alt="arrows pointing inwards">
-                </button>
-                <button id="add-pkmn" class="small-button control" title="add pokemon">
-                    <img class="symbol" src="img/addmon.png" alt="plus sign over pokeball">
-                </button>
-                <button id="add-queue" class="small-button control" title="add to queue">
-                    <img class="symbol" src="img/addeggs.png" alt="plus sign over eggs">
-                </button>
-                <button id="queue-hatched" class="small-button control" title="confirm queue hatched">
-                    <img class="symbol" src="img/check.png" alt="checkmark">
-                </button>
-                <button id="shiny-hatched" class="small-button control" title="hatched a shiny">
-                    <img class="symbol" src="img/sparkle.png" alt="mint-colored sparkle emoji">
-                </button>
-                <form action="update.php" method="post">
-                    <button id="save" class="small-button control" title="save your progress">
-                        <img class="symbol" src="img/save.png" alt="save floppy icon">
-                    </button>
-                    <input type="hidden" id="in-queue-eggs" name="in-queue-eggs" value="54">
-                    <input type="hidden" id="in-queue-pokemon" name="in-queue-pokemon" value="moon-zorua-h">
-                    <input type="hidden" id="in-since-last" name="in-since-last" value="741">
-                    <input type="hidden" id="in-json" name="in-json" value="json">
-                    <input type="submit" id="submit" value="" class="hidden">
-                </form>
-            </div>
+            
             <a class="attribution" href="https://www.vecteezy.com/members/venesiaagustian744914">(Wood Texture)</a>
         </footer>
 

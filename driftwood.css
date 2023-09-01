@@ -156,6 +156,7 @@ nav {
     align-items: center;
     position: sticky;
     top: 10px;
+    width: 80%;
 }
 
 h2 {
@@ -279,11 +280,11 @@ select {
     width: 128px;
 }
 
-input.wide {
+input.wide-field {
     width: 240px;
 }
 
-select.wide {
+select.wide-field {
     width: 248px;
 }
 

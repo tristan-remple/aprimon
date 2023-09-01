@@ -3,6 +3,10 @@
         "name": "sprigatito",
         "natdex": 906,
         "form": null,
+        "evo": [
+            "floragato",
+            "meowscarada"
+        ],
         "prevgen": false,
         "swsh": false,
         "scarvi": true,
@@ -25,6 +29,10 @@
         "name": "fuecoco",
         "natdex": 909,
         "form": null,
+        "evo": [
+            "crocolor",
+            "skeledirge"
+        ],
         "prevgen": false,
         "swsh": false,
         "scarvi": true,
@@ -46,6 +54,10 @@
         "name": "quaxly",
         "natdex": 912,
         "form": null,
+        "evo": [
+            "quaxwell",
+            "quaquaval"
+        ],
         "prevgen": false,
         "swsh": false,
         "scarvi": true,
@@ -67,6 +79,9 @@
         "name": "lechonk",
         "natdex": 915,
         "form": null,
+        "evo": [
+            "oinkologne"
+        ],
         "prevgen": false,
         "swsh": false,
         "scarvi": true,
@@ -88,6 +103,9 @@
         "name": "tarountula",
         "natdex": 917,
         "form": null,
+        "evo": [
+            "spidops"
+        ],
         "prevgen": false,
         "swsh": false,
         "scarvi": true,
@@ -108,6 +126,9 @@
         "name": "nymble",
         "natdex": 919,
         "form": null,
+        "evo": [
+            "lokix"
+        ],
         "prevgen": false,
         "swsh": false,
         "scarvi": true,
@@ -127,6 +148,10 @@
         "name": "hoppip",
         "natdex": 187,
         "form": null,
+        "evo": [
+            "skiploom",
+            "jumpluff"
+        ],
         "prevgen": true,
         "swsh": false,
         "scarvi": true,
@@ -152,12 +177,17 @@
         "name": "fletchling",
         "natdex": 661,
         "form": null,
+        "evo": [
+            "fletchinder",
+            "talonflame"
+        ],
         "prevgen": true,
         "swsh": true,
         "scarvi": true,
         "apri": true,
         "cycles": 15,
         "types": [
+            "normal",
             "fire",
             "flying"
         ],
@@ -172,6 +202,10 @@
         "name": "pawmi",
         "natdex": 921,
         "form": null,
+        "evo": [
+            "pawmo",
+            "pawmot"
+        ],
         "prevgen": false,
         "swsh": false,
         "scarvi": true,
@@ -193,6 +227,9 @@
         "name": "houndour",
         "natdex": 228,
         "form": null,
+        "evo": [
+            "houndoom"
+        ],
         "prevgen": true,
         "swsh": false,
         "scarvi": true,
@@ -218,6 +255,9 @@
         "name": "yungoos",
         "natdex": 734,
         "form": null,
+        "evo": [
+            "gumshoos"
+        ],
         "prevgen": false,
         "swsh": true,
         "scarvi": true,
@@ -239,6 +279,9 @@
         "name": "skwovet",
         "natdex": 819,
         "form": null,
+        "evo": [
+            "greedent"
+        ],
         "prevgen": false,
         "swsh": true,
         "scarvi": true,
@@ -259,6 +302,9 @@
         "name": "sunkern",
         "natdex": 191,
         "form": null,
+        "evo": [
+            "sunflora"
+        ],
         "prevgen": true,
         "swsh": false,
         "scarvi": true,
@@ -281,6 +327,9 @@
         "name": "kriketot",
         "natdex": 401,
         "form": null,
+        "evo": [
+            "kricketune"
+        ],
         "prevgen": true,
         "swsh": false,
         "scarvi": true,
@@ -298,6 +347,10 @@
         "name": "scatterbug",
         "natdex": 664,
         "form": null,
+        "evo": [
+            "spewpa",
+            "vivillon"
+        ],
         "prevgen": true,
         "swsh": false,
         "scarvi": true,
@@ -317,6 +370,9 @@
         "name": "combee",
         "natdex": 415,
         "form": null,
+        "evo": [
+            "vespiquen"
+        ],
         "prevgen": true,
         "swsh": true,
         "scarvi": true,
@@ -335,6 +391,10 @@
         "name": "rookidee",
         "natdex": 821,
         "form": null,
+        "evo": [
+            "corvisquire",
+            "corviknight"
+        ],
         "prevgen": false,
         "swsh": true,
         "scarvi": true,
@@ -4030,7 +4090,7 @@
             "mean look",
             "cross chop",
             "feint",
-            "ddefog",
+            "defog",
             "entrainment",
             "quick guard"
         ]
@@ -5255,6 +5315,285 @@
             "aqua tail",
             "dragon rush",
             "freeze-dry"
+        ]
+    },
+    {
+        "name": "charmander",
+        "natdex": 4,
+        "form": null,
+        "evo": [
+            "charmeleon",
+            "charizard"
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": true,
+        "scarvi": false,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "fire",
+            "flying"
+        ],
+        "hidden": "solar power",
+        "eggmoves": [
+            "bite",
+            "counter",
+            "belly drum",
+            "iron tail",
+            "metal claw",
+            "ancient power",
+            "dragon rush",
+            "dragon tail"
+        ]
+    },
+    {
+        "name": "cyndaquil",
+        "natdex": 155,
+        "form": null,
+        "evo": [
+            "quilava",
+            "typhlosion"
+        ],
+        "prevgen": true,
+        "swsh": false,
+        "bdsp": true,
+        "scarvi": false,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "fire",
+            "ghost"
+        ],
+        "hidden": "flash fire",
+        "eggmoves": [
+            "double kick",
+            "curse",
+            "reversal",
+            "extrasensory",
+            "howl",
+            "covet"
+        ]
+    },
+    {
+        "name": "fennekin",
+        "natdex": 653,
+        "form": null,
+        "evo": [
+            "braixen",
+            "delphox"
+        ],
+        "prevgen": true,
+        "swsh": false,
+        "bdsp": false,
+        "scarvi": false,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "fire",
+            "psychic"
+        ],
+        "hidden": "magician",
+        "eggmoves": [
+            "hypnosis",
+            "heat wave",
+            "wish",
+            "copycat",
+            "magic room"
+        ]
+    },
+    {
+        "name": "scorbunny",
+        "natdex": 813,
+        "form": null,
+        "evo": [
+            "raboot",
+            "cinderace"
+        ],
+        "prevgen": false,
+        "swsh": true,
+        "bdsp": false,
+        "scarvi": false,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "fire"
+        ],
+        "hidden": "libero",
+        "eggmoves": [
+            "sand attack",
+            "high jump kick",
+            "super fang",
+            "sucker punch"
+        ]
+    },
+    {
+        "name": "oshawott",
+        "natdex": 501,
+        "form": null,
+        "evo": [
+            "dewott",
+            "samurott"
+        ],
+        "prevgen": true,
+        "swsh": false,
+        "bdsp": false,
+        "scarvi": false,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "water",
+            "dark"
+        ],
+        "hidden": "shell armor",
+        "eggmoves": [
+            "screech",
+            "detect",
+            "knock off",
+            "copycat",
+            "night slash",
+            "air slash",
+            "sacred sword",
+            "aqua cutter"
+        ]
+    },
+    {
+        "name": "froakie",
+        "natdex": 656,
+        "form": null,
+        "evo": [
+            "frogadier",
+            "greninja"
+        ],
+        "prevgen": true,
+        "swsh": false,
+        "bdsp": false,
+        "scarvi": false,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "water",
+            "dark"
+        ],
+        "hidden": "protean",
+        "eggmoves": [
+            "counter",
+            "spikes",
+            "toxic spikes",
+            "switcheroo",
+            "retaliate"
+        ]
+    },
+    {
+        "name": "sobble",
+        "natdex": 816,
+        "form": null,
+        "evo": [
+            "drizzile",
+            "inteleon"
+        ],
+        "prevgen": false,
+        "swsh": true,
+        "bdsp": false,
+        "scarvi": false,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "water"
+        ],
+        "hidden": "sniper",
+        "eggmoves": [
+            "mist",
+            "double team",
+            "haze",
+            "aqua ring",
+            "ice shard",
+            "aqua jet",
+            "fell stinger"
+        ]
+    },
+    {
+        "name": "chespin",
+        "natdex": 650,
+        "form": null,
+        "evo": [
+            "quilladin",
+            "chesnaught"
+        ],
+        "prevgen": true,
+        "swsh": false,
+        "bdsp": false,
+        "scarvi": false,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "grass",
+            "fighting"
+        ],
+        "hidden": "bulletproof",
+        "eggmoves": [
+            "super fang",
+            "curse",
+            "belly drum",
+            "spikes",
+            "synthesis",
+            "wide guard",
+            "quick guard"
+        ]
+    },
+    {
+        "name": "rowlet",
+        "natdex": 722,
+        "form": null,
+        "evo": [
+            "dartrix",
+            "decidueye"
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": false,
+        "scarvi": false,
+        "apri": true,
+        "cycles": 15,
+        "types": [
+            "grass",
+            "ghost",
+            "fighting"
+        ],
+        "hidden": "long reach",
+        "eggmoves": [
+            "double team",
+            "confuse ray",
+            "knock off",
+            "roost",
+            "defog"
+        ]
+    },
+    {
+        "name": "grookey",
+        "natdex": 810,
+        "form": null,
+        "evo": [
+            "thwackey",
+            "rillaboom"
+        ],
+        "prevgen": false,
+        "swsh": true,
+        "bdsp": false,
+        "scarvi": false,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "grass"
+        ],
+        "hidden": "grassy surge",
+        "eggmoves": [
+            "strength",
+            "leech seed",
+            "growth",
+            "fake out",
+            "hammer arm",
+            "worry seed"
         ]
     }
 ]
