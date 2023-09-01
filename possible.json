@@ -1014,5 +1014,4247 @@
             "healing wish",
             "worry seed"
         ]
+    },
+    {
+        "name": "shroomish",
+        "natdex": 285,
+        "form": null,
+        "evo": [
+            "breloom"
+        ],
+        "prevgen": true,
+        "swsh": false,
+        "bdsp": true,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 15,
+        "types": [
+            "grass",
+            "fighting"
+        ],
+        "hidden": "quick feet",
+        "eggmoves": [
+            "charm",
+            "helping hand",
+            "fake tears",
+            "worry seed"
+        ]
+    },
+    {
+        "name": "applin",
+        "natdex": 840,
+        "form": null,
+        "evo": [
+            "flapple",
+            "appletun",
+            "dipplin"
+        ],
+        "prevgen": false,
+        "swsh": true,
+        "bdsp": false,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "grass",
+            "dragon"
+        ],
+        "hidden": "bulletproof",
+        "eggmoves": [
+            "defense curl",
+            "rollout",
+            "recycle",
+            "sucker punch"
+        ]
+    },
+    {
+        "name": "spoink",
+        "natdex": 325,
+        "form": null,
+        "evo": [
+            "grumpig"
+        ],
+        "prevgen": true,
+        "swsh": false,
+        "bdsp": true,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "psychic"
+        ],
+        "hidden": "gluttony",
+        "eggmoves": [
+            "whirlwind",
+            "amnesia",
+            "mirror coat",
+            "future sight",
+            "trick",
+            "zen headbutt",
+            "simple beam"
+        ]
+    },
+    {
+        "name": "squawkabilly",
+        "natdex": 931,
+        "form": "green",
+        "evo": [
+            
+        ],
+        "prevgen": false,
+        "swsh": false,
+        "bdsp": false,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 15,
+        "types": [
+            "normal",
+            "flying"
+        ],
+        "hidden": "guts",
+        "eggmoves": [
+            "double-edge",
+            "flatter",
+            "final gambit",
+            "parting shot"
+        ]
+    },
+    {
+        "name": "squawkabilly",
+        "natdex": 931,
+        "form": "blue",
+        "evo": [
+            
+        ],
+        "prevgen": false,
+        "swsh": false,
+        "bdsp": false,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 15,
+        "types": [
+            "normal",
+            "flying"
+        ],
+        "hidden": "guts",
+        "eggmoves": [
+            "double-edge",
+            "flatter",
+            "final gambit",
+            "parting shot"
+        ]
+    },
+    {
+        "name": "squawkabilly",
+        "natdex": 931,
+        "form": "yellow",
+        "evo": [
+            
+        ],
+        "prevgen": false,
+        "swsh": false,
+        "bdsp": false,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 15,
+        "types": [
+            "normal",
+            "flying"
+        ],
+        "hidden": "sheer force",
+        "eggmoves": [
+            "double-edge",
+            "flatter",
+            "final gambit",
+            "parting shot"
+        ]
+    },
+    {
+        "name": "squawkabilly",
+        "natdex": 931,
+        "form": "white",
+        "evo": [
+            
+        ],
+        "prevgen": false,
+        "swsh": false,
+        "bdsp": false,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 15,
+        "types": [
+            "normal",
+            "flying"
+        ],
+        "hidden": "sheer force",
+        "eggmoves": [
+            "double-edge",
+            "flatter",
+            "final gambit",
+            "parting shot"
+        ]
+    },
+    {
+        "name": "misdreavus",
+        "natdex": 200,
+        "form": null,
+        "evo": [
+            "mismagius"
+        ],
+        "prevgen": true,
+        "swsh": false,
+        "bdsp": true,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 25,
+        "types": [
+            "ghost"
+        ],
+        "hidden": null,
+        "eggmoves": [
+            "screech",
+            "curse",
+            "spite",
+            "destiny bond",
+            "memento",
+            "imprison",
+            "sucker punch",
+            "shadow sneak",
+            "wonder room"
+        ]
+    },
+    {
+        "name": "makuhita",
+        "natdex": 296,
+        "form": null,
+        "evo": [
+            "hariyama"
+        ],
+        "prevgen": true,
+        "swsh": false,
+        "bdsp": true,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "fighting"
+        ],
+        "hidden": "sheer force",
+        "eggmoves": [
+            "counter",
+            "dynamic punch",
+            "cross chop",
+            "helping hand",
+            "feint",
+            "bullet punch",
+            "wide guard"
+        ]
+    },
+    {
+        "name": "crabrawler",
+        "natdex": 739,
+        "form": null,
+        "evo": [
+            "crabominable"
+        ],
+        "prevgen": true,
+        "swsh": false,
+        "bdsp": false,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "fighting",
+            "ice"
+        ],
+        "hidden": "anger point",
+        "eggmoves": [
+            "focus punch",
+            "superpower",
+            "endeavor",
+            "wide guard"
+        ]
+    },
+    {
+        "name": "salandit",
+        "natdex": 757,
+        "form": null,
+        "evo": [
+            "salazzle"
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": false,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "poison",
+            "fire"
+        ],
+        "hidden": "oblivious",
+        "eggmoves": [
+            "sand attack",
+            "mud-slap",
+            "fake out",
+            "belch"
+        ]
+    },
+    {
+        "name": "phanpy",
+        "natdex": 231,
+        "form": null,
+        "evo": [
+            "donphan"
+        ],
+        "prevgen": true,
+        "swsh": false,
+        "bdsp": true,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "ground"
+        ],
+        "hidden": "sand veil",
+        "eggmoves": [
+            "body slam",
+            "counter",
+            "fissure",
+            "focus energy",
+            "snore",
+            "ancient power",
+            "endeavor",
+            "ice shard",
+            "head smash",
+            "play rough",
+            "high horsepower"
+        ]
+    },
+    {
+        "name": "cufant",
+        "natdex": 878,
+        "form": null,
+        "evo": [
+            "copperajah"
+        ],
+        "prevgen": false,
+        "swsh": true,
+        "bdsp": false,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 25,
+        "types": [
+            "steel"
+        ],
+        "hidden": "heavy metal",
+        "eggmoves": [
+            "whirlwind",
+            "slam",
+            "double-edge",
+            "fissure",
+            "defense curl",
+            "curse",
+            "swagger",
+            "belch"
+        ]
+    },
+    {
+        "name": "gible",
+        "natdex": 443,
+        "form": null,
+        "evo": [
+            "gabite",
+            "garchomp"
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": true,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 40,
+        "types": [
+            "dragon",
+            "ground"
+        ],
+        "hidden": "rough skin",
+        "eggmoves": [
+            "thrash",
+            "double-edge",
+            "metal claw",
+            "twister"
+        ]
+    },
+    {
+        "name": "nacli",
+        "natdex": 932,
+        "form": null,
+        "evo": [
+            "naclstack",
+            "garganacl"
+        ],
+        "prevgen": false,
+        "swsh": false,
+        "bdsp": false,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "rock"
+        ],
+        "hidden": "clear body",
+        "eggmoves": [
+            "fissure",
+            "curse",
+            "ancient power",
+            "power gem"
+        ]
+    },
+    {
+        "name": "wingull",
+        "natdex": 278,
+        "form": null,
+        "evo": [
+            "pelipper"
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": true,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "water",
+            "flying"
+        ],
+        "hidden": "rain dish",
+        "eggmoves": [
+            "gust",
+            "twister",
+            "knock off",
+            "air cutter",
+            "aerial ace",
+            "aqua ring",
+            "wide guard",
+            "soak"
+        ]
+    },
+    {
+        "name": "magikarp",
+        "natdex": 129,
+        "form": null,
+        "evo": [
+            "gyarados"
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": true,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 5,
+        "types": [
+            "water",
+            "flying"
+        ],
+        "hidden": "rattled",
+        "eggmoves": [
+
+        ]
+    },
+    {
+        "name": "arrokuda",
+        "natdex": 846,
+        "form": null,
+        "evo": [
+            "barraskewda"
+        ],
+        "prevgen": false,
+        "swsh": true,
+        "bdsp": false,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "water"
+        ],
+        "hidden": "propeller tail",
+        "eggmoves": [
+            "thrash",
+            "slash",
+            "acupressure",
+            "night slash"
+        ]
+    },
+    {
+        "name": "basculin",
+        "natdex": 550,
+        "form": "red",
+        "evo": [
+
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": false,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 40,
+        "types": [
+            "water"
+        ],
+        "hidden": "mold breaker",
+        "eggmoves": [
+            "bubble beam",
+            "endeavor"
+        ]
+    },
+    {
+        "name": "basculin",
+        "natdex": 550,
+        "form": "blue",
+        "evo": [
+
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": false,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 40,
+        "types": [
+            "water"
+        ],
+        "hidden": "mold breaker",
+        "eggmoves": [
+            "bubble beam",
+            "endeavor"
+        ]
+    },
+    {
+        "name": "basculin",
+        "natdex": 550,
+        "form": "white",
+        "evo": [
+            "basculegion"
+        ],
+        "prevgen": false,
+        "swsh": false,
+        "bdsp": false,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 40,
+        "types": [
+            "water"
+        ],
+        "hidden": "mold breaker",
+        "eggmoves": [
+            "endeavor",
+            "last respects"
+        ]
+    },
+    {
+        "name": "gulpin",
+        "natdex": 316,
+        "form": null,
+        "evo": [
+            "swalot"
+        ],
+        "prevgen": true,
+        "swsh": false,
+        "bdsp": true,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "poison"
+        ],
+        "hidden": "gluttony",
+        "eggmoves": [
+            "smog",
+            "acid armor",
+            "curse",
+            "mud-slap",
+            "destiny bond",
+            "clear smog",
+            "stuff cheeks"
+        ]
+    },
+    {
+        "name": "meowth",
+        "natdex": 52,
+        "form": null,
+        "evo": [
+            "persian"
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": true,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "normal"
+        ],
+        "hidden": "unnerve",
+        "eggmoves": [
+            "tail whip",
+            "hypnosis",
+            "flail",
+            "spite",
+            "covet",
+            "last resort"
+        ]
+    },
+    {
+        "name": "meowth",
+        "natdex": 52,
+        "form": "alolan",
+        "evo": [
+            "persian"
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": false,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "dark"
+        ],
+        "hidden": "rattled",
+        "eggmoves": [
+            "flail",
+            "spite",
+            "covet",
+            "flatter",
+            "parting shot"
+        ]
+    },
+    {
+        "name": "meowth",
+        "natdex": 52,
+        "form": "galarian",
+        "evo": [
+            "perrserker"
+        ],
+        "prevgen": false,
+        "swsh": true,
+        "bdsp": false,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "steel"
+        ],
+        "hidden": "unnerve",
+        "eggmoves": [
+            "flail",
+            "spite",
+            "covet",
+            "double-edge",
+            "curse",
+            "night slash"
+        ]
+    },
+    {
+        "name": "drifloon",
+        "natdex": 425,
+        "form": null,
+        "evo": [
+            "drifblim"
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": true,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 30,
+        "types": [
+            "ghost",
+            "flying"
+        ],
+        "hidden": "flare boost",
+        "eggmoves": [
+            "disable",
+            "hypnosis",
+            "haze",
+            "memento",
+            "defog",
+            "clear smog"
+        ]
+    },
+    {
+        "name": "flabébé",
+        "natdex": 669,
+        "form": "red",
+        "evo": [
+            "floette",
+            "florges"
+        ],
+        "prevgen": true,
+        "swsh": false,
+        "bdsp": false,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "fairy"
+        ],
+        "hidden": "symbiosis",
+        "eggmoves": [
+            "endeavor",
+            "copycat",
+            "tearful look"
+        ]
+    },
+    {
+        "name": "flabébé",
+        "natdex": 669,
+        "form": "blue",
+        "evo": [
+            "floette",
+            "florges"
+        ],
+        "prevgen": true,
+        "swsh": false,
+        "bdsp": false,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "fairy"
+        ],
+        "hidden": "symbiosis",
+        "eggmoves": [
+            "endeavor",
+            "copycat",
+            "tearful look"
+        ]
+    },
+    {
+        "name": "flabébé",
+        "natdex": 669,
+        "form": "orange",
+        "evo": [
+            "floette",
+            "florges"
+        ],
+        "prevgen": true,
+        "swsh": false,
+        "bdsp": false,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "fairy"
+        ],
+        "hidden": "symbiosis",
+        "eggmoves": [
+            "endeavor",
+            "copycat",
+            "tearful look"
+        ]
+    },
+    {
+        "name": "flabébé",
+        "natdex": 669,
+        "form": "white",
+        "evo": [
+            "floette",
+            "florges"
+        ],
+        "prevgen": true,
+        "swsh": false,
+        "bdsp": false,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "fairy"
+        ],
+        "hidden": "symbiosis",
+        "eggmoves": [
+            "endeavor",
+            "copycat",
+            "tearful look"
+        ]
+    },
+    {
+        "name": "flabébé",
+        "natdex": 669,
+        "form": "yellow",
+        "evo": [
+            "floette",
+            "florges"
+        ],
+        "prevgen": true,
+        "swsh": false,
+        "bdsp": false,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "fairy"
+        ],
+        "hidden": "symbiosis",
+        "eggmoves": [
+            "endeavor",
+            "copycat",
+            "tearful look"
+        ]
+    },
+    {
+        "name": "diglett",
+        "natdex": 50,
+        "form": null,
+        "evo": [
+            "dugtrio"
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": true,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "ground"
+        ],
+        "hidden": "sand force",
+        "eggmoves": [
+            "headbutt",
+            "ancient power",
+            "memento",
+            "hone claws",
+            "final gambit"
+        ]
+    },
+    {
+        "name": "diglett",
+        "natdex": 50,
+        "form": "alolan",
+        "evo": [
+            "dugtrio"
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": true,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "ground",
+            "steel"
+        ],
+        "hidden": "sand force",
+        "eggmoves": [
+            "headbutt",
+            "ancient power",
+            "memento",
+            "hone claws",
+            "final gambit",
+            "thrash",
+            "metal sound"
+        ]
+    },
+    {
+        "name": "torkoal",
+        "natdex": 324,
+        "form": null,
+        "evo": [
+
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": true,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "fire"
+        ],
+        "hidden": "shell armor",
+        "eggmoves": [
+            "fissure",
+            "flail",
+            "ancient power",
+            "yawn"
+        ]
+    },
+    {
+        "name": "numel",
+        "natdex": 322,
+        "form": null,
+        "evo": [
+            "dugtrio"
+        ],
+        "prevgen": true,
+        "swsh": false,
+        "bdsp": true,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "fire",
+            "ground"
+        ],
+        "hidden": "own tempo",
+        "eggmoves": [
+            "stomp",
+            "body slam",
+            "growth",
+            "defense curl",
+            "scary face",
+            "rollout",
+            "ancient power",
+            "stockpile",
+            "spit up",
+            "swallow",
+            "heat wave",
+            "yawn",
+            "howl",
+            "iron head",
+            "heavy slam"
+        ]
+    },
+    {
+        "name": "bronzor",
+        "natdex": 436,
+        "form": null,
+        "evo": [
+            "bronzong"
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": true,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "steel",
+            "psychic"
+        ],
+        "hidden": "heavy metal",
+        "eggmoves": [
+            "recycle",
+            "gravity"
+        ]
+    },
+    {
+        "name": "axew",
+        "natdex": 610,
+        "form": null,
+        "evo": [
+            "fraxure",
+            "haxorus"
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": false,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 40,
+        "types": [
+            "dragon"
+        ],
+        "hidden": "unnerve",
+        "eggmoves": [
+            "counter",
+            "iron tail",
+            "endeavor",
+            "night slash",
+            "aqua tail",
+            "first impression"
+        ]
+    },
+    {
+        "name": "mankey",
+        "natdex": 56,
+        "form": null,
+        "evo": [
+            "primeape",
+            "annihilape"
+        ],
+        "prevgen": true,
+        "swsh": false,
+        "bdsp": true,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "fighting",
+            "ghost"
+        ],
+        "hidden": "defiant",
+        "eggmoves": [
+            "counter",
+            "curse",
+            "spite",
+            "encore",
+            "beat up",
+            "night slash"
+        ]
+    },
+    {
+        "name": "meditite",
+        "natdex": 307,
+        "form": null,
+        "evo": [
+            "medicham"
+        ],
+        "prevgen": true,
+        "swsh": false,
+        "bdsp": true,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "fighting",
+            "psychic"
+        ],
+        "hidden": "telepathy",
+        "eggmoves": [
+            "fire punch",
+            "ice punch",
+            "thunder punch",
+            "dynamic punch",
+            "baton pass",
+            "fake out",
+            "power swap",
+            "guard swap",
+            "bullet punch",
+            "psycho cut",
+            "quick guard"
+        ]
+    },
+    {
+        "name": "riolu",
+        "natdex": 447,
+        "form": null,
+        "evo": [
+            "lucario"
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": true,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 25,
+        "types": [
+            "fighting",
+            "steel"
+        ],
+        "hidden": "prankster",
+        "eggmoves": [
+            "bite",
+            "high jump kick",
+            "detect",
+            "cross chop",
+            "howl",
+            "bullet punch",
+            "circle throw"
+        ]
+    },
+    {
+        "name": "charcadet",
+        "natdex": 935,
+        "form": null,
+        "evo": [
+            "armarouge",
+            "ceruledge"
+        ],
+        "prevgen": false,
+        "swsh": false,
+        "bdsp": false,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 35,
+        "types": [
+            "fire",
+            "psychic",
+            "ghost"
+        ],
+        "hidden": "flame body",
+        "eggmoves": [
+            "disable",
+            "spite",
+            "destiny bond"
+        ]
+    },
+    {
+        "name": "barboach",
+        "natdex": 339,
+        "form": null,
+        "evo": [
+            "whiscash"
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": true,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "water",
+            "ground"
+        ],
+        "hidden": "hydration",
+        "eggmoves": [
+            "take down",
+            "thrash",
+            "flail",
+            "spark"
+        ]
+    },
+    {
+        "name": "tadbulb",
+        "natdex": 938,
+        "form": null,
+        "evo": [
+            "bellibot"
+        ],
+        "prevgen": false,
+        "swsh": false,
+        "bdsp": false,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "electric"
+        ],
+        "hidden": "damp",
+        "eggmoves": [
+            "muddy water",
+            "soak",
+            "parabollic charge"
+        ]
+    },
+    {
+        "name": "goomy",
+        "natdex": 50,
+        "form": null,
+        "evo": [
+            "sliggoo",
+            "goodra"
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": false,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 40,
+        "types": [
+            "dragon"
+        ],
+        "hidden": "gooey",
+        "eggmoves": [
+            "counter",
+            "life dew"
+        ]
+    },
+    {
+        "name": "croagunk",
+        "natdex": 453,
+        "form": null,
+        "evo": [
+            "dugtrio"
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": true,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 10,
+        "types": [
+            "poison",
+            "fighting"
+        ],
+        "hidden": "poison touch",
+        "eggmoves": [
+            "headbutt",
+            "counter",
+            "dynamic punch",
+            "cross chop",
+            "fake out",
+            "feint",
+            "vacuum wave",
+            "bullet punch",
+            "quick guard"
+        ]
+    },
+    {
+        "name": "wattrel",
+        "natdex": 940,
+        "form": null,
+        "evo": [
+            "kilowattrel"
+        ],
+        "prevgen": false,
+        "swsh": false,
+        "bdsp": false,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "electric",
+            "flying"
+        ],
+        "hidden": "competitive",
+        "eggmoves": [
+            "stockpile",
+            "spit up",
+            "swallow",
+            "endeavor",
+            "feather dance",
+            "weather ball"
+        ]
+    },
+    {
+        "name": "eevee",
+        "natdex": 133,
+        "form": null,
+        "evo": [
+            "leafeon",
+            "glaceon",
+            "jolteon",
+            "vaporeon",
+            "flareon",
+            "espeon",
+            "umbreon",
+            "sylveon"
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": true,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 35,
+        "types": [
+            "normal",
+            "grass",
+            "ice",
+            "electric",
+            "water",
+            "fire",
+            "psychic",
+            "dark",
+            "fairy"
+        ],
+        "hidden": "anticipation",
+        "eggmoves": [
+            "double kick",
+            "curse",
+            "flail",
+            "mud-slap",
+            "detect",
+            "wish",
+            "yawn",
+            "tickle"
+        ]
+    },
+    {
+        "name": "dunsparce",
+        "natdex": 206,
+        "form": null,
+        "evo": [
+            "dudunsparce"
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": true,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "normal"
+        ],
+        "hidden": "rattled",
+        "eggmoves": [
+            "headbutt",
+            "bite",
+            "curse",
+            "astonish",
+            "last resort",
+            "aqua tail"
+        ]
+    },
+    {
+        "name": "deerling",
+        "natdex": 585,
+        "form": null,
+        "evo": [
+            "sawsbuck"
+        ],
+        "prevgen": true,
+        "swsh": false,
+        "bdsp": false,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "normal",
+            "grass"
+        ],
+        "hidden": "serene grace",
+        "eggmoves": [
+            "headbutt",
+            "agility",
+            "sleep talk",
+            "baton pass",
+            "synthesis",
+            "fake tears",
+            "worry seed"
+        ]
+    },
+    {
+        "name": "girafarig",
+        "natdex": 203,
+        "form": null,
+        "evo": [
+            "farigiraf"
+        ],
+        "prevgen": true,
+        "swsh": false,
+        "bdsp": true,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "normal",
+            "psychic"
+        ],
+        "hidden": "sap sipper",
+        "eggmoves": [
+            "double kick",
+            "take down",
+            "mean look",
+            "mirror coat",
+            "future sight",
+            "beat up",
+            "uproar",
+            "wish",
+            "ally switch"
+        ]
+    },
+    {
+        "name": "grimer",
+        "natdex": 88,
+        "form": null,
+        "evo": [
+            "muk"
+        ],
+        "prevgen": true,
+        "swsh": false,
+        "bdsp": true,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "poison"
+        ],
+        "hidden": "poison touch",
+        "eggmoves": [
+            "haze",
+            "curse",
+            "mean look",
+            "stockpile",
+            "spit up",
+            "swallow",
+            "shadow punch",
+            "shadow sneak",
+            "acid spray"
+        ]
+    },
+    {
+        "name": "grimer",
+        "natdex": 88,
+        "form": "alolan",
+        "evo": [
+            "muk"
+        ],
+        "prevgen": true,
+        "swsh": false,
+        "bdsp": true,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "poison",
+            "dark"
+        ],
+        "hidden": "poison touch",
+        "eggmoves": [
+
+        ]
+    },
+    {
+        "name": "maschiff",
+        "natdex": 942,
+        "form": null,
+        "evo": [
+            "mabosstiff"
+        ],
+        "prevgen": false,
+        "swsh": false,
+        "bdsp": false,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "dark"
+        ],
+        "hidden": "stakeout",
+        "eggmoves": [
+            "destiny bond",
+            "endeavor",
+            "retaliate",
+            "play rough"
+        ]
+    },
+    {
+        "name": "toxel",
+        "natdex": 848,
+        "form": null,
+        "evo": [
+            "toxtricity"
+        ],
+        "prevgen": false,
+        "swsh": true,
+        "bdsp": false,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 25,
+        "types": [
+            "electric",
+            "poison"
+        ],
+        "hidden": "klutz",
+        "eggmoves": [
+            "endeavor",
+            "metal sound"
+        ]
+    },
+    {
+        "name": "dedenne",
+        "natdex": 702,
+        "form": null,
+        "evo": [
+
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": false,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "electric",
+            "fairy"
+        ],
+        "hidden": "plus",
+        "eggmoves": [
+            "covet",
+            "magnet rise",
+            "tearful look"
+        ]
+    },
+    {
+        "name": "pachirisu",
+        "natdex": 417,
+        "form": null,
+        "evo": [
+
+        ],
+        "prevgen": true,
+        "swsh": false,
+        "bdsp": true,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 10,
+        "types": [
+            "electric"
+        ],
+        "hidden": "volt absorb",
+        "eggmoves": [
+            "tail whip",
+            "bite",
+            "defense curl",
+            "flail",
+            "rollout",
+            "flatter",
+            "follow me",
+            "charge",
+            "fake tears",
+            "covet",
+            "baby-doll eyes"
+        ]
+    },
+    {
+        "name": "shroodle",
+        "natdex": 944,
+        "form": null,
+        "evo": [
+            "grafaiai"
+        ],
+        "prevgen": false,
+        "swsh": false,
+        "bdsp": false,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "poison",
+            "normal"
+        ],
+        "hidden": "prankster",
+        "eggmoves": [
+            "toxic",
+            "super fang",
+            "swagger",
+            "copycat",
+            "cross poison",
+            "parting shot"
+        ]
+    },
+    {
+        "name": "stantler",
+        "natdex": 234,
+        "form": null,
+        "evo": [
+            "wyrdeer"
+        ],
+        "prevgen": true,
+        "swsh": false,
+        "bdsp": true,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "normal",
+            "psychic"
+        ],
+        "hidden": "sap sipper",
+        "eggmoves": [
+            "double kick",
+            "thrash",
+            "bite",
+            "disable",
+            "spite",
+            "megahorn",
+            "extrasensory",
+            "psyshield bash"
+        ]
+    },
+    {
+        "name": "foongus",
+        "natdex": 590,
+        "form": null,
+        "evo": [
+            "amoongus"
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": false,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "grass",
+            "poison"
+        ],
+        "hidden": "regenerator",
+        "eggmoves": [
+            "poison powder",
+            "defense curl",
+            "rollout",
+            "worry seed"
+        ]
+    },
+    {
+        "name": "voltorb",
+        "natdex": 100,
+        "form": null,
+        "evo": [
+            "electrode"
+        ],
+        "prevgen": true,
+        "swsh": false,
+        "bdsp": true,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "electric"
+        ],
+        "hidden": "aftermath",
+        "eggmoves": [
+            "recycle",
+            "metal sound"
+        ]
+    },
+    {
+        "name": "voltorb",
+        "natdex": 100,
+        "form": "hisuian",
+        "evo": [
+            "electrode"
+        ],
+        "prevgen": false,
+        "swsh": false,
+        "bdsp": true,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "electric",
+            "grass"
+        ],
+        "hidden": "aftermath",
+        "eggmoves": [
+            "recycle",
+            "leech seed",
+            "worry seed"
+        ]
+    },
+    {
+        "name": "magnemite",
+        "natdex": 81,
+        "form": null,
+        "evo": [
+            "magneton",
+            "magnezone"
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": true,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "electric",
+            "steel"
+        ],
+        "hidden": "analytic",
+        "eggmoves": [
+            "explosion",
+            "electroweb"
+        ]
+    },
+    {
+        "name": "growlithe",
+        "natdex": 58,
+        "form": null,
+        "evo": [
+            "arcanine"
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": true,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "fire"
+        ],
+        "hidden": "justified",
+        "eggmoves": [
+            "double kick",
+            "thrash",
+            "double-edge",
+            "morning sun",
+            "covet",
+            "raging fury"
+        ]
+    },
+    {
+        "name": "growlithe",
+        "natdex": 58,
+        "form": "hisuian",
+        "evo": [
+            "arcanine"
+        ],
+        "prevgen": false,
+        "swsh": false,
+        "bdsp": false,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "fire",
+            "rock"
+        ],
+        "hidden": "rock head",
+        "eggmoves": [
+            "double kick",
+            "thrash",
+            "double-edge",
+            "morning sun",
+            "covet",
+            "head smash"
+        ]
+    },
+    {
+        "name": "teddiursa",
+        "natdex": 216,
+        "form": null,
+        "evo": [
+            "arcanine"
+        ],
+        "prevgen": true,
+        "swsh": false,
+        "bdsp": true,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "normal",
+            "ground"
+        ],
+        "hidden": "honey gather",
+        "eggmoves": [
+            "double-edge",
+            "counter",
+            "seismic toss",
+            "belly drum",
+            "fury cutter",
+            "metal claw",
+            "cross chop",
+            "crunch",
+            "yawn",
+            "fake tears",
+            "close combat",
+            "night slash"
+        ]
+    },
+    {
+        "name": "zangoose",
+        "natdex": 335,
+        "form": null,
+        "evo": [
+
+        ],
+        "prevgen": true,
+        "swsh": false,
+        "bdsp": true,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "normal"
+        ],
+        "hidden": "toxic boost",
+        "eggmoves": [
+
+        ]
+    },
+    {
+        "name": "seviper",
+        "natdex": 336,
+        "form": null,
+        "evo": [
+
+        ],
+        "prevgen": true,
+        "swsh": false,
+        "bdsp": true,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "poison"
+        ],
+        "hidden": "infiltrator",
+        "eggmoves": [
+            "body slam",
+            "scary face",
+            "stockpile",
+            "spit up",
+            "swallow",
+            "assurance",
+            "night slash",
+            "switcheroo",
+            "final gambit"
+        ]
+    },
+    {
+        "name": "swablu",
+        "natdex": 333,
+        "form": null,
+        "evo": [
+            "altaria"
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": true,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "normal",
+            "flying",
+            "dragon"
+        ],
+        "hidden": "cloud nine",
+        "eggmoves": [
+            "haze",
+            "feather dance",
+            "astonish",
+            "roost",
+            "tailwind",
+            "dragon rush",
+            "defog"
+        ]
+    },
+    {
+        "name": "skiddo",
+        "natdex": 672,
+        "form": null,
+        "evo": [
+            "gogoat"
+        ],
+        "prevgen": true,
+        "swsh": false,
+        "bdsp": false,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "grass"
+        ],
+        "hidden": "grass pelt",
+        "eggmoves": [
+            "defense curl",
+            "rollout",
+            "milk drink",
+            "grassy terrain"
+        ]
+    },
+    {
+        "name": "tauros",
+        "natdex": 128,
+        "form": null,
+        "evo": [
+
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": true,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "normal"
+        ],
+        "hidden": "sheer force",
+        "eggmoves": [
+            "curse",
+            "endeavor"
+        ]
+    },
+    {
+        "name": "tauros",
+        "natdex": 128,
+        "form": "paldean",
+        "evo": [
+
+        ],
+        "prevgen": false,
+        "swsh": false,
+        "bdsp": false,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "fighting"
+        ],
+        "hidden": "cud chew",
+        "eggmoves": [
+            "curse",
+            "endeavor"
+        ]
+    },
+    {
+        "name": "tauros",
+        "natdex": 128,
+        "form": "blaze",
+        "evo": [
+
+        ],
+        "prevgen": false,
+        "swsh": false,
+        "bdsp": false,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "fighting",
+            "fire"
+        ],
+        "hidden": "cud chew",
+        "eggmoves": [
+            "curse",
+            "endeavor"
+        ]
+    },
+    {
+        "name": "tauros",
+        "natdex": 128,
+        "form": "aqua",
+        "evo": [
+
+        ],
+        "prevgen": false,
+        "swsh": false,
+        "bdsp": false,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "fighting",
+            "water"
+        ],
+        "hidden": "cud chew",
+        "eggmoves": [
+            "curse",
+            "endeavor"
+        ]
+    },
+    {
+        "name": "litleo",
+        "natdex": 667,
+        "form": null,
+        "evo": [
+            "pyroar"
+        ],
+        "prevgen": true,
+        "swsh": false,
+        "bdsp": false,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "fire",
+            "normal"
+        ],
+        "hidden": "moxie",
+        "eggmoves": [
+            "fire spin",
+            "yawn",
+            "flare blitz",
+            "entrainment"
+        ]
+    },
+    {
+        "name": "stunky",
+        "natdex": 434,
+        "form": null,
+        "evo": [
+            "skuntank"
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": true,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "poison",
+            "dark"
+        ],
+        "hidden": "keen eye",
+        "eggmoves": [
+            "double-edge",
+            "leer",
+            "haze",
+            "smog",
+            "slash",
+            "astonish"
+        ]
+    },
+    {
+        "name": "zorua",
+        "natdex": 570,
+        "form": null,
+        "evo": [
+            "zoroark"
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": false,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 25,
+        "types": [
+            "dark"
+        ],
+        "hidden": null,
+        "eggmoves": [
+            "counter",
+            "detect",
+            "memento",
+            "extrasensory",
+            "copycat",
+            "sucker punch"
+        ]
+    },
+    {
+        "name": "zorua",
+        "natdex": 570,
+        "form": "hisuian",
+        "evo": [
+            "zoroark"
+        ],
+        "prevgen": false,
+        "swsh": false,
+        "bdsp": false,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 25,
+        "types": [
+            "normal",
+            "ghost"
+        ],
+        "hidden": null,
+        "eggmoves": [
+            "detect",
+            "memento",
+            "extrasensory",
+            "comeuppance"
+        ]
+    },
+    {
+        "name": "sneasel",
+        "natdex": 215,
+        "form": null,
+        "evo": [
+            "weavile"
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": true,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "dark",
+            "ice"
+        ],
+        "hidden": "pickpocket",
+        "eggmoves": [
+            "bite",
+            "counter",
+            "spite",
+            "fake out",
+            "feint",
+            "ice shard",
+            "double hit",
+            "icicle crash"
+        ]
+    },
+    {
+        "name": "sneasel",
+        "natdex": 215,
+        "form": null,
+        "evo": [
+            "sneasler"
+        ],
+        "prevgen": false,
+        "swsh": false,
+        "bdsp": false,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "fighting",
+            "poison"
+        ],
+        "hidden": "pickpocket",
+        "eggmoves": [
+            "counter",
+            "fake out",
+            "feint",
+            "double hit",
+            "night slash",
+            "switcheroo",
+            "quick guard"
+        ]
+    },
+    {
+        "name": "murkrow",
+        "natdex": 198,
+        "form": null,
+        "evo": [
+            "honchkrow"
+        ],
+        "prevgen": true,
+        "swsh": false,
+        "bdsp": true,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "dark",
+            "flying"
+        ],
+        "hidden": "prankster",
+        "eggmoves": [
+            "whirlwind",
+            "drill peck",
+            "screech",
+            "confuse ray",
+            "sky attack",
+            "perish song",
+            "flatter",
+            "feather dance",
+            "brave bird"
+        ]
+    },
+    {
+        "name": "gothita",
+        "natdex": 574,
+        "form": null,
+        "evo": [
+            "gothorita",
+            "gothitelle"
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": false,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "psychic"
+        ],
+        "hidden": "shadow tag",
+        "eggmoves": [
+            "mean look",
+            "mirror coat",
+            "fake out",
+            "torment",
+            "heal pulse"
+        ]
+    },
+    {
+        "name": "sinistea",
+        "natdex": 854,
+        "form": null,
+        "evo": [
+            "polteageist"
+        ],
+        "prevgen": false,
+        "swsh": true,
+        "bdsp": false,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "ghost"
+        ],
+        "hidden": "cursed body",
+        "eggmoves": [
+            "ally switch"
+        ]
+    },
+    {
+        "name": "mimikyu",
+        "natdex": 778,
+        "form": null,
+        "evo": [
+
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": false,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "ghost",
+            "fairy"
+        ],
+        "hidden": null,
+        "eggmoves": [
+            "curse",
+            "destiny bond"
+        ]
+    },
+    {
+        "name": "klefki",
+        "natdex": 707,
+        "form": null,
+        "evo": [
+
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": false,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "steel",
+            "fairy"
+        ],
+        "hidden": "magician",
+        "eggmoves": [
+            "magnet rise",
+            "switcheroo"
+        ]
+    },
+    {
+        "name": "indeedee",
+        "natdex": 876,
+        "form": null,
+        "evo": [
+
+        ],
+        "prevgen": false,
+        "swsh": true,
+        "bdsp": false,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "psychic",
+            "normal"
+        ],
+        "hidden": "psychic surge",
+        "eggmoves": [
+            "psych up",
+            "fake out",
+            "extrasensory",
+            "heal pulse"
+        ]
+    },
+    {
+        "name": "bramblin",
+        "natdex": 946,
+        "form": null,
+        "evo": [
+            "brambleghast"
+        ],
+        "prevgen": false,
+        "swsh": false,
+        "bdsp": false,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "grass",
+            "ghost"
+        ],
+        "hidden": "infiltrator",
+        "eggmoves": [
+            "leech seed",
+            "beat up",
+            "block",
+            "shadow sneak",
+            "strength sap"
+        ]
+    },
+    {
+        "name": "toedscool",
+        "natdex": 948,
+        "form": null,
+        "evo": [
+            "toedscruel"
+        ],
+        "prevgen": false,
+        "swsh": false,
+        "bdsp": false,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "ground",
+            "grass"
+        ],
+        "hidden": null,
+        "eggmoves": [
+            "leech seed",
+            "toxic",
+            "rapid spin",
+            "mirror coat",
+            "knock off",
+            "tickle",
+            "acupressure",
+            "rage powder"
+        ]
+    },
+    {
+        "name": "tropius",
+        "natdex": 357,
+        "form": null,
+        "evo": [
+
+        ],
+        "prevgen": true,
+        "swsh": false,
+        "bdsp": true,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 25,
+        "types": [
+            "grass",
+            "flying"
+        ],
+        "hidden": "harvest",
+        "eggmoves": [
+            "slam",
+            "headbutt",
+            "leech seed",
+            "curse",
+            "leaf blade",
+            "dragon dance"
+        ]
+    },
+    {
+        "name": "fomantis",
+        "natdex": 753,
+        "form": null,
+        "evo": [
+            "lurantis"
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": false,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "grass"
+        ],
+        "hidden": "contrary",
+        "eggmoves": [
+            "worry seed",
+            "defog"
+        ]
+    },
+    {
+        "name": "klawf",
+        "natdex": 950,
+        "form": null,
+        "evo": [
+
+        ],
+        "prevgen": false,
+        "swsh": false,
+        "bdsp": false,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 35,
+        "types": [
+            "rock"
+        ],
+        "hidden": "regenerator",
+        "eggmoves": [
+            "crabhammer",
+            "ancient power",
+            "knock off",
+            "endeavor"
+        ]
+    },
+    {
+        "name": "capsakid",
+        "natdex": 951,
+        "form": null,
+        "evo": [
+            "scovillain"
+        ],
+        "prevgen": false,
+        "swsh": false,
+        "bdsp": false,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "grass",
+            "fire"
+        ],
+        "hidden": "klutz",
+        "eggmoves": [
+            "leech seed",
+            "rollout",
+            "ingrain",
+            "worry seed",
+            "rage powder"
+        ]
+    },
+    {
+        "name": "cacnea",
+        "natdex": 331,
+        "form": null,
+        "evo": [
+            "cacturne"
+        ],
+        "prevgen": true,
+        "swsh": false,
+        "bdsp": true,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "grass",
+            "dark"
+        ],
+        "hidden": "water absorb",
+        "eggmoves": [
+
+        ]
+    },
+    {
+        "name": "rellor",
+        "natdex": 953,
+        "form": null,
+        "evo": [
+            "rabsca"
+        ],
+        "prevgen": false,
+        "swsh": false,
+        "bdsp": false,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "bug",
+            "psychic"
+        ],
+        "hidden": "shed skin",
+        "eggmoves": [
+            "recover",
+            "memento",
+            "weather ball",
+            "cosmic power"
+        ]
+    },
+    {
+        "name": "venonat",
+        "natdex": 48,
+        "form": null,
+        "evo": [
+            "venomoth"
+        ],
+        "prevgen": true,
+        "swsh": false,
+        "bdsp": true,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "bug",
+            "poison"
+        ],
+        "hidden": "run away",
+        "eggmoves": [
+            "agility",
+            "screech",
+            "baton pass",
+            "morning sun",
+            "toxic spikes",
+            "bug bite",
+            "venoshock",
+            "rage powder"
+        ]
+    },
+    {
+        "name": "pineco",
+        "natdex": 204,
+        "form": null,
+        "evo": [
+            "forretress"
+        ],
+        "prevgen": true,
+        "swsh": false,
+        "bdsp": true,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "bug",
+            "steel"
+        ],
+        "hidden": "overcoat",
+        "eggmoves": [
+            "pin missile",
+            "counter",
+            "swift", 
+            "flail",
+            "sand tomb",
+            "power trick",
+            "toxic spikes"
+        ]
+    },
+    {
+        "name": "scyther",
+        "natdex": 123,
+        "form": null,
+        "evo": [
+            "scizor",
+            "kleavor"
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": true,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 25,
+        "types": [
+            "bug",
+            "flying",
+            "steel",
+            "rock"
+        ],
+        "hidden": "steadfast",
+        "eggmoves": [
+            "counter",
+            "feint",
+            "night slash",
+            "defog",
+            "quick guard"
+        ]
+    },
+    {
+        "name": "heracross",
+        "natdex": 214,
+        "form": null,
+        "evo": [
+
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": true,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "bug",
+            "fighting"
+        ],
+        "hidden": "moxie",
+        "eggmoves": [
+            "double-edge",
+            "seismic toss",
+            "harden",
+            "flail",
+            "feint",
+            "night slash"
+        ]
+    },
+    {
+        "name": "flittle",
+        "natdex": 955,
+        "form": null,
+        "evo": [
+            "espathra"
+        ],
+        "prevgen": false,
+        "swsh": false,
+        "bdsp": false,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "psychic"
+        ],
+        "hidden": "speed boost",
+        "eggmoves": [
+            "hypnosis",
+            "roost",
+            "ally switch"
+        ]
+    },
+    {
+        "name": "hippopotas",
+        "natdex": 449,
+        "form": null,
+        "evo": [
+            "hippowdon"
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": true,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 30,
+        "types": [
+            "ground"
+        ],
+        "hidden": "sand force",
+        "eggmoves": [
+            "whirlwind",
+            "curse",
+            "stockpile",
+            "spit up",
+            "swallow"
+        ]
+    },
+    {
+        "name": "sandile",
+        "natdex": 551,
+        "form": null,
+        "evo": [
+            "krokorok",
+            "krookodile"
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": false,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "ground",
+            "dark"
+        ],
+        "hidden": "anger point",
+        "eggmoves": [
+            "double-edge",
+            "counter",
+            "spite",
+            "aqua tail"
+        ]
+    },
+    {
+        "name": "silicobra",
+        "natdex": 843,
+        "form": null,
+        "evo": [
+            "sandaconda"
+        ],
+        "prevgen": false,
+        "swsh": true,
+        "bdsp": false,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "ground"
+        ],
+        "hidden": "sand veil",
+        "eggmoves": [
+            "mud-slap",
+            "poison tail",
+            "last resort",
+            "dragon rush",
+            "belch"
+        ]
+    },
+    {
+        "name": "mudbray",
+        "natdex": 749,
+        "form": null,
+        "evo": [
+            "mudsdale"
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": false,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "ground"
+        ],
+        "hidden": "inner focus",
+        "eggmoves": [
+            "double-edge",
+            "roar",
+            "fissure",
+            "endeavor",
+            "smack down"
+        ]
+    },
+    {
+        "name": "larvesta",
+        "natdex": 636,
+        "form": null,
+        "evo": [
+            "volcarona"
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": false,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 40,
+        "types": [
+            "bug",
+            "fire"
+        ],
+        "hidden": "swarm",
+        "eggmoves": [
+            "thrash",
+            "absorb",
+            "harden",
+            "morning sun"
+        ]
+    },
+    {
+        "name": "bagon",
+        "natdex": 371,
+        "form": null,
+        "evo": [
+            "shelgon",
+            "salamence"
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": true,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 40,
+        "types": [
+            "dragon",
+            "flying"
+        ],
+        "hidden": "sheer force",
+        "eggmoves": [
+            "thrash",
+            "defense curl",
+            "twister",
+            "dragon rush"
+        ]
+    },
+    {
+        "name": "tinkatink",
+        "natdex": 957,
+        "form": null,
+        "evo": [
+            "tinkatuff",
+            "tinkaton"
+        ],
+        "prevgen": false,
+        "swsh": false,
+        "bdsp": false,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "fairy",
+            "steel"
+        ],
+        "hidden": "pickpocket",
+        "eggmoves": [
+            "feint",
+            "quash",
+            "ice hammer"
+        ]
+    },
+    {
+        "name": "hatenna",
+        "natdex": 856,
+        "form": null,
+        "evo": [
+            "hattrem",
+            "hatterene"
+        ],
+        "prevgen": false,
+        "swsh": true,
+        "bdsp": false,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "psychic",
+            "fairy"
+        ],
+        "hidden": "magic bounce",
+        "eggmoves": [
+            "after you",
+            "quash",
+            "mystical fire",
+            "nuzzle"
+        ]
+    },
+    {
+        "name": "impidimp",
+        "natdex": 859,
+        "form": null,
+        "evo": [
+            "morgrem",
+            "grimmsnarl"
+        ],
+        "prevgen": false,
+        "swsh": true,
+        "bdsp": false,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "dark",
+            "fairy"
+        ],
+        "hidden": "pickpocket",
+        "eggmoves": [
+            "parting shot"
+        ]
+    },
+    {
+        "name": "wiglett",
+        "natdex": 960,
+        "form": null,
+        "evo": [
+            "wugtrio"
+        ],
+        "prevgen": false,
+        "swsh": false,
+        "bdsp": false,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "water"
+        ],
+        "hidden": "sand veil",
+        "eggmoves": [
+            "memento",
+            "final gambit"
+        ]
+    },
+    {
+        "name": "bombirdier",
+        "natdex": 962,
+        "form": null,
+        "evo": [
+
+        ],
+        "prevgen": false,
+        "swsh": false,
+        "bdsp": false,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 35,
+        "types": [
+            "flying",
+            "dark"
+        ],
+        "hidden": "rocky payload",
+        "eggmoves": [
+            "sky attack",
+            "feather dance",
+            "roost",
+            "sucker punch",
+            "power trip"
+        ]
+    },
+    {
+        "name": "finizen",
+        "natdex": 963,
+        "form": null,
+        "evo": [
+            "palafin"
+        ],
+        "prevgen": false,
+        "swsh": false,
+        "bdsp": false,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 40,
+        "types": [
+            "water"
+        ],
+        "hidden": null,
+        "eggmoves": [
+            "counter",
+            "haze",
+            "tickle",
+            "bounce",
+            "boomburst"
+        ]
+    },
+    {
+        "name": "varoom",
+        "natdex": 965,
+        "form": null,
+        "evo": [
+            "revraroom"
+        ],
+        "prevgen": false,
+        "swsh": false,
+        "bdsp": false,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "steel",
+            "poison"
+        ],
+        "hidden": "slow start",
+        "eggmoves": [
+            "toxic",
+            "haze",
+            "self-destruct",
+            "torment",
+            "parting shot"
+        ]
+    },
+    {
+        "name": "cyclizar",
+        "natdex": 967,
+        "form": null,
+        "evo": [
+
+        ],
+        "prevgen": false,
+        "swsh": false,
+        "bdsp": false,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 30,
+        "types": [
+            "dragon",
+            "normal"
+        ],
+        "hidden": "regenerator",
+        "eggmoves": [
+            "iron tail",
+            "knock off",
+            "aqua tail",
+            "power whip"
+        ]
+    },
+    {
+        "name": "orthworm",
+        "natdex": 968,
+        "form": null,
+        "evo": [
+            
+        ],
+        "prevgen": false,
+        "swsh": false,
+        "bdsp": false,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 35,
+        "types": [
+            "steel"
+        ],
+        "hidden": "sand veil",
+        "eggmoves": [
+            "curse",
+            "metal burst",
+            "coil"
+        ]
+    },
+    {
+        "name": "sableye",
+        "natdex": 302,
+        "form": null,
+        "evo": [
+
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": true,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 25,
+        "types": [
+            "dark",
+            "ghost"
+        ],
+        "hidden": "prankster",
+        "eggmoves": [
+            "recover",
+            "torment",
+            "flatter",
+            "feint",
+            "metal burst",
+            "sucker punch"
+        ]
+    },
+    {
+        "name": "shuppet",
+        "natdex": 353,
+        "form": null,
+        "evo": [
+            "banette"
+        ],
+        "prevgen": true,
+        "swsh": false,
+        "bdsp": true,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 25,
+        "types": [
+            "ghost"
+        ],
+        "hidden": "cursed body",
+        "eggmoves": [
+            "disable",
+            "confuse ray",
+            "destiny bond",
+            "imprison",
+            "gunk shot"
+        ]
+    },
+    {
+        "name": "falinks",
+        "natdex": 870,
+        "form": null,
+        "evo": [
+
+        ],
+        "prevgen": false,
+        "swsh": true,
+        "bdsp": false,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 25,
+        "types": [
+            "fighting"
+        ],
+        "hidden": "defiant",
+        "eggmoves": [
+
+        ]
+    },
+    {
+        "name": "hawlucha",
+        "natdex": 701,
+        "form": null,
+        "evo": [
+
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": false,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "fighting",
+            "flying"
+        ],
+        "hidden": "mold breaker",
+        "eggmoves": [
+            "mean look",
+            "cross chop",
+            "feint",
+            "ddefog",
+            "entrainment",
+            "quick guard"
+        ]
+    },
+    {
+        "name": "spiritomb",
+        "natdex": 442,
+        "form": null,
+        "evo": [
+
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": true,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 30,
+        "types": [
+            "ghost",
+            "dark"
+        ],
+        "hidden": "infiltrator",
+        "eggmoves": [
+            "disable",
+            "smokescreen",
+            "destiny bond",
+            "pain split",
+            "ally switch"
+        ]
+    },
+    {
+        "name": "noibat",
+        "natdex": 714,
+        "form": null,
+        "evo": [
+            "noivern"
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": false,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "flying",
+            "dragon"
+        ],
+        "hidden": "telepathy",
+        "eggmoves": [
+            "dragon rush",
+            "defog"
+        ]
+    },
+    {
+        "name": "dreepy",
+        "natdex": 885,
+        "form": null,
+        "evo": [
+            "drakloak",
+            "dragapult"
+        ],
+        "prevgen": false,
+        "swsh": true,
+        "bdsp": false,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 40,
+        "types": [
+            "dragon",
+            "ghost"
+        ],
+        "hidden": "cursed body",
+        "eggmoves": [
+            "disable",
+            "double team",
+            "confuse ray",
+            "curse",
+            "sucker punch",
+            "dragon tail"
+        ]
+    },
+    {
+        "name": "glimmet",
+        "natdex": 969,
+        "form": null,
+        "evo": [
+            "glimmora"
+        ],
+        "prevgen": false,
+        "swsh": false,
+        "bdsp": false,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 30,
+        "types": [
+            "rock",
+            "poison"
+        ],
+        "hidden": "corrosion",
+        "eggmoves": [
+            "toxic",
+            "explosion",
+            "memento"
+        ]
+    },
+    {
+        "name": "rotom",
+        "natdex": 479,
+        "form": null,
+        "evo": [
+
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": true,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "electric",
+            "ghost",
+            "ice",
+            "fire",
+            "grass",
+            "flying",
+            "water"
+        ],
+        "hidden": null,
+        "eggmoves": [
+
+        ]
+    },
+    {
+        "name": "greavard",
+        "natdex": 971,
+        "form": null,
+        "evo": [
+            "houndstone"
+        ],
+        "prevgen": false,
+        "swsh": false,
+        "bdsp": false,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "ghost"
+        ],
+        "hidden": "fluffy",
+        "eggmoves": [
+            "disable",
+            "destiny bond",
+            "memento",
+            "yawn",
+            "howl",
+            "shadow sneak",
+            "ally switch"
+        ]
+    },
+    {
+        "name": "oranguru",
+        "natdex": 765,
+        "form": null,
+        "evo": [
+
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": false,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "normal",
+            "psychic"
+        ],
+        "hidden": "symbiosis",
+        "eggmoves": [
+            "dream eater",
+            "extrasensory",
+            "last resort"
+        ]
+    },
+    {
+        "name": "passimian",
+        "natdex": 766,
+        "form": null,
+        "evo": [
+
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": false,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "fighting"
+        ],
+        "hidden": "defiant",
+        "eggmoves": [
+            "counter",
+            "seismic toss",
+            "quick attack",
+            "knock off",
+            "feint",
+            "quick guard"
+        ]
+    },
+    {
+        "name": "komala",
+        "natdex": 775,
+        "form": null,
+        "evo": [
+
+        ],
+        "prevgen": true,
+        "swsh": false,
+        "bdsp": false,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "normal"
+        ],
+        "hidden": null,
+        "eggmoves": [
+            "sing",
+            "charm", 
+            "wish", 
+            "superpower",
+            "play rough"
+        ]
+    },
+    {
+        "name": "larvitar",
+        "natdex": 246,
+        "form": null,
+        "evo": [
+            "pupitar",
+            "tyranitar"
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": true,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 40,
+        "types": [
+            "rock",
+            "ground"
+        ],
+        "hidden": "sand veil",
+        "eggmoves": [
+            "stomp",
+            "focus energy",
+            "curse",
+            "outrage",
+            "ancient power",
+            "iron defense", 
+            "dragon dance", 
+            "assurance", 
+            "iron head"
+        ]
+    },
+    {
+        "name": "stonjourner",
+        "natdex": 874,
+        "form": null,
+        "evo": [
+
+        ],
+        "prevgen": false,
+        "swsh": true,
+        "bdsp": false,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 25,
+        "types": [
+            "rock"
+        ],
+        "hidden": null,
+        "eggmoves": [
+            "curse",
+            "ancient power"
+        ]
+    },
+    {
+        "name": "eiscue",
+        "natdex": 875,
+        "form": null,
+        "evo": [
+
+        ],
+        "prevgen": false,
+        "swsh": true,
+        "bdsp": false,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 25,
+        "types": [
+            "ice"
+        ],
+        "hidden": null,
+        "eggmoves": [
+            "double-edge",
+            "belly drum",
+            "aqua ring",
+            "head smash",
+            "soak",
+            "icicle crash"
+        ]
+    },
+    {
+        "name": "pinchurchin",
+        "natdex": 871,
+        "form": null,
+        "evo": [
+
+        ],
+        "prevgen": false,
+        "swsh": true,
+        "bdsp": false,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "electric"
+        ],
+        "hidden": "electric surge",
+        "eggmoves": [
+            "memento",
+            "sucker punch"
+        ]
+    },
+    {
+        "name": "sandyghast",
+        "natdex": 769,
+        "form": null,
+        "evo": [
+            "palossand"
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": false,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 15,
+        "types": [
+            "ghost",
+            "ground"
+        ],
+        "hidden": "sand veil",
+        "eggmoves": [
+            "curse",
+            "destiny bond",
+            "ancient power",
+            "stockpile",
+            "spit up",
+            "swallow"
+        ]
+    },
+    {
+        "name": "slowpoke",
+        "natdex": 279,
+        "form": null,
+        "evo": [
+            "slowbro",
+            "slowking"
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": true,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "water",
+            "psychic"
+        ],
+        "hidden": "regenerator",
+        "eggmoves": [
+            "stomp",
+            "belly drum",
+            "block",
+            "belch"
+        ]
+    },
+    {
+        "name": "slowpoke",
+        "natdex": 279,
+        "form": "galarian",
+        "evo": [
+            "slowbro",
+            "slowking"
+        ],
+        "prevgen": false,
+        "swsh": true,
+        "bdsp": true,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "psychic"
+        ],
+        "hidden": "regenerator",
+        "eggmoves": [
+            "stomp",
+            "belly drum",
+            "block",
+            "belch"
+        ]
+    },
+    {
+        "name": "shellos",
+        "natdex": 422,
+        "form": "west",
+        "evo": [
+            "gastrodon"
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": true,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "water",
+            "ground"
+        ],
+        "hidden": "sand force",
+        "eggmoves": [
+            "mist",
+            "counter",
+            "sludge",
+            "acid armor",
+            "curse", 
+            "mirror coat",
+            "stockpile",
+            "spit up",
+            "swallow",
+            "yawn",
+            "clear smog"
+        ]
+    },
+    {
+        "name": "shellos",
+        "natdex": 422,
+        "form": "east",
+        "evo": [
+            "gastrodon"
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": true,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "water",
+            "ground"
+        ],
+        "hidden": "sand force",
+        "eggmoves": [
+            "mist",
+            "counter",
+            "sludge",
+            "acid armor",
+            "curse", 
+            "mirror coat",
+            "stockpile",
+            "spit up",
+            "swallow",
+            "yawn",
+            "clear smog"
+        ]
+    },
+    {
+        "name": "shellder",
+        "natdex": 90,
+        "form": null,
+        "evo": [
+            "gastrodon"
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": true,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "water"
+        ],
+        "hidden": "overcoat",
+        "eggmoves": [
+            "bubble beam",
+            "water pulse",
+            "aqua ring",
+            "life dew"
+        ]
+    },
+    {
+        "name": "qwilfish",
+        "natdex": 211,
+        "form": null,
+        "evo": [
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": true,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "water",
+            "poison"
+        ],
+        "hidden": "intimidate",
+        "eggmoves": [
+            "supersonic",
+            "bubble beam",
+            "haze",
+            "self-destruct",
+            "flail",
+            "astonish",
+            "water pulse",
+            "aqua jet",
+            "acid spray",
+            "barb barrage"
+        ]
+    },
+    {
+        "name": "qwilfish",
+        "natdex": 211,
+        "form": "hisuian",
+        "evo": [
+            "overqwil"
+        ],
+        "prevgen": false,
+        "swsh": false,
+        "bdsp": false,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "dark",
+            "poison"
+        ],
+        "hidden": "intimidate",
+        "eggmoves": [
+            "supersonic",
+            "bubble beam",
+            "haze",
+            "self-destruct",
+            "flail",
+            "astonish",
+            "water pulse",
+            "aqua jet",
+            "acid spray",
+            "aqua tail"
+        ]
+    },
+    {
+        "name": "luvdisc",
+        "natdex": 370,
+        "form": null,
+        "evo": [
+
+        ],
+        "prevgen": true,
+        "swsh": false,
+        "bdsp": true,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "water"
+        ],
+        "hidden": "hydration",
+        "eggmoves": [
+
+        ]
+    },
+    {
+        "name": "finneon",
+        "natdex": 456,
+        "form": null,
+        "evo": [
+            "lumineon"
+        ],
+        "prevgen": true,
+        "swsh": false,
+        "bdsp": true,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "water"
+        ],
+        "hidden": "water veil",
+        "eggmoves": [
+            "psybeam",
+            "aurora beam",
+            "agility",
+            "confuse ray",
+            "flail",
+            "sweet kiss",
+            "charm",
+            "tickle",
+            "aqua tail"
+        ]
+    },
+    {
+        "name": "bruxish",
+        "natdex": 779,
+        "form": null,
+        "evo": [
+        ],
+        "prevgen": true,
+        "swsh": false,
+        "bdsp": false,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 15,
+        "types": [
+            "water",
+            "psychic"
+        ],
+        "hidden": "wonder skin",
+        "eggmoves": [
+            "super fang",
+            "poison fang",
+            "water pulse",
+            "ice fang"
+        ]
+    },
+    {
+        "name": "alomomola",
+        "natdex": 594,
+        "form": null,
+        "evo": [
+        ],
+        "prevgen": true,
+        "swsh": false,
+        "bdsp": false,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 40,
+        "types": [
+            "water"
+        ],
+        "hidden": "regenerator",
+        "eggmoves": [
+            "mist",
+            "endure",
+            "pain split",
+            "mirror coat",
+            "tickle",
+            "bounce"
+        ]
+    },
+    {
+        "name": "skrelp",
+        "natdex": 690,
+        "form": null,
+        "evo": [
+            "draglage"
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": false,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "water",
+            "poison",
+            "dragon"
+        ],
+        "hidden": "adaptability",
+        "eggmoves": [
+            "haze",
+            "acid armor",
+            "twister",
+            "dragon tail"
+        ]
+    },
+    {
+        "name": "clauncher",
+        "natdex": 692,
+        "form": null,
+        "evo": [
+            "clawitzer"
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": false,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 15,
+        "types": [
+            "water"
+        ],
+        "hidden": null,
+        "eggmoves": [
+            "bubble beam",
+            "aqua tail",
+            "entrainment"
+        ]
+    },
+    {
+        "name": "tynamo",
+        "natdex": 602,
+        "form": null,
+        "evo": [
+            "electrik",
+            "eelektross"
+        ],
+        "prevgen": true,
+        "swsh": false,
+        "bdsp": false,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "electric"
+        ],
+        "hidden": null,
+        "eggmoves": [
+
+        ]
+    },
+    {
+        "name": "mareanie",
+        "natdex": 747,
+        "form": null,
+        "evo": [
+            "toxapex"
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": false,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "water",
+            "poison"
+        ],
+        "hidden": "regenerator",
+        "eggmoves": [
+            "haze",
+            "stockpile",
+            "spit up",
+            "swallow",
+            "infestation"
+        ]
+    },
+    {
+        "name": "flamigo",
+        "natdex": 973,
+        "form": null,
+        "evo": [
+        ],
+        "prevgen": false,
+        "swsh": false,
+        "bdsp": false,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "flying",
+            "fighting"
+        ],
+        "hidden": "costar",
+        "eggmoves": [
+            "double team",
+            "sky attack",
+            "quick guard"
+        ]
+    },
+    {
+        "name": "dratini",
+        "natdex": 147,
+        "form": null,
+        "evo": [
+            "dragonair",
+            "dragonite"
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": true,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 40,
+        "types": [
+            "dragon",
+            "flying"
+        ],
+        "hidden": "marvel scale",
+        "eggmoves": [
+            "supersonic",
+            "mist",
+            "dragon breath",
+            "extreme speed",
+            "water pulse",
+            "aqua jet"
+        ]
+    },
+    {
+        "name": "snom",
+        "natdex": 872,
+        "form": null,
+        "evo": [
+            "frosmoth"
+        ],
+        "prevgen": false,
+        "swsh": true,
+        "bdsp": false,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "ice",
+            "bug"
+        ],
+        "hidden": "ice scales",
+        "eggmoves": [
+            "mirror coat",
+            "bug bite",
+            "fairy wind"
+        ]
+    },
+    {
+        "name": "snover",
+        "natdex": 459,
+        "form": null,
+        "evo": [
+            "abomasnow"
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": true,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "grass",
+            "ice"
+        ],
+        "hidden": "soundproof",
+        "eggmoves": [
+            "stomp",
+            "double-edge",
+            "leech seed",
+            "growth",
+            "weather ball"
+        ]
+    },
+    {
+        "name": "delibird",
+        "natdex": 225,
+        "form": null,
+        "evo": [
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": true,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "ice",
+            "flying"
+        ],
+        "hidden": "insomnia",
+        "eggmoves": [
+            "aurora beam",
+            "counter",
+            "quick attack",
+            "splash",
+            "destiny bond",
+            "fake out",
+            "memento",
+            "ice shard",
+            "freeze-dry",
+            "aurora veil"
+        ]
+    },
+    {
+        "name": "cubchoo",
+        "natdex": 613,
+        "form": null,
+        "evo": [
+            "beartic"
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": false,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "ice"
+        ],
+        "hidden": "rattled",
+        "eggmoves": [
+            "focus punch",
+            "yawn",
+            "night slash"
+        ]
+    },
+    {
+        "name": "snorunt",
+        "natdex": 361,
+        "form": null,
+        "evo": [
+            "glalie",
+            "froslass"
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": true,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "ice",
+            "ghost"
+        ],
+        "hidden": "moody",
+        "eggmoves": [
+            "disable",
+            "rollout",
+            "block",
+            "switcheroo",
+            "icicle crash"
+        ]
+    },
+    {
+        "name": "cryogonal",
+        "natdex": 615,
+        "form": null,
+        "evo": [
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": false,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 25,
+        "types": [
+            "ice"
+        ],
+        "hidden": null,
+        "eggmoves": [
+            "explosion",
+            "frost breath",
+            "aurora veil"
+        ]
+    },
+    {
+        "name": "cetoddle",
+        "natdex": 974,
+        "form": null,
+        "evo": [
+            "cetitan"
+        ],
+        "prevgen": false,
+        "swsh": false,
+        "bdsp": false,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "ice"
+        ],
+        "hidden": "sheer force",
+        "eggmoves": [
+            "belly drum",
+            "superpower",
+            "yawn",
+            "entrainment",
+            "icicle crash"
+        ]
+    },
+    {
+        "name": "bergmite",
+        "natdex": 712,
+        "form": null,
+        "evo": [
+            "avalugg"
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": false,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "ice",
+            "rock"
+        ],
+        "hidden": "sturdy",
+        "eggmoves": [
+            "mist",
+            "mirror coat",
+            "aurora veil"
+        ]
+    },
+    {
+        "name": "rufflet",
+        "natdex": 627,
+        "form": null,
+        "evo": [
+            "braviary"
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": false,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "normal",
+            "flying",
+            "psychic"
+        ],
+        "hidden": "hustle",
+        "eggmoves": [
+            "rock smash",
+            "roost"
+        ]
+    },
+    {
+        "name": "pawniard",
+        "natdex": 624,
+        "form": null,
+        "evo": [
+            "bisharp",
+            "kingambit"
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": false,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "dark",
+            "steel"
+        ],
+        "hidden": "pressure",
+        "eggmoves": [
+            "headbutt",
+            "mean look",
+            "sucker punch",
+            "quick guard"
+        ]
+    },
+    {
+        "name": "deino",
+        "natdex": 633,
+        "form": null,
+        "evo": [
+            "zweilous",
+            "hydreigon"
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": false,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "dark",
+            "dragon"
+        ],
+        "hidden": null,
+        "eggmoves": [
+            "astonish",
+            "head smash",
+            "double hit",
+            "belch"
+        ]
+    },
+    {
+        "name": "veluza",
+        "natdex": 976,
+        "form": null,
+        "evo": [
+        ],
+        "prevgen": false,
+        "swsh": false,
+        "bdsp": false,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "water",
+            "psychic"
+        ],
+        "hidden": "sharpness",
+        "eggmoves": [
+            "thrash",
+            "recover"
+        ]
+    },
+    {
+        "name": "dondozo",
+        "natdex": 977,
+        "form": null,
+        "evo": [
+        ],
+        "prevgen": false,
+        "swsh": false,
+        "bdsp": false,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 40,
+        "types": [
+            "water"
+        ],
+        "hidden": "water veil",
+        "eggmoves": [
+            "thrash",
+            "fissure",
+            "curse",
+            "yawn"
+        ]
+    },
+    {
+        "name": "tatsugiri",
+        "natdex": 978,
+        "form": "curly",
+        "evo": [
+        ],
+        "prevgen": false,
+        "swsh": false,
+        "bdsp": false,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 35,
+        "types": [
+            "dragon",
+            "water"
+        ],
+        "hidden": "storm drain",
+        "eggmoves": [
+            "counter",
+            "baton pass",
+            "rapid spin"
+        ]
+    },
+    {
+        "name": "tatsugiri",
+        "natdex": 978,
+        "form": "droopy",
+        "evo": [
+        ],
+        "prevgen": false,
+        "swsh": false,
+        "bdsp": false,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 35,
+        "types": [
+            "dragon",
+            "water"
+        ],
+        "hidden": "storm drain",
+        "eggmoves": [
+            "counter",
+            "baton pass",
+            "rapid spin"
+        ]
+    },
+    {
+        "name": "tatsugiri",
+        "natdex": 978,
+        "form": "stretch",
+        "evo": [
+        ],
+        "prevgen": false,
+        "swsh": false,
+        "bdsp": false,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 35,
+        "types": [
+            "dragon",
+            "water"
+        ],
+        "hidden": "storm drain",
+        "eggmoves": [
+            "counter",
+            "baton pass",
+            "rapid spin"
+        ]
+    },
+    {
+        "name": "frigibax",
+        "natdex": 996,
+        "form": null,
+        "evo": [
+            "actibax",
+            "baxcalibur"
+        ],
+        "prevgen": false,
+        "swsh": false,
+        "bdsp": false,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 40,
+        "types": [
+            "dragon",
+            "ice"
+        ],
+        "hidden": "ice body",
+        "eggmoves": [
+            "icicle spear",
+            "aqua tail",
+            "dragon rush",
+            "freeze-dry"
+        ]
     }
 ]

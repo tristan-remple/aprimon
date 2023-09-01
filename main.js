@@ -577,6 +577,20 @@
         const addPkmnBtn = document.getElementById("add-pkmn");
         addPkmnBtn.addEventListener("click", addPokemonDialog);
 
+        function getPossible() {
+            fetch("possible.json")
+            .then(response => response.json())
+            .then(possibleAprimon => {
+
+                return possibleAprimon;
+                
+            });
+        }
+
+        function zoomIn(e) {
+            
+        }
+
         // adds tallies and form functionality
         function insertTallies() {
             fetch("tallies.html", {cache: "no-store"})
