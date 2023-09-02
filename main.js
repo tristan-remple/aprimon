@@ -314,7 +314,7 @@
                 if (pkmn.final !== null) {
                     shinyCount++;
                 }
-                eggCount += pkmn.eggs;
+                eggCount += parseInt(pkmn.eggs);
             });
             shinies.innerText = shinyCount;
             eggs.innerText = eggCount;
@@ -548,9 +548,9 @@
 
             const pkmnDetails = possible.filter(function(pkmn){
                 return (pkmn.name === pkmnName && pkmn.form === pkmnForm);
-            });
+            })[0];
 
-            if (pkmnDetails.length !== 1) {
+            if (pkmnDetails === undefined) {
                 alert("Pokemon not found.");
                 popdown();
                 return;
@@ -783,22 +783,27 @@
             if (arr[2]) {
                 suffix = arr[2];
             }
+
             const pkmnIndv = activeSort.filter(function(pkmn){
-                let checkForm = true;
-                if (suffix && pkmn.pokemon.form) {
-                    if (pkmn.pokemon.form.substr(0, 1) !== suffix) {
-                        checkForm = false;
+                let checkForm = false;
+                if (suffix) {
+                    if (pkmn.pokemon.form && pkmn.pokemon.form.substr(0, 1) === suffix) {
+                        checkForm = true;
                     }
+                } else {
+                    checkForm = true;
                 }
                 return (pkmn.ball === ball && pkmn.pokemon.name === name && checkForm);
             })[0];
 
             const pkmnSpcs = possible.filter(function(pkmn){
-                let checkForm = true;
-                if (suffix && pkmn.form) {
-                    if (pkmn.form.substr(0, 1) !== suffix) {
-                        checkForm = false;
+                let checkForm = false;
+                if (suffix) {
+                    if (pkmn.form && pkmn.form.substr(0, 1) === suffix) {
+                        checkForm = true;
                     }
+                } else {
+                    checkForm = true;
                 }
                 return (pkmn.name === name && checkForm);
             })[0];
@@ -847,10 +852,8 @@
                 moveSpan.innerText = move;
                 moveSpan.classList.add("eggmove");
                 if (pkmnIndv.eggmoves && pkmnIndv.eggmoves.includes(move)) {
-                    console.log("move learned");
                     moveSpan.classList.add("learned");
                 } else {
-                    console.log("move not learned");
                     moveSpan.classList.add("missing");
                 }
                 eggWrapper.appendChild(moveSpan);
@@ -948,6 +951,9 @@
 
             const zoom = document.createElement("div");
             zoom.id = "zoom";
+            if (pkmnIndv.final !== null) {
+                zoom.classList.add("shiny");
+            }
             
             const imgRow = document.createElement("div");
             imgRow.classList.add("nav-row", "zoom-img-row");
