@@ -50,7 +50,7 @@
                 </tr>
                 <tr>
                     <td id="shinies" class="num">1</td>
-                    <td class="label">Shiny Pokemon</td>
+                    <td class="label">Shinies Hatched</td>
                 </tr>
                 <tr>
                     <td id="eggs" class="num">1795</td>
@@ -82,7 +82,7 @@
                 <button id="save" class="small-button control" title="save your progress">
                     <img class="symbol" src="img/save.png" alt="save floppy icon">
                 </button>
-                <form action="update.php" method="post">
+                <form action="update.php" method="post" id="secret-form">
                     <input type="hidden" id="in-queue-eggs" name="in-queue-eggs">
                     <input type="hidden" id="in-queue-pokemon" name="in-queue-pokemon">
                     <input type="hidden" id="in-since-last" name="in-since-last">
@@ -98,8 +98,11 @@
                 <button id="alpha" class="small-button sort" title="alphabetical">
                     A-Z
                 </button>
-                <button id="numer" class="small-button sort" title="numerical">
+                <button id="numer" class="small-button sort" title="by natdex number">
                     #
+                </button>
+                <button id="count" class="small-button sort" title="by egg count">
+                    EGG
                 </button>
                 <button id="balls" class="small-button sort" title="group balls">
                     <img class="symbol" src="img/ball.png" alt="pokéball lines">
@@ -110,10 +113,10 @@
                 <button id="shiny" class="small-button sort" title="shinies first">
                     <img class="symbol" src="img/sparkle.png" alt="sparkle emoji">
                 </button>
-                <button id="five" class="small-button sort" title="5+ IVs">
+                <button id="five" class="small-button sort" title="5+ IVs first">
                     5+
                 </button>
-                <button id="ha" class="small-button sort" title="hidden ability">
+                <button id="ha" class="small-button sort" title="has hidden first">
                     HA
                 </button>
             </div>
@@ -152,8 +155,8 @@
         </nav>
 
         <footer class="box">
-            
             <a class="attribution" href="https://www.vecteezy.com/members/venesiaagustian744914">(Wood Texture)</a>
+            <a class="attribution" href="https://www.serebii.net/scarletviolet/paldeapokedex.shtml">(Pokemon Images)</a>
         </footer>
 
     </main>
@@ -186,7 +189,7 @@
                     </div>
                 </div>
 
-                <form class="column">
+                < !--<form class="column">
                     <div class="field">
                         <label for="hatched">Eggs hatched:</label>
                         <input type="number" id="hatched" name="hatched" value="150">
@@ -215,9 +218,9 @@
                             (Unaware)</label>
                         <input type="checkbox" id="hidden-ability" name="hidden-ability">
                     </div>
-                </form>
+                </form>-- >
 
-                < !--<div class="column">
+                <div class="column">
                     <div class="display-field">
                         <span>Eggs hatched:</span>
                         <span>150</span>
@@ -239,7 +242,7 @@
                         (Unaware)</span>
                         <span>no</span>
                     </div>
-                </div>-- >
+                </div>
             </div>
 
             <div id="eggmoves" class="move-edit">
@@ -258,7 +261,7 @@
                 <span class="eggmove missing">after you</span>
             </div>
 
-            <div id="zoom-controls" class="nav-row">
+            < !--<div id="zoom-controls" class="nav-row">
                 <button id="edit" class="small-button">
                     <img class="symbol" src="img/edit.png">
                 </button>
@@ -315,7 +318,7 @@
                 <div id="cancel" class="small-button">
                     <img class="symbol" src="img/x.png">
                 </div>
-            </div>
+            </div>-- >
 
         </div>
     </div>-->

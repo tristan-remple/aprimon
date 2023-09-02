@@ -137,7 +137,6 @@
 
     const sizeButton = document.getElementById("size-toggle");
     function toggleSize() {
-        console.log("toggling");
         const cardRows = document.getElementById("card-rows");
         const symbol = sizeButton.getElementsByClassName("symbol")[0];
         if (cardRows.classList.contains("compact")) {
@@ -188,8 +187,12 @@
     menuToggle("sort");
     menuToggle("filter");
 
+    function getPossible() {
+        fetch("data/_possible.json")
+        .then(response => response.json())
+        .then(possible => {
+
     const url = "data/" + userInfo.name + ".json";
-    console.log(url);
     fetch(url, {cache: "no-store"})
     .then(response => response.json())
     .then(json => {
@@ -205,7 +208,7 @@
 
             data.forEach(function(pkmn){
 
-                let title = "hup";
+                let title;
                 if (pkmn.pokemon.form === null) {
                     title = capitalize(pkmn.pokemon.name);
                 } else {
@@ -291,6 +294,10 @@
                 }
                 smallRow.appendChild(count);
 
+                card.addEventListener("click", function(e){
+                    zoomIn(e);
+                });
+
             });
         }
 
@@ -370,6 +377,10 @@
             } else if (id === "five") {
                 sortedJSON = activeSort.sort(function(a, b){
                     return b["5iv"] - a["5iv"];
+                });
+            } else if (id === "count") {
+                sortedJSON = activeSort.sort(function(a, b){
+                    return b.eggs - a.eggs;
                 });
             }
             activeSort = sortedJSON;
@@ -470,6 +481,21 @@
             overlay.remove();
         }
 
+        function addHover(el) {
+            el.addEventListener("mouseover", function(e){
+                hoverIcon(e);
+            });
+            el.addEventListener("mouseleave", function(e){
+                hoverIcon(e);
+            });
+            el.addEventListener("focusin", function(e){
+                hoverIcon(e);
+            });
+            el.addEventListener("focusout", function(e){
+                hoverIcon(e);
+            });
+        }
+
         function confirmOrDeny(Qcheck, confirmFunc) {
             const Qsubmit = document.createElement("button");
             Qsubmit.id = "approve-queue";
@@ -481,18 +507,7 @@
             Qicon.src = "img/check.png";
             Qicon.classList.add("symbol");
             Qsubmit.appendChild(Qicon);
-            Qicon.addEventListener("mouseover", function(e){
-                hoverIcon(e);
-            });
-            Qicon.addEventListener("mouseleave", function(e){
-                hoverIcon(e);
-            });
-            Qicon.addEventListener("focusin", function(e){
-                hoverIcon(e);
-            });
-            Qicon.addEventListener("focusout", function(e){
-                hoverIcon(e);
-            });
+            addHover(Qicon)
 
             const Qcancel = document.createElement("button");
             Qcancel.id = "cancel-queue";
@@ -504,25 +519,8 @@
             Qx.src = "img/x.png";
             Qx.classList.add("symbol");
             Qcancel.appendChild(Qx);
-            Qx.addEventListener("mouseover", function(e){
-                hoverIcon(e);
-            });
-            Qx.addEventListener("mouseleave", function(e){
-                hoverIcon(e);
-            });
-            Qx.addEventListener("focusin", function(e){
-                hoverIcon(e);
-            });
-            Qx.addEventListener("focusout", function(e){
-                hoverIcon(e);
-            });
+            addHover(Qx);
         }
-
-        function getPossible() {
-            fetch("data/_possible.json")
-            .then(response => response.json())
-            .then(possible => {
-
 
         function addPokemon() {
 
@@ -550,7 +548,13 @@
 
             const pkmnDetails = possible.filter(function(pkmn){
                 return (pkmn.name === pkmnName && pkmn.form === pkmnForm);
-            })[0];
+            });
+
+            if (pkmnDetails.length !== 1) {
+                alert("Pokemon not found.");
+                popdown();
+                return;
+            }
 
             const entry = {
                 "pokemon": {
@@ -574,35 +578,57 @@
 
         }
 
-        function createFormField(name, type) {
+        function createFormField(name, id, type, value) {
             const nameField = document.createElement("div");
             nameField.classList.add("field");
 
             const nameLabel = document.createElement("label");
-            nameLabel.setAttribute("for", name);
+            nameLabel.setAttribute("for", id);
             nameLabel.innerText = capitalize(name) + ":";
             nameField.appendChild(nameLabel);
 
             const nameEntry = document.createElement("input");
-            nameEntry.name = name;
-            nameEntry.id = name;
+            nameEntry.name = id;
+            nameEntry.id = id;
             nameEntry.type = type;
+            if (value !== undefined) {
+                nameEntry.value = value;
+            }
             nameField.appendChild(nameEntry);
 
             return nameField;
         }
 
-        function createCheck(title, id, location) {
+        // function createCheck(title, id, location) {
+        //     const label = document.createElement("label");
+        //     label.setAttribute("for", id);
+        //     label.innerText = title;
+        //     location.appendChild(label);
+
+        //     const check = document.createElement("input");
+        //     check.type = "checkbox";
+        //     check.name = id;
+        //     check.id = id;
+        //     location.appendChild(check);
+        // }
+
+        function createCheck(title, id, state) {
+            const loc = document.createElement("div");
+            loc.classList.add("field");
+
             const label = document.createElement("label");
             label.setAttribute("for", id);
-            label.innerText = title;
-            location.appendChild(label);
+            label.innerHTML = title;
+            loc.appendChild(label);
 
             const check = document.createElement("input");
             check.type = "checkbox";
             check.name = id;
             check.id = id;
-            location.appendChild(check);
+            check.checked = state;
+            loc.appendChild(check);
+
+            return loc;
         }
 
         function createDrop(title, id, list) {
@@ -618,7 +644,6 @@
             ballDrop.name = id;
             ballDrop.id = id;
             ballField.appendChild(ballDrop);
-            console.log(list);
 
             list.forEach(function(ball){
                 const option = document.createElement("option");
@@ -685,7 +710,6 @@
             const form = document.createElement("form");
             box.appendChild(form);
 
-            console.log(possible);
             const nameList = possible.map(function(pkmn){
                 if (pkmn.form === null) {
                     return capitalize(pkmn.name);
@@ -693,11 +717,15 @@
                     return capitalize(pkmn.form + " " + pkmn.name);
                 }
             });
-            console.log(nameList);
 
-            // form.appendChild(createDrop("pokemon", "form-name", nameList));
-            const nameField = createFormField("pokemon", "text");
+            const nameField = createFormField("pokemon name", "pokemon", "text");
             nameField.id = "name-field";
+            nameField.addEventListener("keydown", function(e){
+                if (e.key === "Enter") {
+                    e.preventDefault();
+                    return false;
+                  }
+            });
             nameField.addEventListener("input", function(e) {
                 autoComplete(e, nameList);
             });
@@ -715,9 +743,9 @@
             const checksRow = document.createElement("div");
             form.appendChild(checksRow);
 
-            createCheck("5+ IVs?", "five-iv", checksRow);
-            createCheck("Hidden ability?", "hidden-ab", checksRow);
-            createCheck("Shiny hunting target?", "target-pk", checksRow);
+            checksRow.appendChild(createCheck("5+ IVs?", "five-iv"));
+            checksRow.appendChild(createCheck("Hidden ability?", "hidden-ab"))
+            checksRow.appendChild(createCheck("Shiny target?", "target-pk"))
 
             const decision = document.createElement("div");
             decision.classList.add("nav-row");
@@ -731,9 +759,330 @@
         const addPkmnBtn = document.getElementById("add-pkmn");
         addPkmnBtn.addEventListener("click", addPokemonDialog);
 
+        function createZoomField(title, info) {
+            const field = document.createElement("div");
+            field.classList.add("display-field");
+
+            const label = document.createElement("span");
+            label.innerHTML = title;
+            field.appendChild(label);
+
+            const text = document.createElement("span");
+            text.innerText = info;
+            field.appendChild(text);
+
+            return field;
+        }
+
+        function findPokemon() {
+            const id = document.getElementById("indv-facts").dataset.id;
+            const arr = id.split("-");
+            const ball = arr[0];
+            const name = arr[1];
+            let suffix = null;
+            if (arr[2]) {
+                suffix = arr[2];
+            }
+            const pkmnIndv = activeSort.filter(function(pkmn){
+                let checkForm = true;
+                if (suffix && pkmn.pokemon.form) {
+                    if (pkmn.pokemon.form.substr(0, 1) !== suffix) {
+                        checkForm = false;
+                    }
+                }
+                return (pkmn.ball === ball && pkmn.pokemon.name === name && checkForm);
+            })[0];
+
+            const pkmnSpcs = possible.filter(function(pkmn){
+                let checkForm = true;
+                if (suffix && pkmn.form) {
+                    if (pkmn.form.substr(0, 1) !== suffix) {
+                        checkForm = false;
+                    }
+                }
+                return (pkmn.name === name && checkForm);
+            })[0];
+
+            return [pkmnIndv, pkmnSpcs];
+        }
+
+        function editPokemon() {
+            const inHatched = document.getElementById("hatched").value;
+            const togShiny = document.getElementById("shiny-get").checked;
+            let inShiny = null;
+            if (togShiny === true) {
+                const date = new Date();
+                inShiny = `${months[date.getMonth()]} ${date.getDate()}, ${date.getFullYear()}`;
+            }
+            const inFive = document.getElementById("five-iv").checked;
+            const inNature = document.getElementById("nature").value;
+            const inHidden = document.getElementById("hidden-ability").checked;
+
+            const indvPkmn = findPokemon()[0];
+            indvPkmn.eggs = inHatched;
+            indvPkmn.final = inShiny;
+            indvPkmn["5iv"] = inFive;
+            indvPkmn.nature = inNature;
+            indvPkmn.ha = inHidden;
+
+            popdown();
+            displayCards(activeSort);
+            
+        }
+
+        function displayEggmoves() {
+            const element = document.getElementById("egg-wrapper");
+            if (element !== null) {
+                element.remove();
+            }
+
+            const eggWrapper = document.createElement("p");
+            eggWrapper.id = "egg-wrapper";
+            
+            const pkmnIndv = findPokemon()[0];
+            const pkmnSpcs = findPokemon()[1];
+
+            pkmnSpcs.eggmoves.forEach(function(move){
+                const moveSpan = document.createElement("span");
+                moveSpan.innerText = move;
+                moveSpan.classList.add("eggmove");
+                if (pkmnIndv.eggmoves && pkmnIndv.eggmoves.includes(move)) {
+                    console.log("move learned");
+                    moveSpan.classList.add("learned");
+                } else {
+                    console.log("move not learned");
+                    moveSpan.classList.add("missing");
+                }
+                eggWrapper.appendChild(moveSpan);
+                moveSpan.addEventListener("click", function(e){
+                    toggleMove(e);
+                });
+            });
+            return eggWrapper;
+        }
+
+        function toggleMove(e) {
+            const move = e.target.innerText;
+            const indvPkmn = findPokemon()[0];
+            if (!indvPkmn.eggmoves) {
+                indvPkmn.eggmoves = [move];
+            } else if (indvPkmn.eggmoves.includes(move)) {
+                const index = indvPkmn.eggmoves.indexOf(move);
+                indvPkmn.eggmoves.splice(index, 1);
+            } else {
+                indvPkmn.eggmoves.push(move);
+            }
+            // const index = activeSort.indexOf(indvPkmn);
+            // activeSort[index].eggmoves = indvPkmn.eggmoves;
+            
+            const eggMoveBox = document.getElementById("eggmoves");
+            eggMoveBox.appendChild(displayEggmoves());
+        }
+
+        function editPokemonDialog(pkmnIndv, pkmnSpcs) {
+
+            const indvFacts = document.getElementById("indv-facts");
+            indvFacts.innerHTML = "";
+
+            indvFacts.appendChild(createFormField("Eggs hatched", "hatched", "number", pkmnIndv.eggs));
+
+            let shiny = true;
+            if (pkmnIndv.final === null) {
+                shiny = false;
+            }
+            indvFacts.appendChild(createCheck("Shiny obtained", "shiny-get", shiny));
+
+            indvFacts.appendChild(createCheck("5+ IVs", "five-iv", pkmnIndv["5iv"]));
+
+            indvFacts.appendChild(createDrop("nature", "nature", natures));
+
+            const hiddenTitle = `Hidden ability:<br>(${pkmnSpcs.hidden})`;
+            indvFacts.appendChild(createCheck(hiddenTitle, "hidden-ability", pkmnIndv.ha));
+
+            const eggMoveBox = document.getElementById("eggmoves");
+            eggMoveBox.classList.add("move-edit");
+
+            const controls = document.getElementById("zoom-controls");
+            controls.innerHTML = "";
+            confirmOrDeny(controls, editPokemon);
+        }
 
         function zoomIn(e) {
+            let target = e.target;
+            while (!target.classList.contains("card")) {
+                target = target.parentNode;
+            }
+            const id = target.id;
+
+            const idArr = id.split("-");
+            const ball = idArr[0];
+            const name = idArr[1];
+            let suffix = null;
+            if (idArr[2]) {
+                suffix = idArr[2];
+            }
+            const pkmnIndv = activeSort.filter(function(pkmn){
+                return (pkmn.pokemon.name === name && pkmn.ball === ball);
+            })[0];
+            const pkmnSpcs = possible.filter(function(pkmn){
+                let check1 = true;
+                if (suffix !== null) {
+                    if (pkmn.form === null) {
+                        check1 = false;
+                    } else {
+                        const pkmnSuffix = pkmn.form.substr(0, 1);
+                        if (pkmnSuffix !== suffix) {
+                            check1 = false;
+                        }
+                    }
+                }
+                return (pkmn.name === name && check1 === true);
+            })[0];
+
+            let pkmnTitle = "";
+            if (suffix) {
+                pkmnTitle = pkmnSpcs.form + " ";
+            }
+            pkmnTitle += name;
+            const fullTitle = capitalize(ball + " " + pkmnTitle);
+
+            const zoom = document.createElement("div");
+            zoom.id = "zoom";
             
+            const imgRow = document.createElement("div");
+            imgRow.classList.add("nav-row", "zoom-img-row");
+            zoom.appendChild(imgRow);
+
+            const pkmnImg = document.createElement("img");
+            pkmnImg.classList.add("big-pkmn");
+            pkmnImg.src = "img/" + addLeadingZeros(pkmnSpcs.natdex);
+            if (suffix) {
+                pkmnImg.src += "-" + suffix;
+            }
+            pkmnImg.src += ".png";
+            pkmnImg.alt = pkmnTitle;
+            imgRow.appendChild(pkmnImg);
+
+            const ballImg = document.createElement("img");
+            ballImg.classList.add("ball");
+            ballImg.src = `img/${ball}ball.png`;
+            ballImg.alt = `${ball} ball`;
+            imgRow.appendChild(ballImg);
+
+            const zoomTitle = document.createElement("h2");
+            zoomTitle.innerText = fullTitle;
+            zoom.appendChild(zoomTitle);
+
+            const colSet = document.createElement("div");
+            colSet.classList.add("nav-row");
+            zoom.appendChild(colSet);
+
+            const pkmnFacts = document.createElement("div");
+            pkmnFacts.classList.add("column");
+            colSet.appendChild(pkmnFacts);
+
+            pkmnFacts.appendChild(createZoomField("Natdex #:", pkmnSpcs.natdex));
+
+            const typeField = document.createElement("div");
+            typeField.classList.add("display-field");
+            const label = document.createElement("span");
+            label.innerText = "Types:";
+            typeField.appendChild(label);
+            const typeWrapper = document.createElement("span");
+            typeField.appendChild(typeWrapper)
+            pkmnSpcs.types.forEach(function(type){
+                const typeDisp = document.createElement("span");
+                typeDisp.classList.add("type", type);
+                typeDisp.innerText = type.toUpperCase();
+                typeWrapper.appendChild(typeDisp);
+            });
+            pkmnFacts.appendChild(typeField);
+
+            pkmnFacts.appendChild(createZoomField("Evolution(s):", capitalize(pkmnSpcs.evo.join(", "))));
+
+            pkmnFacts.appendChild(createZoomField("Egg cycles:", pkmnSpcs.cycles));
+
+            const indvFacts = document.createElement("div");
+            indvFacts.id = "indv-facts";
+            indvFacts.dataset.id = id;
+            indvFacts.classList.add("column");
+            colSet.appendChild(indvFacts);
+
+            indvFacts.appendChild(createZoomField("Eggs hatched:", pkmnIndv.eggs));
+
+            let so = "no";
+            if (pkmnIndv.final !== null) {
+                so = pkmnIndv.final;
+            }
+            indvFacts.appendChild(createZoomField("Shiny obtained:", so));
+
+            let five = "no";
+            if (pkmnIndv["5iv"] === true) {
+                five = "yes";
+            }
+            indvFacts.appendChild(createZoomField("5+ IVs", five));
+
+            indvFacts.appendChild(createZoomField("Nature:", pkmnIndv.nature));
+
+            const hiddenTitle = `Hidden ability:<br>(${pkmnSpcs.hidden})`;
+            let ha = "no";
+            if (pkmnIndv.ha === true) {
+                ha = "yes";
+            }
+            indvFacts.appendChild(createZoomField(hiddenTitle, ha));
+
+            const eggMoveBox = document.createElement("div");
+            eggMoveBox.id = "eggmoves";
+            zoom.appendChild(eggMoveBox);
+
+            const eggTitle = document.createElement("span");
+            eggTitle.innerText = "Egg moves:";
+            eggMoveBox.appendChild(eggTitle);
+
+            const controls = document.createElement("div");
+            controls.id = "zoom-controls";
+            controls.classList.add("nav-row");
+            zoom.appendChild(controls);
+
+            const editBtn = document.createElement("button");
+            editBtn.id = "edit";
+            editBtn.classList.add("small-button");
+            editBtn.title = "Edit Pokemon";
+            const editSym = document.createElement("img");
+            editSym.src = "img/edit.png";
+            editSym.classList.add("symbol");
+            editSym.alt = "pencil edit";
+            editBtn.appendChild(editSym);
+            controls.appendChild(editBtn);
+            addHover(editBtn);
+
+            const close = document.createElement("button");
+            close.id = "cancel";
+            close.classList.add("small-button");
+            close.title = "close";
+            const closeSym = document.createElement("img");
+            closeSym.src = "img/x.png";
+            closeSym.classList.add("symbol");
+            closeSym.alt = "x";
+            close.appendChild(closeSym);
+            controls.appendChild(close);
+            addHover(close);
+
+            close.addEventListener("click", popdown);
+            editBtn.addEventListener("click", function(){
+                editPokemonDialog(pkmnIndv, pkmnSpcs)
+            });
+
+            popup(zoom);
+            eggMoveBox.appendChild(displayEggmoves());
+            
+        }
+
+        const cardList = document.getElementsByClassName("card");
+        for (card of cardList) {
+            card.addEventListener("click", function(e){
+                zoomIn(e);
+            });
         }
 
         // adds tallies and form functionality
@@ -770,25 +1119,15 @@
                 function addQueueDialog() {
 
                     const Qcheck = document.createElement("div");
-                    Qcheck.classList.add("popup");
+                    Qcheck.id = "zoom";
 
-                    const Qnumber = document.createElement("input");
-                    Qnumber.type = "number";
-                    Qnumber.id = "add-q-eggs";
-                    Qnumber.name = "add-q-eggs";
-                    Qcheck.appendChild(Qnumber);
+                    const Qtitle = document.createElement("h2");
+                    Qtitle.innerText = "Add pokemon eggs to hatching queue";
+                    Qcheck.appendChild(Qtitle);
 
-                    const Qdropdown = document.createElement("select");
-                    Qdropdown.name = "add-q-pkmn";
-                    Qdropdown.id = "add-q-pkmn";
-                    Qcheck.appendChild(Qdropdown);
+                    Qcheck.appendChild(createFormField("Eggs", "add-q-eggs", "number"));
 
-                    pkmnList.forEach(function(pkmn){
-                        const option = document.createElement("option");
-                        option.value = pkmn;
-                        option.innerText = pkmn;
-                        Qdropdown.appendChild(option);
-                    });
+                    Qcheck.appendChild(createDrop("Pokemon", "add-q-pkmn", pkmnList));
 
                     if (queueEggs > 0) {
                         const overwrite = document.createElement("p");
@@ -796,7 +1135,10 @@
                         Qcheck.appendChild(overwrite);
                     }
 
-                    confirmOrDeny(Qcheck, addQueue);
+                    const controlRow = document.createElement("div");
+                    controlRow.classList.add("nav-row");
+                    Qcheck.appendChild(controlRow);
+                    confirmOrDeny(controlRow, addQueue);
 
                     popup(Qcheck);
 
@@ -856,7 +1198,6 @@
                         suffix = "-" + pkmnArr[2];
                     }
                     const date = new Date();
-                    console.log(date);
                     const dateStr = `${months[date.getMonth()]} ${date.getDate()}, ${date.getFullYear()}`;
                     json.forEach(function(pkmn){
                         if (pkmn.pokemon.name === name && pkmn.ball === ball && pkmn.pokemon['form-suffix'] === suffix) {
@@ -911,7 +1252,6 @@
                 }
 
                 function saveDialog() {
-                    console.log("hey listen");
                     const box = document.createElement("div");
                     box.classList.add("popup");
 
@@ -934,13 +1274,14 @@
             })
         }
         insertTallies();
-    });
-}
-
-        // initial activation
-        getPossible();
         displayCards(json);
-
     });
+
+});
+
+};
+
+// initial activation
+getPossible();
 
 })();

@@ -304,13 +304,18 @@ option {
     justify-content: center;
     align-items: center;
     flex-flow: column nowrap;
+    overflow-y: auto;
+}
+
+.zoom-img-row {
+    align-items: end;
 }
 
 .column {
     display: flex;
     flex-flow: column nowrap;
-    align-items: center;
     margin-bottom: 10px;
+    flex-grow: 1;
 }
 
 .display-field {
@@ -320,11 +325,20 @@ option {
     align-content: start;
 }
 
-.display-field > span:first-child {
+.display-field > span:first-child, #eggmoves > span:first-child {
     font-weight: bold;
     display: inline-block;
     width: 140px;
+}
+
+.display-field > span, #eggmoves > span {
     margin-top: 5px;
+}
+
+.big-pkmn {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
 }
 
 #eggmoves {
@@ -357,10 +371,11 @@ form.column {
     cursor: pointer;
 }
 
-.move-edit > .eggmove:hover, .move-edit > .eggmove:focus {
+.move-edit > p > .eggmove:hover, .move-edit > p > .eggmove:focus {
     background-color: #383838;
     background-image: linear-gradient(#383838, #3F3029);
     color: #CBDEBC;
+    cursor: pointer;
 }
 
 .field {
