@@ -340,6 +340,7 @@ option {
 .column {
     display: flex;
     flex-flow: column nowrap;
+    margin: 5px;
     margin-bottom: 10px;
     flex-grow: 1;
 }

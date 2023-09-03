@@ -24,6 +24,13 @@
                 "collapse": true,
                 "style": "driftwood"
             }
+        },
+        {
+            "name": "iolite",
+            "pref": {
+                "collapse": true,
+                "style": "driftwood"
+            }
         }
     ];
 
@@ -152,6 +159,9 @@
         }
     }
     sizeButton.addEventListener("click", toggleSize);
+    if (userInfo.pref.collapse === true) {
+        toggleSize();
+    }
 
     // toggles sections of the menu
     function menuToggle(item) {
@@ -1008,8 +1018,15 @@
             const togShiny = document.getElementById("shiny-get").checked;
             let inShiny = null;
             if (togShiny === true) {
-                const date = new Date();
+                const inDate = document.getElementById("shiny-date").value;
+                let date;
+                if (inDate !== "") {
+                    date = new Date(inDate);
+                } else {
+                    date = new Date();
+                }
                 inShiny = `${months[date.getMonth()]} ${date.getDate()}, ${date.getFullYear()}`;
+                console.log(inShiny);
             }
             const inFive = document.getElementById("five-iv").checked;
             const inNature = document.getElementById("nature").value;
@@ -1042,7 +1059,7 @@
 
             pkmnSpcs.eggmoves.forEach(function(move){
                 const moveSpan = document.createElement("span");
-                moveSpan.innerText = move;
+                moveSpan.innerText = capitalize(move);
                 moveSpan.classList.add("eggmove");
                 if (pkmnIndv.eggmoves && pkmnIndv.eggmoves.includes(move)) {
                     moveSpan.classList.add("learned");
@@ -1081,6 +1098,8 @@
             const indvFacts = document.getElementById("indv-facts");
             indvFacts.innerHTML = "";
 
+            indvFacts.appendChild(createCheck("Shiny target", "shiny-target", pkmnIndv.target));
+
             indvFacts.appendChild(createFormField("Eggs hatched", "hatched", "number", pkmnIndv.eggs));
 
             let shiny = true;
@@ -1088,12 +1107,13 @@
                 shiny = false;
             }
             indvFacts.appendChild(createCheck("Shiny obtained", "shiny-get", shiny));
+            indvFacts.appendChild(createFormField("Shiny date", "shiny-date", "date"));
 
             indvFacts.appendChild(createCheck("5+ IVs", "five-iv", pkmnIndv["5iv"]));
 
             indvFacts.appendChild(createDrop("nature", "nature", natures));
 
-            const hiddenTitle = `Hidden ability:<br>(${pkmnSpcs.hidden})`;
+            const hiddenTitle = `Hidden ability:<br>(${capitalize(pkmnSpcs.hidden)})`;
             indvFacts.appendChild(createCheck(hiddenTitle, "hidden-ability", pkmnIndv.ha));
 
             const eggMoveBox = document.getElementById("eggmoves");
@@ -1102,6 +1122,14 @@
             const controls = document.getElementById("zoom-controls");
             controls.innerHTML = "";
             confirmOrDeny(controls, editPokemon);
+        }
+
+        function yesNo(bool) {
+            if (bool === true) {
+                return "yes";
+            } else {
+                return "no";
+            }
         }
 
         // display a popup with all the information available about an aprimon
@@ -1211,26 +1239,25 @@
 
             indvFacts.appendChild(createZoomField("Eggs hatched:", pkmnIndv.eggs));
 
+            indvFacts.appendChild(createZoomField("Shiny target:", yesNo(pkmnIndv.target)));
+
             let so = "no";
             if (pkmnIndv.final !== null) {
                 so = pkmnIndv.final;
             }
             indvFacts.appendChild(createZoomField("Shiny obtained:", so));
 
-            let five = "no";
-            if (pkmnIndv["5iv"] === true) {
-                five = "yes";
-            }
-            indvFacts.appendChild(createZoomField("5+ IVs", five));
+            indvFacts.appendChild(createZoomField("5+ IVs", yesNo(pkmnIndv["5iv"])));
 
-            indvFacts.appendChild(createZoomField("Nature:", pkmnIndv.nature));
+            indvFacts.appendChild(createZoomField("Nature:", capitalize(pkmnIndv.nature)));
 
-            const hiddenTitle = `Hidden ability:<br>(${pkmnSpcs.hidden})`;
-            let ha = "no";
-            if (pkmnIndv.ha === true) {
-                ha = "yes";
+            let hiddenTitle = `Hidden ability:`;
+            if (pkmnSpcs.hidden !== null) {
+                hiddenTitle += `<br>(${capitalize(pkmnSpcs.hidden)})`;
+            } else {
+                hiddenTitle += `<br>(N/A)`;
             }
-            indvFacts.appendChild(createZoomField(hiddenTitle, ha));
+            indvFacts.appendChild(createZoomField(hiddenTitle, yesNo(pkmnIndv.ha)));
 
             const eggMoveBox = document.createElement("div");
             eggMoveBox.id = "eggmoves";
@@ -1364,7 +1391,7 @@
                     }
                     json.forEach(function(pkmn){
                         if (pkmn.pokemon.name === name && pkmn.ball === ball && pkmn.pokemon['form-suffix'] === suffix) {
-                            pkmn.eggs += queueEggs;
+                            pkmn.eggs = parseInt(pkmn.eggs) + parseInt(queueEggs);
                         }
                     });
                     queueEggs = 0;
@@ -1374,6 +1401,7 @@
                     popdown();
                     displayCards(json);
                     apriTotals();
+
                 }
 
                 // confirm queue hatched

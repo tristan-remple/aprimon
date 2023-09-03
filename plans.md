@@ -3,4 +3,7 @@ keyboard navigation
 shiny date editing
 toggle targeting
 custom groupings
-browsing list
+user switch
+help menu
+user notes
+user bio
