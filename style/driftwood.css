@@ -63,11 +63,29 @@ h1 {
     margin: 20px;
 }
 
+.shiny, .include {
+    background-color: #92C6AD;
+    background-image: linear-gradient(#a5eab2, #3da39c);
+    border-color: #383838;
+    color: #383838;
+}
+
 .small-button:hover, .small-button:focus, .card:hover {
     background-color: #383838;
     background-image: linear-gradient(#383838, #3F3029);
     color: #CBDEBC;
     border: 4px inset #CBDEBC;
+}
+
+.missing, .exclude, .wishlist, .wishlist:hover {
+    color: #6A6F6B;
+    background-color: #cbdebc66;
+    border-color: #6A6F6B;
+    background-image: none;
+}
+
+.wishlist, .wishlist:hover {
+    border-style: solid;
 }
 
 .browse-card {
@@ -79,12 +97,7 @@ h1 {
     margin: 5px;
 }
 
-.shiny, .include {
-    background-color: #92C6AD;
-    background-image: linear-gradient(#a5eab2, #3da39c);
-    border-color: #383838;
-    color: #383838;
-}
+
 
 #card-rows {
     grid-area: tiles;
@@ -159,6 +172,10 @@ h3 {
 
 .card:hover > .small-row > .info {
     background-color:#383838;
+}
+
+.wishlist:hover > .small-row > .info, .wishlist > .small-row > .info {
+    background-color: #CBDEBC99;
 }
 
 nav {
@@ -521,10 +538,8 @@ form.column {
     left: 35px;
 }
 
-.missing, .exclude {
-    color: #6A6F6B;
-    background-color: #cbdebc66;
-    border-color: #6A6F6B;
+.wishlist > img {
+    filter: sepia(100%);
 }
 
 .hidden {

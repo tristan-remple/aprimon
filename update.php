@@ -24,7 +24,7 @@ if (hash($algo, $_POST['in-password']) === $users[$user]) {
     fwrite($tallies, $html);
     fclose($tallies);
 
-    header("Location: index.html");
+    header("Location: index.html?user=".$user);
 } else {
     echo "Invalid password";
 }

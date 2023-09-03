@@ -78,6 +78,12 @@
         return newStr;
     }
 
+    function displayUser() {
+        const nameSpace = document.getElementById("user-display");
+        nameSpace.innerText = capitalize(userInfo.name) + "'s ";
+    }
+    displayUser();
+
     // applies leading zeros to id numbers
     // used to match pokemon to images
     function addLeadingZeros(number) {
@@ -222,7 +228,7 @@
         let pkmnList = ["SELECT:"];
 
         // function that renders cards from a json
-        function displayCards(data) {
+        function displayPokemon(data) {
 
             const cardBox = document.getElementById("card-rows");
             cardBox.innerHTML = "";
@@ -240,6 +246,15 @@
                 card.classList.add("box", "card");
                 if (pkmn.final !== null) {
                     card.classList.add("shiny");
+                    card.addEventListener("click", function(e){
+                        zoomIn(e);
+                    });
+                } else if (pkmn.wishlist === true) {
+                    card.classList.add("wishlist");
+                } else {
+                    card.addEventListener("click", function(e){
+                        zoomIn(e);
+                    });
                 }
                 let id = pkmn.ball + "-" + pkmn.pokemon.name;
                 cardBox.appendChild(card);
@@ -314,10 +329,6 @@
                     count.classList.add("missing");
                 }
                 smallRow.appendChild(count);
-
-                card.addEventListener("click", function(e){
-                    zoomIn(e);
-                });
 
             });
         }
@@ -485,6 +496,28 @@
             button.addEventListener("keydown", function(e){
                 filterCards(e);
             });
+        }
+
+        const wishButton = document.getElementById("wish");
+        function displayWishlist() {
+            if (!wishButton.classList.contains("shiny")){
+                const data = activeSort.filter(function(pkmn){
+                    return pkmn.wishlist === true;
+                });
+                wishButton.classList.add("shiny");
+                displayPokemon(data);
+            } else {
+                wishButton.classList.remove("shiny");
+                displayCards(activeSort);
+            }
+        } 
+        wishButton.addEventListener("click", displayWishlist);
+
+        function displayCards(input) {
+            const noWish = input.filter(function(pkmn){
+                return !pkmn.wishlist || pkmn.wishlist === false;
+            })
+            displayPokemon(noWish);
         }
 
         // create overlay popup
@@ -732,6 +765,7 @@
             const ivCheck = document.getElementById("five-iv").checked;
             const haCheck = document.getElementById("hidden-ab").checked;
             const targetCheck = document.getElementById("target-pk").checked;
+            const wishlistCheck = document.getElementById("wishlist").checked;
 
             if (pkmnName === "") {
                 alert("Pokemon name required.");
@@ -771,7 +805,8 @@
                 "final": null,
                 "ha": haCheck,
                 "5iv": ivCheck,
-                "target": targetCheck
+                "target": targetCheck,
+                "wishlist": wishlistCheck
             };
             
             json.push(entry);
@@ -941,8 +976,9 @@
             form.appendChild(checksRow);
 
             checksRow.appendChild(createCheck("5+ IVs?", "five-iv"));
-            checksRow.appendChild(createCheck("Hidden ability?", "hidden-ab"))
-            checksRow.appendChild(createCheck("Shiny target?", "target-pk"))
+            checksRow.appendChild(createCheck("Hidden ability?", "hidden-ab"));
+            checksRow.appendChild(createCheck("Shiny target?", "target-pk"));
+            checksRow.appendChild(createCheck("Wishlist only?", "wishlist"));
 
             const decision = document.createElement("div");
             decision.classList.add("nav-row");
@@ -1076,7 +1112,7 @@
 
         // toggles an egg move between learned and not learned
         function toggleMove(e) {
-            const move = e.target.innerText;
+            const move = e.target.innerText.toLowerCase();
             const indvPkmn = findPokemon()[0];
             if (!indvPkmn.eggmoves) {
                 indvPkmn.eggmoves = [move];
@@ -1113,7 +1149,12 @@
 
             indvFacts.appendChild(createDrop("nature", "nature", natures));
 
-            const hiddenTitle = `Hidden ability:<br>(${capitalize(pkmnSpcs.hidden)})`;
+            let hiddenTitle = `Hidden ability:`;
+            if (pkmnSpcs.hidden !== null) {
+                hiddenTitle += `<br>(${capitalize(pkmnSpcs.hidden)})`;
+            } else {
+                hiddenTitle += `<br>(N/A)`;
+            }
             indvFacts.appendChild(createCheck(hiddenTitle, "hidden-ability", pkmnIndv.ha));
 
             const eggMoveBox = document.getElementById("eggmoves");
