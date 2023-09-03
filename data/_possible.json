@@ -1051,6 +1051,33 @@
         ]
     },
     {
+        "name": "mareep",
+        "natdex": 179,
+        "form": null,
+        "evo": [
+            "flaafy",
+            "ampharos"
+        ],
+        "prevgen": true,
+        "swsh": false,
+        "bdsp": false,
+        "scarvi": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "electric"
+        ],
+        "hidden": "plus",
+        "eggmoves": [
+            "agility",
+            "flatter",
+            "after you",
+            "electroweb",
+            "eerie impulse",
+            "electric terrain"
+        ]
+    },
+    {
         "name": "petilil",
         "natdex": 548,
         "form": null,
@@ -4455,7 +4482,7 @@
     },
     {
         "name": "slowpoke",
-        "natdex": 279,
+        "natdex": 79,
         "form": null,
         "evo": [
             "slowbro",
@@ -4481,7 +4508,7 @@
     },
     {
         "name": "slowpoke",
-        "natdex": 279,
+        "natdex": 79,
         "form": "galarian",
         "evo": [
             "slowbro",

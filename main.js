@@ -87,6 +87,7 @@
     // keep track of hover state to make sure it doesn't double-activate
     let activeHover = false;
 
+    // applies hover coloring to icons on buttons
     function hoverIcon(e) {
 
         // account for bubbling
@@ -135,6 +136,7 @@
         });
     }
 
+    // toggles between tall cards and thin cards
     const sizeButton = document.getElementById("size-toggle");
     function toggleSize() {
         const cardRows = document.getElementById("card-rows");
@@ -151,6 +153,7 @@
     }
     sizeButton.addEventListener("click", toggleSize);
 
+    // toggles sections of the menu
     function menuToggle(item) {
         const menuSection = document.getElementById(item);
         const menuButton = document.getElementById(item + "-menu");
@@ -164,6 +167,7 @@
         }
     }
 
+    // handles the event for the menu toggle
     function menuHandler(e) {
         if (e.type === "keydown" && e.key !== "Enter") {
             return;
@@ -173,6 +177,7 @@
         menuToggle(item);
     }
 
+    // adds action handlers to menu sections
     const menuSections = document.getElementsByClassName("menu");
     for (section of menuSections) {
         section.addEventListener("click", function(e){
@@ -183,20 +188,26 @@
         });
     }
 
+    // minimizes 3 sections
     menuToggle("control");
     menuToggle("sort");
     menuToggle("filter");
 
+    // get the list of possible aprimon
     function getPossible() {
         fetch("data/_possible.json")
         .then(response => response.json())
         .then(possible => {
 
+    // get the user information about their specific aprimon
     const url = "data/" + userInfo.name + ".json";
     fetch(url, {cache: "no-store"})
     .then(response => response.json())
     .then(json => {
 
+        // i thought this would clone it; it did not
+        // but the only harm done is that the sort order is persistent now
+        // which might actually be good
         let activeSort = json;
         let pkmnList = ["SELECT:"];
 
@@ -476,11 +487,13 @@
             return overlay;
         }
 
+        // close overlay popup
         function popdown() {
             const overlay = document.getElementById("overlay");
             overlay.remove();
         }
 
+        // adds hover styling on 4 events at once
         function addHover(el) {
             el.addEventListener("mouseover", function(e){
                 hoverIcon(e);
@@ -496,6 +509,9 @@
             });
         }
 
+        // generates a pair of confirm and close buttons
+        // Qcheck is the location the buttons are added to
+        // i should instead add them to a .nav-row and return that
         function confirmOrDeny(Qcheck, confirmFunc) {
             const Qsubmit = document.createElement("button");
             Qsubmit.id = "approve-queue";
@@ -522,6 +538,182 @@
             addHover(Qx);
         }
 
+        // reads the state of the browse buttons and generates simple tiles
+        function displayBrowse() {
+            const buttons = document.getElementsByClassName("browse-button");
+            const bf = {};
+            for (btn of buttons) {
+                if (btn.classList.contains("include")) {
+                    bf[btn.id] = true;
+                } else if (btn.classList.contains("exclude")) {
+                    bf[btn.id] = false;
+                } else {
+                    bf[btn.id] = null;
+                }
+            }
+
+            let filteredPossible = possible.filter(function(pkmn){
+                let check = true;
+                console.log(pkmn);
+                for (game in bf) {
+                    console.log(game);
+                    if (bf[game] === null) {
+                        console.log("not looking");
+                        check = true;
+                    } else if (bf[game] === pkmn[game]) {
+                        console.log("match");
+                        check = true;
+                    } else {
+                        console.log("no match");
+                        check = false;
+                        break;
+                    }
+                }
+                console.log(check);
+                return check;
+            });
+            if (bf["all-possible"] === true) {
+                filteredPossible = possible;
+            }
+ 
+            const cardRow = document.getElementById("browse-row");
+            cardRow.innerHTML = "";
+            filteredPossible.forEach(function(pkmn){
+                let id;
+                let title;
+                if (pkmn.form) {
+                    id = pkmn.form + "-" + pkmn.name;
+                    title = capitalize(pkmn.form + " " + pkmn.name);
+                } else {
+                    id = pkmn.name;
+                    title = capitalize(pkmn.name);
+                }
+
+                const card = document.createElement("div");
+                card.classList.add("browse-card");
+                card.id = id;
+                const image = document.createElement("img");
+                image.classList.add("pokemon");
+                image.src = "img/" + addLeadingZeros(pkmn.natdex);
+                if (pkmn.form) {
+                    image.src += "-" + pkmn.form.substr(0, 1);
+                }
+                image.src += ".png";
+                image.alt = title;
+                card.appendChild(image);
+                cardRow.appendChild(card);
+            })
+
+        }
+
+        // changes the state of the browse buttons
+        function changeBrowseFilter(e) {
+            const target = e.target;
+
+            if (target.id === "all-possible" && !target.classList.contains("include")) {
+                const browseBtns = document.getElementsByClassName("browse-button");
+                for (btn of browseBtns) {
+                    btn.classList.remove("include");
+                    btn.classList.remove("exclude");
+                }
+                target.classList.add("include");
+            } else {
+                const viewAll = document.getElementById("all-possible");
+                viewAll.classList.remove("include");
+                if (target.classList.contains("include")) {
+                    target.classList.remove("include");
+                    target.classList.add("exclude");
+                } else if (target.classList.contains("exclude")) {
+                    target.classList.remove("exclude");
+                } else {
+                    target.classList.add("include");
+                }
+            }
+
+            displayBrowse();
+        }
+
+        // opens the browsing popup
+        function browseAprimon() {
+            const browse = document.createElement("div");
+            browse.id = "browse-display";
+
+            const browseTitle = document.createElement("h2");
+            browseTitle.innerText = "Browse Pokemon by generation(s) available";
+            browse.appendChild(browseTitle);
+
+            const browseControls = document.createElement("div");
+            browseControls.classList.add("nav-row", "wide-row");
+            browse.appendChild(browseControls);
+
+            const prevGen = document.createElement("div");
+            prevGen.id = "prevgen";
+            prevGen.classList.add("small-button", "browse-button");
+            prevGen.innerText = "7-";
+            prevGen.title = "Gen 7 and earlier";
+            browseControls.appendChild(prevGen);
+            prevGen.addEventListener("click", function(e){
+                changeBrowseFilter(e);
+            });
+
+            const swsh = document.createElement("div");
+            swsh.id = "swsh";
+            swsh.classList.add("small-button", "browse-button");
+            swsh.innerText = "SWSH";
+            swsh.title = "Sword and Shield";
+            browseControls.appendChild(swsh);
+            swsh.addEventListener("click", function(e){
+                changeBrowseFilter(e);
+            });
+
+            const bdsp = document.createElement("div");
+            bdsp.id = "bdsp";
+            bdsp.classList.add("small-button", "browse-button");
+            bdsp.innerText = "BDSP";
+            bdsp.title = "Brilliant Diamond and Shining Pearl";
+            browseControls.appendChild(bdsp);
+            bdsp.addEventListener("click", function(e){
+                changeBrowseFilter(e);
+            });
+
+            const viewAll = document.createElement("div");
+            viewAll.id = "all-possible";
+            viewAll.classList.add("small-button", "browse-button", "include");
+            viewAll.innerText = "ALL";
+            viewAll.title = "View all possible aprimon";
+            browseControls.appendChild(viewAll);
+            viewAll.addEventListener("click", function(e){
+                changeBrowseFilter(e);
+            });
+
+            const Qcancel = document.createElement("div");
+            Qcancel.id = "cancel";
+            Qcancel.classList.add("small-button");
+            browseControls.appendChild(Qcancel);
+            Qcancel.addEventListener("click", popdown);
+
+            const Qx = document.createElement("img");
+            Qx.src = "img/x.png";
+            Qx.classList.add("symbol");
+            Qcancel.appendChild(Qx);
+            addHover(Qx);
+
+            const cardRow = document.createElement("div");
+            cardRow.classList.add("nav-row");
+            cardRow.id = "browse-row";
+            browse.appendChild(cardRow);
+
+            popup(browse);
+            displayBrowse();
+
+        }
+
+        // event listener
+        const browseBtn = document.getElementById("browse");
+        browseBtn.addEventListener("click", browseAprimon);
+
+        // adds a new aprimon to the user's collection
+        // part 2: change the data
         function addPokemon() {
 
             let pkmnName = document.getElementById("pokemon").value.toLowerCase();
@@ -578,6 +770,8 @@
 
         }
 
+        // creates a standardized field with label and container
+        // text or number
         function createFormField(name, id, type, value) {
             const nameField = document.createElement("div");
             nameField.classList.add("field");
@@ -599,19 +793,7 @@
             return nameField;
         }
 
-        // function createCheck(title, id, location) {
-        //     const label = document.createElement("label");
-        //     label.setAttribute("for", id);
-        //     label.innerText = title;
-        //     location.appendChild(label);
-
-        //     const check = document.createElement("input");
-        //     check.type = "checkbox";
-        //     check.name = id;
-        //     check.id = id;
-        //     location.appendChild(check);
-        // }
-
+        // creates a standardized checkbox with label and container
         function createCheck(title, id, state) {
             const loc = document.createElement("div");
             loc.classList.add("field");
@@ -631,6 +813,7 @@
             return loc;
         }
 
+        // creates a standardized drop-down menu with label and container
         function createDrop(title, id, list) {
             const ballField = document.createElement("div");
             ballField.classList.add("field");
@@ -657,6 +840,7 @@
             return ballField;
         }
 
+        // when the user clicks on an auto-suggestion, fill it in as the field value
         function acceptSuggestion(e) {
             const sug = e.target.innerText;
             const field = document.getElementById("pokemon");
@@ -666,6 +850,7 @@
             location.classList.add("hidden");
         }
 
+        // when the user is typing into a field, generate and display auto-complete suggestions
         function autoComplete(e, list) {
             const value = e.target.value.toLowerCase();
             const length = value.length;
@@ -698,6 +883,8 @@
 
         }
 
+        // adds a new aprimon to the user's collection
+        // part 1: gather input
         function addPokemonDialog() {
 
             const box = document.createElement("div");
@@ -756,9 +943,11 @@
 
         }
 
+        // listeners
         const addPkmnBtn = document.getElementById("add-pkmn");
         addPkmnBtn.addEventListener("click", addPokemonDialog);
 
+        // creates a read-only text field
         function createZoomField(title, info) {
             const field = document.createElement("div");
             field.classList.add("display-field");
@@ -774,6 +963,7 @@
             return field;
         }
 
+        // find all information about the pokemon whose details are currently displayed
         function findPokemon() {
             const id = document.getElementById("indv-facts").dataset.id;
             const arr = id.split("-");
@@ -811,6 +1001,8 @@
             return [pkmnIndv, pkmnSpcs];
         }
 
+        // change the user information about an aprimon
+        // part 2: change the data
         function editPokemon() {
             const inHatched = document.getElementById("hatched").value;
             const togShiny = document.getElementById("shiny-get").checked;
@@ -835,6 +1027,7 @@
             
         }
 
+        // generates a list of possible egg moves, with those learned emphasized
         function displayEggmoves() {
             const element = document.getElementById("egg-wrapper");
             if (element !== null) {
@@ -864,6 +1057,7 @@
             return eggWrapper;
         }
 
+        // toggles an egg move between learned and not learned
         function toggleMove(e) {
             const move = e.target.innerText;
             const indvPkmn = findPokemon()[0];
@@ -875,13 +1069,13 @@
             } else {
                 indvPkmn.eggmoves.push(move);
             }
-            // const index = activeSort.indexOf(indvPkmn);
-            // activeSort[index].eggmoves = indvPkmn.eggmoves;
             
             const eggMoveBox = document.getElementById("eggmoves");
             eggMoveBox.appendChild(displayEggmoves());
         }
 
+        // change the user information about an aprimon
+        // part 1: gather input
         function editPokemonDialog(pkmnIndv, pkmnSpcs) {
 
             const indvFacts = document.getElementById("indv-facts");
@@ -910,6 +1104,7 @@
             confirmOrDeny(controls, editPokemon);
         }
 
+        // display a popup with all the information available about an aprimon
         function zoomIn(e) {
             let target = e.target;
             while (!target.classList.contains("card")) {
@@ -1084,6 +1279,7 @@
             
         }
 
+        // listener
         const cardList = document.getElementsByClassName("card");
         for (card of cardList) {
             card.addEventListener("click", function(e){
@@ -1107,7 +1303,8 @@
                 let queueEggs = parseInt(queue.innerText);
                 let queuePokemon = queue.dataset.pkmn;
 
-                // change tallies
+                // add eggs to hatching queue
+                // part 2: change the data
                 function addQueue() {
 
                     const num = parseInt(document.getElementById("add-q-eggs").value);
@@ -1121,7 +1318,8 @@
                     popdown();
                 } 
 
-                // add to queue
+                // add eggs to hatching queue
+                // part 1: gather input
                 function addQueueDialog() {
 
                     const Qcheck = document.createElement("div");
@@ -1154,6 +1352,7 @@
                 addButton.addEventListener("click", addQueueDialog);
 
                 // confirm queue hatched
+                // part 2: change the data
                 function confirmHatch() {
                     since += queueEggs;
                     const pkmnArr = queuePokemon.split("-");
@@ -1177,6 +1376,8 @@
                     apriTotals();
                 }
 
+                // confirm queue hatched
+                // part 1: gather input
                 function confirmHatchDialog() {
 
                     const confirm = document.createElement("div");
@@ -1193,7 +1394,7 @@
                 checkButton.addEventListener("click", confirmHatchDialog);
 
                 // announce shiny
-
+                // part 2: change the data
                 function confirmShiny() {
                     const queuePokemon = document.getElementById("queue").dataset.pkmn;
                     const pkmnArr = queuePokemon.split("-");
@@ -1220,6 +1421,8 @@
 
                 }
 
+                // announce shiny
+                // part 1: gather input
                 function confirmShinyDialog() {
                     const confirm = document.createElement("div");
                     confirm.classList.add("popup");
@@ -1236,6 +1439,7 @@
                 shinyButton.addEventListener("click", confirmShinyDialog);
 
                 // save your progress
+                // part 2: send data to server
                 function save() {
                     const fieldQueueEggs = document.getElementById("in-queue-eggs");
                     const fieldQueuePokemon = document.getElementById("in-queue-pokemon");
@@ -1257,6 +1461,8 @@
                     popdown();
                 }
 
+                // save your progress
+                // part 1: gather input
                 function saveDialog() {
                     const box = document.createElement("div");
                     box.classList.add("popup");

@@ -70,7 +70,16 @@ h1 {
     border: 4px inset #CBDEBC;
 }
 
-.shiny {
+.browse-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #CBDEBC99;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.shiny, .include {
     background-color: #92C6AD;
     background-image: linear-gradient(#a5eab2, #3da39c);
     border-color: #383838;
@@ -97,6 +106,9 @@ h1 {
 
 .pokemon {
     width: 80px;
+}
+
+.card > .pokemon {
     position: relative;
     left: 15px;
 }
@@ -193,6 +205,10 @@ label {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+}
+
+.wide-row {
+    width: 90%;
 }
 
 .small-button {
@@ -305,6 +321,16 @@ option {
     align-items: center;
     flex-flow: column nowrap;
     overflow-y: auto;
+}
+
+#browse-display {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    overflow-y: auto;
+    align-content: start;
 }
 
 .zoom-img-row {
@@ -494,9 +520,10 @@ form.column {
     left: 35px;
 }
 
-.missing {
+.missing, .exclude {
     color: #6A6F6B;
     background-color: #cbdebc66;
+    border-color: #6A6F6B;
 }
 
 .hidden {
