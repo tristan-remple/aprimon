@@ -77,11 +77,48 @@ h1 {
     border: 4px inset #CBDEBC;
 }
 
+.info {
+    height: 24px;
+    width: 24px;
+    line-height: 24px;
+    background-color: #CBDEBC;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.eggmove, .type {
+    display: inline-block;
+    width: 100px;
+    padding: 2px;
+    margin: 2px;
+    border-radius: 5px;
+    background-color:#CBDEBC;
+    text-align: center;
+}
+
 .missing, .exclude, .wishlist, .wishlist:hover {
     color: #6A6F6B;
     background-color: #cbdebc66;
     border-color: #6A6F6B;
     background-image: none;
+}
+
+.shiny > .small-row > .info {
+    background-color: #92C6AD;
+}
+
+.shiny > .small-row > .missing {
+    background-color: #92C6AD00;
+}
+
+.card:hover > .small-row > .info {
+    background-color:#383838;
+}
+
+.wishlist:hover > .small-row > .info, .wishlist > .small-row > .info {
+    background-color: #CBDEBC99;
 }
 
 .wishlist, .wishlist:hover {
@@ -96,8 +133,6 @@ h1 {
     border-radius: 10px;
     margin: 5px;
 }
-
-
 
 #card-rows {
     grid-area: tiles;
@@ -152,30 +187,6 @@ h3 {
 
 .symbol, .icon {
     height: 20px;
-}
-
-.info {
-    height: 24px;
-    width: 24px;
-    line-height: 24px;
-    background-color: #CBDEBC;
-    border-radius: 10px;
-}
-
-.shiny > .small-row > .info {
-    background-color: #92C6AD;
-}
-
-.shiny > .small-row > .missing {
-    background-color: #92C6AD00;
-}
-
-.card:hover > .small-row > .info {
-    background-color:#383838;
-}
-
-.wishlist:hover > .small-row > .info, .wishlist > .small-row > .info {
-    background-color: #CBDEBC99;
 }
 
 nav {
@@ -390,16 +401,6 @@ option {
     margin: auto;
 }
 
-.eggmove, .type {
-    display: inline-block;
-    width: 100px;
-    padding: 2px;
-    margin: 2px;
-    border-radius: 5px;
-    background-color:#CBDEBC;
-    text-align: center;
-}
-
 #zoom-controls {
     position: absolute;
     top: 10px;
@@ -538,8 +539,16 @@ form.column {
     left: 35px;
 }
 
-.wishlist > img {
-    filter: sepia(100%);
+.wishlist > .pokemon {
+    filter: sepia(80%);
+}
+
+.wishlist > .ball {
+    filter: sepia(50%);
+}
+
+.wishlist > h3 {
+    color: #4c524d;
 }
 
 .hidden {

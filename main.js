@@ -516,7 +516,8 @@
         function displayCards(input) {
             const noWish = input.filter(function(pkmn){
                 return !pkmn.wishlist || pkmn.wishlist === false;
-            })
+            });
+            wishButton.classList.remove("shiny");
             displayPokemon(noWish);
         }
 
@@ -1430,8 +1431,9 @@
                     if (pkmnArr[2]) {
                         suffix = "-" + pkmnArr[2];
                     }
+
                     json.forEach(function(pkmn){
-                        if (pkmn.pokemon.name === name && pkmn.ball === ball && pkmn.pokemon['form-suffix'] === suffix) {
+                        if (pkmn.pokemon.name === name && pkmn.ball === ball && (pkmn.pokemon.form === null || pkmn.pokemon.form.split(0, 1) === suffix)) {
                             pkmn.eggs = parseInt(pkmn.eggs) + parseInt(queueEggs);
                         }
                     });

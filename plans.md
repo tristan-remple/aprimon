@@ -7,3 +7,4 @@ user notes
 user bio
 duplicate banning
 compare collections
+search
