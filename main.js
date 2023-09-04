@@ -1429,11 +1429,11 @@
                     const name = pkmnArr[1];
                     let suffix = null;
                     if (pkmnArr[2]) {
-                        suffix = "-" + pkmnArr[2];
+                        suffix = pkmnArr[2];
                     }
 
                     json.forEach(function(pkmn){
-                        if (pkmn.pokemon.name === name && pkmn.ball === ball && (pkmn.pokemon.form === null || pkmn.pokemon.form.split(0, 1) === suffix)) {
+                        if (pkmn.pokemon.name === name && pkmn.ball === ball && (suffix === null || pkmn.pokemon.form.substr(0, 1) === suffix)) {
                             pkmn.eggs = parseInt(pkmn.eggs) + parseInt(queueEggs);
                         }
                     });
