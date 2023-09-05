@@ -1,15 +1,20 @@
 (function(){
 
+    // months, for hatch dates
     const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
+    // types of pokeball
     const ballTypes = ["beast", "dream", "fast", "friend", "heavy", "level", "love", "lure", "moon", "safari", "sport"];
 
+    // natures
     const natures = ["random", "hardy", "lonely", "adamant", "naughty", "brave",
                     "bold", "docile", "impish", "lax", "relaxed",
                     "modest", "mild", "bashful", "rash", "quiet",
                     "calm", "gentle", "careful", "quirky", "sassy",
                     "timid", "hasty", "jolly", "naive", "serious"];
 
+    // site users
+    // passwords stored elsewhere
     const users = [
         {
             "name": "knifecat",
@@ -39,6 +44,9 @@
         get: (searchParams, prop) => searchParams.get(prop),
     });
     let userInfo = users[0];
+
+    // if searching for a user, find that user's info
+    // otherwise, use mine
     if (qString.user) {
         userInfo = users.filter(function(user){
             return user.name === qString.user;
@@ -48,6 +56,7 @@
         }
     }
 
+    // capitalize the first letter of each word in a string
     function capitalize(str) {
 
         // check if it's blank (loose equality intentional)
@@ -78,6 +87,7 @@
         return newStr;
     }
 
+    // change the header to display a username
     function displayUser() {
         const nameSpace = document.getElementById("user-display");
         nameSpace.innerText = capitalize(userInfo.name) + "'s ";
@@ -99,8 +109,6 @@
     // change color of icons on hover
     // keep track of hover state to make sure it doesn't double-activate
     let activeHover = false;
-
-    // applies hover coloring to icons on buttons
     function hoverIcon(e) {
 
         // account for bubbling
@@ -152,7 +160,11 @@
     // toggles between tall cards and thin cards
     const sizeButton = document.getElementById("size-toggle");
     function toggleSize() {
+
+        // find where the cards are; the styling is based on the "compact" class for this element
         const cardRows = document.getElementById("card-rows");
+
+        // find the expand / collapse button image, to be changed when toggled
         const symbol = sizeButton.getElementsByClassName("symbol")[0];
         if (cardRows.classList.contains("compact")) {
             cardRows.classList.remove("compact");
@@ -165,6 +177,9 @@
         }
     }
     sizeButton.addEventListener("click", toggleSize);
+
+    // if the user prefers collapsed cards, collapse them automatically
+    // this can be activated before the cards are generated, since the styling is applied to the container
     if (userInfo.pref.collapse === true) {
         toggleSize();
     }
@@ -225,16 +240,21 @@
         // but the only harm done is that the sort order is persistent now
         // which might actually be good
         let activeSort = json;
+
+        // pokemon list is used for the dropdown when adding eggs to queue
         let pkmnList = ["SELECT:"];
 
-        // function that renders cards from a json
+        // function that renders cards based on a json input (user data)
         function displayPokemon(data) {
 
+            // find the place where cards are displayed and wipe it
             const cardBox = document.getElementById("card-rows");
             cardBox.innerHTML = "";
 
+            // loop through the data
             data.forEach(function(pkmn){
 
+                // title variable is used for the header and alt text
                 let title;
                 if (pkmn.pokemon.form === null) {
                     title = capitalize(pkmn.pokemon.name);
@@ -242,26 +262,44 @@
                     title = capitalize(`${pkmn.pokemon.form} ${pkmn.pokemon.name}`);
                 }
 
+                // create the card div
                 const card = document.createElement("div");
                 card.classList.add("box", "card");
+
+                // final is the date of shiny hatching; if null, no shiny yet
+                // shiny pokemon get brighter cards; the same styling is used for active buttons
                 if (pkmn.final !== null) {
                     card.classList.add("shiny");
+
+                    // the zoom in function is a popup with additional info
                     card.addEventListener("click", function(e){
                         zoomIn(e);
                     });
+                
+                // if the user doesn't have the pokemon yet, but it's on their wishlist
+                // then there's no additional information, so the hover function is irrelevant
+                // wishlist styling removes hover and makes the card paler
                 } else if (pkmn.wishlist === true) {
                     card.classList.add("wishlist");
                 } else {
+
+                    // if the pokemon is not shiny or wishlist, add event handler
                     card.addEventListener("click", function(e){
                         zoomIn(e);
                     });
                 }
+
+                // id is important here
                 let id = pkmn.ball + "-" + pkmn.pokemon.name;
                 cardBox.appendChild(card);
 
+                // image of the pokemon
                 const image = document.createElement("img");
                 image.classList.add("pokemon");
                 
+                // if the pokemon has a form, their image with have that form as a hyphenated suffix
+                // ex 570.png is regular gen5 zorua, 570-h.png is hisuian zorua
+                // all images are in the same folder for now
                 if (pkmn.pokemon["form"] === null) {
                     image.src = `img/${addLeadingZeros(pkmn.pokemon.natdex)}.png`;
                 } else {
@@ -269,25 +307,35 @@
                     image.src = `img/${addLeadingZeros(pkmn.pokemon.natdex)}${suffix}.png`;
                     id += suffix;
                 }
+
+                // image details, card id
                 image.alt = title;
                 card.appendChild(image);
                 card.id = id;
-                pkmnList.push(id);
 
+                // add pokemon to possible queue list if they have been obtained
+                if (pkmn.wishlist !== true) {
+                    pkmnList.push(id);
+                }
+                
+                // ball icon
                 const ball = document.createElement("img");
                 ball.classList.add("ball");
                 ball.src = `img/${pkmn.ball}ball.png`;
                 ball.alt = pkmn.ball + " ball";
                 card.appendChild(ball);
 
+                // header of card
                 const cardTitle = document.createElement("h3");
                 cardTitle.innerText = title;
                 card.appendChild(cardTitle);
 
+                // row with 3 toggles and an egg count, bottom of card
                 const smallRow = document.createElement("div");
                 smallRow.classList.add("small-row");
                 card.appendChild(smallRow);
 
+                // whether the pokemon has high IVs (good base stats)
                 const ivs = document.createElement("p");
                 ivs.classList.add("info");
                 ivs.innerText = "5+";
@@ -297,21 +345,31 @@
                 }
                 smallRow.appendChild(ivs);
 
+                // whether the pokemon has its hidden ability
                 const ha = document.createElement("p");
                 ha.classList.add("info");
                 ha.innerText = "HA";
-                ha.title = "hidden ability";
+                ha.title = "Hidden ability";
                 if (pkmn.ha === false) {
                     ha.classList.add("missing");
+
+                // some pokemon don't have a possible hidden ability; in that case it shouldn't be displayed
                 } else if (pkmn.ha === null) {
                     ha.classList.add("hidden");
                 }
                 smallRow.appendChild(ha);
 
+                // in order to align the sparkle symbol, it needs a container element
                 const sparkleWrap = document.createElement("div");
                 sparkleWrap.classList.add("info", "missing");
+
+                // if the user is not trying for a shiny, don't display the toggle
+                if (pkmn.target === false) {
+                    sparkleWrap.classList.add("hidden");
+                }
                 smallRow.appendChild(sparkleWrap);
 
+                // the icon itself can be active or inactive / greyed out
                 const sparkles = document.createElement("img");
                 sparkles.classList.add("icon");
                 if (pkmn.final !== null) {
@@ -323,6 +381,7 @@
                 }
                 sparkleWrap.appendChild(sparkles);
 
+                // number of eggs hatched, marked as "missing" if the user isn't planning to hatch them until they get a shiny
                 const count = document.createElement("p");
                 count.classList.add("info");
                 count.title = "eggs hatched";
@@ -332,29 +391,44 @@
                 }
                 smallRow.appendChild(count);
 
+            // end of foreach loop
             });
         }
 
         // function that calculates and displays stats
         function apriTotals() {
-            const apriTotal = document.getElementById("apri-total");
-            apriTotal.innerText = json.length;
 
+            // number of aprimon varieties the user has
+            const apriTotal = document.getElementById("apri-total");
+            const counter = activeSort.filter(function(pkmn){
+                return pkmn.wishlist !== true;
+            })
+            apriTotal.innerText = counter.length;
+
+            // tally up the number of eggs hatched and shinies obtained
             const shinies = document.getElementById("shinies");
             const eggs = document.getElementById("eggs");
             let shinyCount = 0;
             let eggCount = 0;
-            json.forEach(function(pkmn){
+            activeSort.forEach(function(pkmn){
                 if (pkmn.final !== null) {
                     shinyCount++;
                 }
+
+                // remember to parse as int
                 eggCount += parseInt(pkmn.eggs);
             });
+
+            // display the tallies
             shinies.innerText = shinyCount;
             eggs.innerText = eggCount;
 
+            // the standard shiny ratio is 1:512
+            // the ratio here is displayed in the same format for ease of evaluation
             const ratioDisplay = document.getElementById("ratio");
             const ratio = eggCount / shinyCount;
+
+            // it doesn't need to be super precise
             ratioDisplay.innerText = "1:" + ratio.toFixed(0);
 
         }
@@ -374,63 +448,85 @@
                 button = e.target;
             }
 
+            // target id is the sorting method
             const id = button.id;
-            let sortedJSON = activeSort;
+
+            // alphabetical by pokemon name
             if (id === "alpha") {
-                sortedJSON = activeSort.sort(function(a, b){
+                activeSort = activeSort.sort(function(a, b){
                     let x = a.pokemon.name;
                     let y = b.pokemon.name;
                     if (x < y) { return -1; }
                     if (x > y) { return 1; }
                     return 0;
                 });
+
+            // numerically by national dex number (pokemon species id)
             } else if (id === "numer") {
-                sortedJSON = activeSort.sort(function(a, b){
+                activeSort = activeSort.sort(function(a, b){
                     return a.pokemon.natdex - b.pokemon.natdex;
                 });
+
+            // group pokemon in the same ball together, sort ball groups alphabetically
             } else if (id === "balls") {
-                sortedJSON = activeSort.sort(function(a, b){
+                activeSort = activeSort.sort(function(a, b){
                     let x = a.ball;
                     let y = b.ball;
                     if (x < y) { return -1; }
                     if (x > y) { return 1; }
                     return 0;
                 });
+
+            // show pokemon the user is trying to get shinies of first
             } else if (id === "target") {
-                sortedJSON = activeSort.sort(function(a, b){
+                activeSort = activeSort.sort(function(a, b){
                     return b.target - a.target;
                 });
+
+            // show pokemon the user has shinies of first
+            // sorted by most recent first
             } else if (id === "shiny") {
-                sortedJSON = activeSort.sort(function(a, b){
+                activeSort = activeSort.sort(function(a, b){
                     return new Date(b.final) - new Date(a.final);
                 });
+
+            // show pokemon with hidden ability first
             } else if (id === "ha") {
-                sortedJSON = activeSort.sort(function(a, b){
+                activeSort = activeSort.sort(function(a, b){
                     return b.ha - a.ha;
                 });
+            
+            // show pokemon with 5+ ivs first
             } else if (id === "five") {
-                sortedJSON = activeSort.sort(function(a, b){
+                activeSort = activeSort.sort(function(a, b){
                     return b["5iv"] - a["5iv"];
                 });
+
+            // from most to least eggs hatched
             } else if (id === "count") {
-                sortedJSON = activeSort.sort(function(a, b){
+                activeSort = activeSort.sort(function(a, b){
                     return b.eggs - a.eggs;
                 });
             }
-            activeSort = sortedJSON;
+
+            // once the data has been sorted, re-generate the visuals
             displayCards(activeSort);
 
             // add the active styling to the active button
             for (const btn of sortSet) {
                 btn.classList.remove("shiny");
             }
+            button.classList.add("shiny");
+
+            // sorting the data resets the filtering to display all
+            // so the active button of the filtering subgroup needs to be changed
             for (const btn of filterSet) {
                 btn.classList.remove("shiny");
                 if (btn.id === "all") {
                     btn.classList.add("shiny");
                 }
             }
-            button.classList.add("shiny");
+            
         }
 
         // event listeners
@@ -445,6 +541,7 @@
         }
 
         // function that filters json data based on input
+        // currently only sorts by pokeball used
         function filterCards(e) {
 
             // if using keyboard navigation, ignore keys other than enter
@@ -460,19 +557,14 @@
                 button = e.target;
             }
 
+            // filteredJSON can't be allowed to overwrite activeSort, since filtering is temporary
             let filteredJSON;
             const id = button.id;
 
-            // filter data by the id 
-            if (!button.classList.contains("other")) {                    
-                filteredJSON = activeSort.filter(function(pkmn){
-                    return pkmn.ball === id;
-                });
-            } else {
-                filteredJSON = activeSort.filter(function(pkmn){
-                    return pkmn[id] === true;
-                });
-            }
+            // filter data by the id                  
+            filteredJSON = activeSort.filter(function(pkmn){
+                return pkmn.ball === id;
+            });
 
             // if the id is all, display all cards
             // otherwise, display filtered cards

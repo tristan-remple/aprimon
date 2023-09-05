@@ -109,7 +109,7 @@ h1 {
     background-color: #92C6AD;
 }
 
-.shiny > .small-row > .missing {
+.shiny > .small-row > .missing, div.missing {
     background-color: #92C6AD00;
 }
 
