@@ -301,8 +301,10 @@
                 ha.classList.add("info");
                 ha.innerText = "HA";
                 ha.title = "hidden ability";
-                if (pkmn.ha === false || pkmn.ha === null) {
+                if (pkmn.ha === false) {
                     ha.classList.add("missing");
+                } else if (pkmn.ha === null) {
+                    ha.classList.add("hidden");
                 }
                 smallRow.appendChild(ha);
 
@@ -1067,14 +1069,21 @@
             }
             const inFive = document.getElementById("five-iv").checked;
             const inNature = document.getElementById("nature").value;
-            const inHidden = document.getElementById("hidden-ability").checked;
+            let inHidden = document.getElementById("hidden-ability").checked;
+            const spcsPkmn = findPokemon()[1];
+            if (spcsPkmn.hidden === null) {
+                inHidden = null;
+            }
+            const inTarget = document.getElementById("shiny-target").checked;
 
             const indvPkmn = findPokemon()[0];
+            
             indvPkmn.eggs = inHatched;
             indvPkmn.final = inShiny;
             indvPkmn["5iv"] = inFive;
             indvPkmn.nature = inNature;
             indvPkmn.ha = inHidden;
+            indvPkmn.target = inTarget;
 
             popdown();
             displayCards(activeSort);

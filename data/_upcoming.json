@@ -1,0 +1,1483 @@
+[
+    {
+        "name": "ekans",
+        "natdex": 23,
+        "form": null,
+        "evo": [
+            "arbok"
+        ],
+        "prevgen": true,
+        "swsh": false,
+        "bdsp": true,
+        "scarvi": true,
+        "expac": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "poison"
+        ],
+        "hidden": "",
+        "eggmoves": [
+
+        ]
+    },
+    {
+        "name": "cleffa",
+        "natdex": 173,
+        "form": null,
+        "evo": [
+            "clefairy",
+            "clefable"
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": true,
+        "scarvi": true,
+        "expac": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "fairy"
+        ],
+        "hidden": "",
+        "eggmoves": [
+
+        ]
+    },
+    {
+        "name": "oddish",
+        "natdex": 43,
+        "form": null,
+        "evo": [
+            "gloom",
+            "vileplume",
+            "bellossom"
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": true,
+        "scarvi": true,
+        "expac": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "grass",
+            "poison"
+        ],
+        "hidden": "",
+        "eggmoves": [
+
+        ]
+    },
+    {
+        "name": "vulpix",
+        "natdex": 37,
+        "form": null,
+        "evo": [
+            "ninetales"
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": true,
+        "scarvi": true,
+        "expac": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "fire"
+        ],
+        "hidden": "",
+        "eggmoves": [
+
+        ]
+    },
+    {
+        "name": "vulpix",
+        "natdex": 37,
+        "form": "alolan",
+        "evo": [
+            "ninetales"
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": true,
+        "scarvi": true,
+        "expac": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "ice",
+            "fairy"
+        ],
+        "hidden": "",
+        "eggmoves": [
+
+        ]
+    },
+    {
+        "name": "poliwag",
+        "natdex": 60,
+        "form": null,
+        "evo": [
+            "poliwhirl",
+            "poliwrath",
+            "politoed"
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": true,
+        "scarvi": true,
+        "expac": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "water",
+            "fighting"
+        ],
+        "hidden": "",
+        "eggmoves": [
+
+        ]
+    },
+    {
+        "name": "munchlax",
+        "natdex": 446,
+        "form": null,
+        "evo": [
+            "snorlax"
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": true,
+        "scarvi": true,
+        "expac": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "normal"
+        ],
+        "hidden": "",
+        "eggmoves": [
+
+        ]
+    },
+    {
+        "name": "sentret",
+        "natdex": 161,
+        "form": null,
+        "evo": [
+            "furret"
+        ],
+        "prevgen": true,
+        "swsh": false,
+        "bdsp": true,
+        "scarvi": true,
+        "expac": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "normal"
+        ],
+        "hidden": "",
+        "eggmoves": [
+
+        ]
+    },
+    {
+        "name": "hoothoot",
+        "natdex": 163,
+        "form": null,
+        "evo": [
+            "noctowl"
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": true,
+        "scarvi": true,
+        "expac": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "normal",
+            "flying"
+        ],
+        "hidden": "",
+        "eggmoves": [
+
+        ]
+    },
+    {
+        "name": "aipom",
+        "natdex": 190,
+        "form": null,
+        "evo": [
+            "ambipom"
+        ],
+        "prevgen": true,
+        "swsh": false,
+        "bdsp": true,
+        "scarvi": true,
+        "expac": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "normal"
+        ],
+        "hidden": "",
+        "eggmoves": [
+
+        ]
+    },
+    {
+        "name": "yanma",
+        "natdex": 193,
+        "form": null,
+        "evo": [
+            "yanmega"
+        ],
+        "prevgen": true,
+        "swsh": false,
+        "bdsp": true,
+        "scarvi": true,
+        "expac": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "bug",
+            "flying"
+        ],
+        "hidden": "",
+        "eggmoves": [
+
+        ]
+    },
+    {
+        "name": "gligar",
+        "natdex": 207,
+        "form": null,
+        "evo": [
+            "gliscor"
+        ],
+        "prevgen": true,
+        "swsh": false,
+        "bdsp": true,
+        "scarvi": true,
+        "expac": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "ground",
+            "flying"
+        ],
+        "hidden": "",
+        "eggmoves": [
+
+        ]
+    },
+    {
+        "name": "smeargle",
+        "natdex": 235,
+        "form": null,
+        "evo": [
+
+        ],
+        "prevgen": true,
+        "swsh": false,
+        "bdsp": true,
+        "scarvi": true,
+        "expac": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "normal"
+        ],
+        "hidden": "",
+        "eggmoves": [
+
+        ]
+    },
+    {
+        "name": "swinub",
+        "natdex": 220,
+        "form": null,
+        "evo": [
+            "piloswine",
+            "mamoswine"
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": true,
+        "scarvi": true,
+        "expac": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "ice",
+            "ground"
+        ],
+        "hidden": "",
+        "eggmoves": [
+
+        ]
+    },
+    {
+        "name": "poliwag",
+        "natdex": 261,
+        "form": null,
+        "evo": [
+            "mightyena"
+        ],
+        "prevgen": true,
+        "swsh": false,
+        "bdsp": true,
+        "scarvi": true,
+        "expac": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "dark"
+        ],
+        "hidden": "",
+        "eggmoves": [
+
+        ]
+    },
+    {
+        "name": "seedot",
+        "natdex": 273,
+        "form": null,
+        "evo": [
+            "nuzleaf",
+            "shiftry"
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": true,
+        "scarvi": true,
+        "expac": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "grass",
+            "dark"
+        ],
+        "hidden": "",
+        "eggmoves": [
+
+        ]
+    },
+    {
+        "name": "corphish",
+        "natdex": 341,
+        "form": null,
+        "evo": [
+            "crawdaunt"
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": true,
+        "scarvi": true,
+        "expac": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "water",
+            "dark"
+        ],
+        "hidden": "",
+        "eggmoves": [
+
+        ]
+    },
+    {
+        "name": "chingling",
+        "natdex": 433,
+        "form": null,
+        "evo": [
+            "chimecho"
+        ],
+        "prevgen": true,
+        "swsh": false,
+        "bdsp": true,
+        "scarvi": true,
+        "expac": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "psychic"
+        ],
+        "hidden": "",
+        "eggmoves": [
+
+        ]
+    },
+    {
+        "name": "feebas",
+        "natdex": 349,
+        "form": null,
+        "evo": [
+            "milotic"
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": true,
+        "scarvi": true,
+        "expac": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "water"
+        ],
+        "hidden": "",
+        "eggmoves": [
+
+        ]
+    },
+    {
+        "name": "phantump",
+        "natdex": 708,
+        "form": null,
+        "evo": [
+            "trevenant"
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": false,
+        "scarvi": true,
+        "expac": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "ghost",
+            "grass"
+        ],
+        "hidden": "",
+        "eggmoves": [
+
+        ]
+    },
+    {
+        "name": "grubbin",
+        "natdex": 736,
+        "form": null,
+        "evo": [
+            "charjabug",
+            "vikavolt"
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": false,
+        "scarvi": true,
+        "expac": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "bug",
+            "electric"
+        ],
+        "hidden": "",
+        "eggmoves": [
+
+        ]
+    },
+    {
+        "name": "jangmo-o",
+        "natdex": 782,
+        "form": null,
+        "evo": [
+            "hakamo-o",
+            "kommo-o"
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": false,
+        "scarvi": true,
+        "expac": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "dragon",
+            "fighting"
+        ],
+        "hidden": "",
+        "eggmoves": [
+
+        ]
+    },
+    {
+        "name": "cramorant",
+        "natdex": 845,
+        "form": null,
+        "evo": [
+
+        ],
+        "prevgen": false,
+        "swsh": true,
+        "bdsp": false,
+        "scarvi": true,
+        "expac": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "flying",
+            "water"
+        ],
+        "hidden": "",
+        "eggmoves": [
+
+        ]
+    },
+    {
+        "name": "bulbasaur",
+        "natdex": 1,
+        "form": null,
+        "evo": [
+            "ivysaur",
+            "venusaur"
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": true,
+        "scarvi": true,
+        "expac": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "grass",
+            "poison"
+        ],
+        "hidden": "",
+        "eggmoves": [
+
+        ]
+    },
+    {
+        "name": "squirtle",
+        "natdex": 7,
+        "form": null,
+        "evo": [
+            "wartortle",
+            "blastoise"
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": true,
+        "scarvi": true,
+        "expac": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "water"
+        ],
+        "hidden": "",
+        "eggmoves": [
+
+        ]
+    },
+    {
+        "name": "sandshrew",
+        "natdex": 27,
+        "form": null,
+        "evo": [
+            "sandslash"
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": true,
+        "scarvi": true,
+        "expac": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "ground"
+        ],
+        "hidden": "",
+        "eggmoves": [
+
+        ]
+    },
+    {
+        "name": "sandshrew",
+        "natdex": 27,
+        "form": "alolan",
+        "evo": [
+            "sandslash"
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": true,
+        "scarvi": true,
+        "expac": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "ice",
+            "steel"
+        ],
+        "hidden": "",
+        "eggmoves": [
+
+        ]
+    },
+    {
+        "name": "doduo",
+        "natdex": 84,
+        "form": null,
+        "evo": [
+            "dotrio"
+        ],
+        "prevgen": true,
+        "swsh": false,
+        "bdsp": true,
+        "scarvi": true,
+        "expac": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "normal",
+            "flying"
+        ],
+        "hidden": "",
+        "eggmoves": [
+
+        ]
+    },
+    {
+        "name": "seel",
+        "natdex": 86,
+        "form": null,
+        "evo": [
+            "dewgong"
+        ],
+        "prevgen": true,
+        "swsh": false,
+        "bdsp": true,
+        "scarvi": true,
+        "expac": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "water",
+            "ice"
+        ],
+        "hidden": "",
+        "eggmoves": [
+
+        ]
+    },
+    {
+        "name": "exeggcute",
+        "natdex": 102,
+        "form": null,
+        "evo": [
+            "exeggutor"
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": true,
+        "scarvi": true,
+        "expac": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "grass",
+            "psychic",
+            "dragon"
+        ],
+        "hidden": "",
+        "eggmoves": [
+
+        ]
+    },
+    {
+        "name": "tyrogue",
+        "natdex": 236,
+        "form": null,
+        "evo": [
+            "hitmonchan",
+            "hitmonlee",
+            "hitmontop"
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": true,
+        "scarvi": true,
+        "expac": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "fighting"
+        ],
+        "hidden": "",
+        "eggmoves": [
+
+        ]
+    },
+    {
+        "name": "magby",
+        "natdex": 240,
+        "form": null,
+        "evo": [
+            "magmar",
+            "magmortar"
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": true,
+        "scarvi": true,
+        "expac": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "fire"
+        ],
+        "hidden": "",
+        "eggmoves": [
+
+        ]
+    },
+    {
+        "name": "rhyhorn",
+        "natdex": 111,
+        "form": null,
+        "evo": [
+            "rhydon",
+            "rhyperior"
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": true,
+        "scarvi": true,
+        "expac": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "ground",
+            "rock"
+        ],
+        "hidden": "",
+        "eggmoves": [
+
+        ]
+    },
+    {
+        "name": "lapras",
+        "natdex": 131,
+        "form": null,
+        "evo": [
+
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": true,
+        "scarvi": true,
+        "expac": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "water",
+            "ice"
+        ],
+        "hidden": "",
+        "eggmoves": [
+
+        ]
+    },
+    {
+        "name": "chikorita",
+        "natdex": 152,
+        "form": null,
+        "evo": [
+            "bayleef",
+            "meganium"
+        ],
+        "prevgen": true,
+        "swsh": false,
+        "bdsp": true,
+        "scarvi": true,
+        "expac": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "grass"
+        ],
+        "hidden": "",
+        "eggmoves": [
+
+        ]
+    },
+    {
+        "name": "totodile",
+        "natdex": 158,
+        "form": null,
+        "evo": [
+            "croconaw",
+            "feraligatr"
+        ],
+        "prevgen": true,
+        "swsh": false,
+        "bdsp": true,
+        "scarvi": true,
+        "expac": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "water"
+        ],
+        "hidden": "",
+        "eggmoves": [
+
+        ]
+    },
+    {
+        "name": "skarmory",
+        "natdex": 227,
+        "form": null,
+        "evo": [
+
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": true,
+        "scarvi": true,
+        "expac": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "steel",
+            "flying"
+        ],
+        "hidden": "",
+        "eggmoves": [
+
+        ]
+    },
+    {
+        "name": "treecko",
+        "natdex": 252,
+        "form": null,
+        "evo": [
+            "grovyle",
+            "sceptile"
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": true,
+        "scarvi": true,
+        "expac": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "grass"
+        ],
+        "hidden": "",
+        "eggmoves": [
+
+        ]
+    },
+    {
+        "name": "torchic",
+        "natdex": 255,
+        "form": null,
+        "evo": [
+            "combusken",
+            "blaziken"
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": true,
+        "scarvi": true,
+        "expac": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "fire",
+            "fighting"
+        ],
+        "hidden": "",
+        "eggmoves": [
+
+        ]
+    },
+    {
+        "name": "mudkip",
+        "natdex": 258,
+        "form": null,
+        "evo": [
+            "marshtomp",
+            "swampert"
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": true,
+        "scarvi": true,
+        "expac": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "water",
+            "ground"
+        ],
+        "hidden": "",
+        "eggmoves": [
+
+        ]
+    },
+    {
+        "name": "trapinch",
+        "natdex": 328,
+        "form": null,
+        "evo": [
+            "vibrava",
+            "flygon"
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": true,
+        "scarvi": true,
+        "expac": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "ground",
+            "dragon"
+        ],
+        "hidden": "",
+        "eggmoves": [
+
+        ]
+    },
+    {
+        "name": "duskull",
+        "natdex": 355,
+        "form": null,
+        "evo": [
+            "dusclops",
+            "dusknoir"
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": true,
+        "scarvi": true,
+        "expac": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "ghost"
+        ],
+        "hidden": "",
+        "eggmoves": [
+
+        ]
+    },
+    {
+        "name": "beldum",
+        "natdex": 374,
+        "form": null,
+        "evo": [
+            "metang",
+            "metagross"
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": true,
+        "scarvi": true,
+        "expac": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "steel",
+            "psychic"
+        ],
+        "hidden": "",
+        "eggmoves": [
+
+        ]
+    },
+    {
+        "name": "turtwig",
+        "natdex": 387,
+        "form": null,
+        "evo": [
+            "grotle",
+            "torterra"
+        ],
+        "prevgen": true,
+        "swsh": false,
+        "bdsp": true,
+        "scarvi": true,
+        "expac": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "grass",
+            "ground"
+        ],
+        "hidden": "",
+        "eggmoves": [
+
+        ]
+    },
+    {
+        "name": "piplup",
+        "natdex": 393,
+        "form": null,
+        "evo": [
+            "prinplup",
+            "empoleon"
+        ],
+        "prevgen": true,
+        "swsh": false,
+        "bdsp": true,
+        "scarvi": true,
+        "expac": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "water",
+            "steel"
+        ],
+        "hidden": "",
+        "eggmoves": [
+
+        ]
+    },
+    {
+        "name": "chimchar",
+        "natdex": 390,
+        "form": null,
+        "evo": [
+            "monferno",
+            "infernape"
+        ],
+        "prevgen": true,
+        "swsh": false,
+        "bdsp": true,
+        "scarvi": true,
+        "expac": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "fire",
+            "fighting"
+        ],
+        "hidden": "",
+        "eggmoves": [
+
+        ]
+    },
+    {
+        "name": "cranidos",
+        "natdex": 408,
+        "form": null,
+        "evo": [
+            "rampardos"
+        ],
+        "prevgen": true,
+        "swsh": false,
+        "bdsp": true,
+        "scarvi": true,
+        "expac": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "rock"
+        ],
+        "hidden": "",
+        "eggmoves": [
+
+        ]
+    },
+    {
+        "name": "shieldon",
+        "natdex": 410,
+        "form": null,
+        "evo": [
+            "bastiodon"
+        ],
+        "prevgen": true,
+        "swsh": false,
+        "bdsp": true,
+        "scarvi": true,
+        "expac": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "rock",
+            "steel"
+        ],
+        "hidden": "",
+        "eggmoves": [
+
+        ]
+    },
+    {
+        "name": "snivy",
+        "natdex": 495,
+        "form": null,
+        "evo": [
+            "servine",
+            "serperior"
+        ],
+        "prevgen": true,
+        "swsh": false,
+        "bdsp": false,
+        "scarvi": true,
+        "expac": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "grass"
+        ],
+        "hidden": "",
+        "eggmoves": [
+
+        ]
+    },
+    {
+        "name": "tepig",
+        "natdex": 498,
+        "form": null,
+        "evo": [
+            "pignite",
+            "emboar"
+        ],
+        "prevgen": true,
+        "swsh": false,
+        "bdsp": false,
+        "scarvi": true,
+        "expac": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "fire",
+            "fighting"
+        ],
+        "hidden": "",
+        "eggmoves": [
+
+        ]
+    },
+    {
+        "name": "blitzle",
+        "natdex": 522,
+        "form": null,
+        "evo": [
+            "zebstrika"
+        ],
+        "prevgen": true,
+        "swsh": false,
+        "bdsp": false,
+        "scarvi": true,
+        "expac": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "electric"
+        ],
+        "hidden": "",
+        "eggmoves": [
+
+        ]
+    },
+    {
+        "name": "cottonee",
+        "natdex": 546,
+        "form": null,
+        "evo": [
+            "whimsicott"
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": false,
+        "scarvi": true,
+        "expac": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "grass",
+            "fairy"
+        ],
+        "hidden": "",
+        "eggmoves": [
+
+        ]
+    },
+    {
+        "name": "minccino",
+        "natdex": 572,
+        "form": null,
+        "evo": [
+            "cinccino"
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": false,
+        "scarvi": true,
+        "expac": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "normal"
+        ],
+        "hidden": "",
+        "eggmoves": [
+
+        ]
+    },
+    {
+        "name": "solosis",
+        "natdex": 577,
+        "form": null,
+        "evo": [
+            "duosion",
+            "reuniclus"
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": false,
+        "scarvi": true,
+        "expac": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "psychic"
+        ],
+        "hidden": "",
+        "eggmoves": [
+
+        ]
+    },
+    {
+        "name": "litwick",
+        "natdex": 607,
+        "form": null,
+        "evo": [
+            "lampent",
+            "chandelure"
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": false,
+        "scarvi": true,
+        "expac": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "ground"
+        ],
+        "hidden": "",
+        "eggmoves": [
+
+        ]
+    },
+    {
+        "name": "golett",
+        "natdex": 622,
+        "form": null,
+        "evo": [
+            "golurk"
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": false,
+        "scarvi": true,
+        "expac": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "ground",
+            "ghost"
+        ],
+        "hidden": "",
+        "eggmoves": [
+
+        ]
+    },
+    {
+        "name": "vullaby",
+        "natdex": 629,
+        "form": null,
+        "evo": [
+            "mandibuzz"
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": false,
+        "scarvi": true,
+        "expac": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "dark",
+            "flying"
+        ],
+        "hidden": "",
+        "eggmoves": [
+
+        ]
+    },
+    {
+        "name": "litten",
+        "natdex": 725,
+        "form": null,
+        "evo": [
+            "torracat",
+            "incineroar"
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": false,
+        "scarvi": true,
+        "expac": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "fire",
+            "dark"
+        ],
+        "hidden": "",
+        "eggmoves": [
+
+        ]
+    },
+    {
+        "name": "popplio",
+        "natdex": 728,
+        "form": null,
+        "evo": [
+            "brionne",
+            "primarina"
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": false,
+        "scarvi": true,
+        "expac": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "water",
+            "fairy"
+        ],
+        "hidden": "",
+        "eggmoves": [
+
+        ]
+    },
+    {
+        "name": "espurr",
+        "natdex": 677,
+        "form": null,
+        "evo": [
+            "mewostic"
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": false,
+        "scarvi": true,
+        "expac": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "psychic"
+        ],
+        "hidden": "",
+        "eggmoves": [
+
+        ]
+    },
+    {
+        "name": "inkay",
+        "natdex": 686,
+        "form": null,
+        "evo": [
+            "malamar"
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": false,
+        "scarvi": true,
+        "expac": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "dark",
+            "psychic"
+        ],
+        "hidden": "",
+        "eggmoves": [
+
+        ]
+    },
+    {
+        "name": "geodude",
+        "natdex": 74,
+        "form": null,
+        "evo": [
+            "graveler",
+            "golem"
+        ],
+        "prevgen": true,
+        "swsh": false,
+        "bdsp": true,
+        "scarvi": true,
+        "expac": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "rock",
+            "ground"
+        ],
+        "hidden": "",
+        "eggmoves": [
+
+        ]
+    },
+    {
+        "name": "geodude",
+        "natdex": 74,
+        "form": "alolan",
+        "evo": [
+            "graveler",
+            "golem"
+        ],
+        "prevgen": true,
+        "swsh": false,
+        "bdsp": false,
+        "scarvi": true,
+        "expac": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "rock",
+            "electric"
+        ],
+        "hidden": "",
+        "eggmoves": [
+
+        ]
+    },
+    {
+        "name": "milcery",
+        "natdex": 868,
+        "form": null,
+        "evo": [
+            "alcremie"
+        ],
+        "prevgen": false,
+        "swsh": true,
+        "bdsp": false,
+        "scarvi": true,
+        "expac": true,
+        "apri": true,
+        "cycles": 20,
+        "types": [
+            "fairy"
+        ],
+        "hidden": "",
+        "eggmoves": [
+
+        ]
+    }
+]

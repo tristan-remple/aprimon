@@ -1,4 +1,4 @@
-This is an app I made to replace the spreadsheet I use for tracking which Pokemon I have captured in which apriballs, and various information about them. It is currently live on my portfolio: https://aqualunae.ca/pkmn/index.html
+This is an app I made to replace the spreadsheet I use for tracking which Pokemon I have captured in which apriballs, and various information about them. It is currently live on my portfolio: https://aqualunae.ca/pkmn
 
 Registration is not currently open, but is planned.
 
@@ -10,6 +10,9 @@ user switch
 help menu
 user notes
 user bio
-duplicate banning
+duplicate checking
+validity checking
 compare collections
 search
+
+add bdsp to possible
