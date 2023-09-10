@@ -1186,7 +1186,7 @@
         const addPkmnBtn = document.getElementById("add-pkmn");
         addPkmnBtn.addEventListener("click", addPokemonDialog);
 
-        // creates a read-only text field
+        // creates and returns a read-only text field
         function createZoomField(title, info) {
             const field = document.createElement("div");
             field.classList.add("display-field");
@@ -1204,7 +1204,12 @@
 
         // find all information about the pokemon whose details are currently displayed
         function findPokemon() {
+
+            // indv-facts is an element in the "zoom in" function popup
+            // so this function only works while that popup is active
             const id = document.getElementById("indv-facts").dataset.id;
+
+            // the id of that field is formatted "moon-zorua-h" for example
             const arr = id.split("-");
             const ball = arr[0];
             const name = arr[1];
@@ -1213,19 +1218,33 @@
                 suffix = arr[2];
             }
 
+            // check the user data for the pokemon that matches the current id
             const pkmnIndv = activeSort.filter(function(pkmn){
+
+                // assume the form doesn't match
                 let checkForm = false;
+
+                // but if the form exists and matches the suffix, it matches
                 if (suffix) {
                     if (pkmn.pokemon.form && pkmn.pokemon.form.substr(0, 1) === suffix) {
                         checkForm = true;
                     }
+                
+                // if there's no form/suffix, it counts as a match as well
                 } else {
                     checkForm = true;
                 }
+
+                // the ball and name are much simpler to check
                 return (pkmn.ball === ball && pkmn.pokemon.name === name && checkForm);
+
+            // only return the first match
             })[0];
 
+            // species information comes from the "possible" list
             const pkmnSpcs = possible.filter(function(pkmn){
+
+                // but the check function is very similar to above
                 let checkForm = false;
                 if (suffix) {
                     if (pkmn.form && pkmn.form.substr(0, 1) === suffix) {
@@ -1235,39 +1254,62 @@
                     checkForm = true;
                 }
                 return (pkmn.name === name && checkForm);
+
+            // again, only return the first match
             })[0];
 
+            // return both results as an array
             return [pkmnIndv, pkmnSpcs];
         }
 
         // change the user information about an aprimon
         // part 2: change the data
         function editPokemon() {
+
+            // gather information from the form
             const inHatched = document.getElementById("hatched").value;
             const togShiny = document.getElementById("shiny-get").checked;
+
+            // in shiny = date shiny was obtained
+            // if this is null, no shiny yet
             let inShiny = null;
+
+            // if the shiny checkbox is ticked
             if (togShiny === true) {
+
+                // check the date form field
                 const inDate = document.getElementById("shiny-date").value;
                 let date;
+
+                // if there is a date, use it
                 if (inDate !== "") {
                     date = new Date(inDate);
+
+                // if no date is supplied, use today's date
                 } else {
                     date = new Date();
                 }
+
+                // format the date
                 inShiny = `${months[date.getMonth()]} ${date.getDate()}, ${date.getFullYear()}`;
-                console.log(inShiny);
             }
             const inFive = document.getElementById("five-iv").checked;
             const inNature = document.getElementById("nature").value;
             let inHidden = document.getElementById("hidden-ability").checked;
+
+            // get pokemon species info
             const spcsPkmn = findPokemon()[1];
+
+            // if there is no species hidden, it's not "false", it's "null"
             if (spcsPkmn.hidden === null) {
                 inHidden = null;
             }
             const inTarget = document.getElementById("shiny-target").checked;
 
+            // get individual pokemon info
             const indvPkmn = findPokemon()[0];
             
+            // change individual pokemon info
             indvPkmn.eggs = inHatched;
             indvPkmn.final = inShiny;
             indvPkmn["5iv"] = inFive;
@@ -1275,55 +1317,89 @@
             indvPkmn.ha = inHidden;
             indvPkmn.target = inTarget;
 
-            popdown();
+            // re-generate the tiles and close the popup
             displayCards(activeSort);
+            popdown();
             
         }
 
         // generates a list of possible egg moves, with those learned emphasized
         function displayEggmoves() {
+
+            // find the wrapper; if it exists, dispose of it
             const element = document.getElementById("egg-wrapper");
             if (element !== null) {
                 element.remove();
             }
 
+            // generate and style the new container
             const eggWrapper = document.createElement("p");
             eggWrapper.id = "egg-wrapper";
+            eggWrapper.classList.add("move-edit");
             
+            // find the data
             const pkmnIndv = findPokemon()[0];
             const pkmnSpcs = findPokemon()[1];
 
+            // for each of the species possible egg moves
             pkmnSpcs.eggmoves.forEach(function(move){
+
+                // create a span element to display it
                 const moveSpan = document.createElement("span");
+
+                // capitalize it for display
                 moveSpan.innerText = capitalize(move);
                 moveSpan.classList.add("eggmove");
+
+                // if the individual pokemon has learned that move, style it one way
                 if (pkmnIndv.eggmoves && pkmnIndv.eggmoves.includes(move)) {
                     moveSpan.classList.add("learned");
+
+                // if not, style it differently
                 } else {
                     moveSpan.classList.add("missing");
                 }
+
+                // add the move to the container and allow it to be toggled
                 eggWrapper.appendChild(moveSpan);
                 moveSpan.addEventListener("click", function(e){
                     toggleMove(e);
                 });
             });
+
+            // return the container with the list
             return eggWrapper;
         }
 
         // toggles an egg move between learned and not learned
         function toggleMove(e) {
+
+            // find the move name and return it to lower case
             const move = e.target.innerText.toLowerCase();
+
+            // find information about the pokemon being displayed
             const indvPkmn = findPokemon()[0];
+
+            // if the pokemon has no egg moves, create an array with the given move as the only value
             if (!indvPkmn.eggmoves) {
                 indvPkmn.eggmoves = [move];
+
+            // if the pokemon has this egg move already, it's being toggled off
+            // find and remove it from the pokemon's eggmoves list
             } else if (indvPkmn.eggmoves.includes(move)) {
                 const index = indvPkmn.eggmoves.indexOf(move);
                 indvPkmn.eggmoves.splice(index, 1);
+
+            // otherwise, the pokemon has some egg moves but not this one
+            // so add it to their list
             } else {
                 indvPkmn.eggmoves.push(move);
             }
             
+            // get the container where the moves are displayed
             const eggMoveBox = document.getElementById("eggmoves");
+
+            // re-generate its contents with the newly updated data
             eggMoveBox.appendChild(displayEggmoves());
         }
 
@@ -1331,40 +1407,50 @@
         // part 1: gather input
         function editPokemonDialog(pkmnIndv, pkmnSpcs) {
 
+            // this dialog form can only be access when the pokemon details popup is displayed
             const indvFacts = document.getElementById("indv-facts");
+
+            // within that popup, wipe the right column
             indvFacts.innerHTML = "";
 
+            // add a check for shiny and a form field for egg count
             indvFacts.appendChild(createCheck("Shiny target", "shiny-target", pkmnIndv.target));
-
             indvFacts.appendChild(createFormField("Eggs hatched", "hatched", "number", pkmnIndv.eggs));
 
+            // figure out if the shiny has been obtained
             let shiny = true;
             if (pkmnIndv.final === null) {
                 shiny = false;
             }
+
+            // but allow the state of that hunt and it's end date to be edited
             indvFacts.appendChild(createCheck("Shiny obtained", "shiny-get", shiny));
             indvFacts.appendChild(createFormField("Shiny date", "shiny-date", "date"));
 
+            // fields for IVs and nature
             indvFacts.appendChild(createCheck("5+ IVs", "five-iv", pkmnIndv["5iv"]));
-
             indvFacts.appendChild(createDrop("nature", "nature", natures));
 
+            // the hidden checkbox label should include the title of the hidden ability
             let hiddenTitle = `Hidden ability:`;
+
+            // so if there is a hidden ability, include it in brackets
             if (pkmnSpcs.hidden !== null) {
                 hiddenTitle += `<br>(${capitalize(pkmnSpcs.hidden)})`;
+
+            // if there's no hidden ability possible for that species, indicate that instead
             } else {
                 hiddenTitle += `<br>(N/A)`;
             }
             indvFacts.appendChild(createCheck(hiddenTitle, "hidden-ability", pkmnIndv.ha));
 
-            const eggMoveBox = document.getElementById("eggmoves");
-            eggMoveBox.classList.add("move-edit");
-
+            // switch the controls from "edit" or "close" to "confirm edits" or "cancel and close"
             const controls = document.getElementById("zoom-controls");
             controls.innerHTML = "";
             confirmOrDeny(controls, editPokemon);
         }
 
+        // convert a boolean into a yes or no string
         function yesNo(bool) {
             if (bool === true) {
                 return "yes";
@@ -1375,12 +1461,15 @@
 
         // display a popup with all the information available about an aprimon
         function zoomIn(e) {
+
+            // account for bubbling; find the parent tile element, not its children
             let target = e.target;
             while (!target.classList.contains("card")) {
                 target = target.parentNode;
             }
             const id = target.id;
 
+            // parse the id of that tile
             const idArr = id.split("-");
             const ball = idArr[0];
             const name = idArr[1];
@@ -1388,9 +1477,24 @@
             if (idArr[2]) {
                 suffix = idArr[2];
             }
+
+            // find the pokemon in the data (only one)
             const pkmnIndv = activeSort.filter(function(pkmn){
-                return (pkmn.pokemon.name === name && pkmn.ball === ball);
+                let check1 = true;
+                if (suffix !== null) {
+                    if (pkmn.pokemon.form === null) {
+                        check1 = false;
+                    } else {
+                        const pkmnSuffix = pkmn.pokemon.form.substr(0, 1);
+                        if (pkmnSuffix !== suffix) {
+                            check1 = false;
+                        }
+                    }
+                }
+                return (pkmn.pokemon.name === name && pkmn.ball === ball && check1);
             })[0];
+
+            // find the pokemon species info
             const pkmnSpcs = possible.filter(function(pkmn){
                 let check1 = true;
                 if (suffix !== null) {
@@ -1403,26 +1507,34 @@
                         }
                     }
                 }
-                return (pkmn.name === name && check1 === true);
+                return (pkmn.name === name && check1);
             })[0];
 
+            // pokemon name and, if applicable, form
             let pkmnTitle = "";
             if (suffix) {
                 pkmnTitle = pkmnSpcs.form + " ";
             }
             pkmnTitle += name;
+
+            // title is capitalized and includes the ball type
             const fullTitle = capitalize(ball + " " + pkmnTitle);
 
+            // create the popup container
             const zoom = document.createElement("div");
             zoom.id = "zoom";
+
+            // use shiny styling if applicable
             if (pkmnIndv.final !== null) {
                 zoom.classList.add("shiny");
             }
             
+            // row for images
             const imgRow = document.createElement("div");
             imgRow.classList.add("nav-row", "zoom-img-row");
             zoom.appendChild(imgRow);
 
+            // image of the pokemon
             const pkmnImg = document.createElement("img");
             pkmnImg.classList.add("big-pkmn");
             pkmnImg.src = "img/" + addLeadingZeros(pkmnSpcs.natdex);
@@ -1433,26 +1545,32 @@
             pkmnImg.alt = pkmnTitle;
             imgRow.appendChild(pkmnImg);
 
+            // image of the pokeball
             const ballImg = document.createElement("img");
             ballImg.classList.add("ball");
             ballImg.src = `img/${ball}ball.png`;
             ballImg.alt = `${ball} ball`;
             imgRow.appendChild(ballImg);
 
+            // title of the pokemon
             const zoomTitle = document.createElement("h2");
             zoomTitle.innerText = fullTitle;
             zoom.appendChild(zoomTitle);
 
+            // row that contains 2 columns
             const colSet = document.createElement("div");
             colSet.classList.add("nav-row");
             zoom.appendChild(colSet);
 
+            // column on the left is for species info
             const pkmnFacts = document.createElement("div");
             pkmnFacts.classList.add("column");
             colSet.appendChild(pkmnFacts);
 
+            // display national dex number
             pkmnFacts.appendChild(createZoomField("Natdex #:", pkmnSpcs.natdex));
 
+            // display the type of the pokemon and all its evolutions
             const typeField = document.createElement("div");
             typeField.classList.add("display-field");
             const label = document.createElement("span");
@@ -1460,6 +1578,8 @@
             typeField.appendChild(label);
             const typeWrapper = document.createElement("span");
             typeField.appendChild(typeWrapper)
+
+            // each type gets a background color of its own applied
             pkmnSpcs.types.forEach(function(type){
                 const typeDisp = document.createElement("span");
                 typeDisp.classList.add("type", type);
@@ -1468,51 +1588,65 @@
             });
             pkmnFacts.appendChild(typeField);
 
+            // list evolutions and egg cycles
             pkmnFacts.appendChild(createZoomField("Evolution(s):", capitalize(pkmnSpcs.evo.join(", "))));
-
             pkmnFacts.appendChild(createZoomField("Egg cycles:", pkmnSpcs.cycles));
 
+            // column on the right is for information about the user's instance of that species
             const indvFacts = document.createElement("div");
             indvFacts.id = "indv-facts";
+
+            // this id is used later
             indvFacts.dataset.id = id;
             indvFacts.classList.add("column");
             colSet.appendChild(indvFacts);
 
+            // non-input fields for eggs hatched and whether the pokemon is a shiny target
             indvFacts.appendChild(createZoomField("Eggs hatched:", pkmnIndv.eggs));
-
             indvFacts.appendChild(createZoomField("Shiny target:", yesNo(pkmnIndv.target)));
 
+            // so = shiny obtained
             let so = "no";
             if (pkmnIndv.final !== null) {
                 so = pkmnIndv.final;
             }
             indvFacts.appendChild(createZoomField("Shiny obtained:", so));
 
+            // non-inut fields for the IVs and nature
             indvFacts.appendChild(createZoomField("5+ IVs", yesNo(pkmnIndv["5iv"])));
-
             indvFacts.appendChild(createZoomField("Nature:", capitalize(pkmnIndv.nature)));
 
+            // hidden ability display
             let hiddenTitle = `Hidden ability:`;
+
+            // find the title of the hidden ability if the species has one
             if (pkmnSpcs.hidden !== null) {
                 hiddenTitle += `<br>(${capitalize(pkmnSpcs.hidden)})`;
+
+            // if the species has no hidden ability, note that
             } else {
                 hiddenTitle += `<br>(N/A)`;
             }
             indvFacts.appendChild(createZoomField(hiddenTitle, yesNo(pkmnIndv.ha)));
 
+            // create the container for the egg moves
             const eggMoveBox = document.createElement("div");
             eggMoveBox.id = "eggmoves";
             zoom.appendChild(eggMoveBox);
 
+            // egg moves title
             const eggTitle = document.createElement("span");
             eggTitle.innerText = "Egg moves:";
             eggMoveBox.appendChild(eggTitle);
 
+            // container for controls
             const controls = document.createElement("div");
             controls.id = "zoom-controls";
             controls.classList.add("nav-row");
             zoom.appendChild(controls);
 
+            // edit button turns this popup into an editable version of the same thing
+            // since the edit function takes parameters, I wasn't sure how to include it in confirmOrDeny
             const editBtn = document.createElement("button");
             editBtn.id = "edit";
             editBtn.classList.add("small-button");
@@ -1525,6 +1659,7 @@
             controls.appendChild(editBtn);
             addHover(editBtn);
 
+            // close button
             const close = document.createElement("button");
             close.id = "cancel";
             close.classList.add("small-button");
@@ -1537,11 +1672,14 @@
             controls.appendChild(close);
             addHover(close);
 
+            // listeners
             close.addEventListener("click", popdown);
             editBtn.addEventListener("click", function(){
                 editPokemonDialog(pkmnIndv, pkmnSpcs)
             });
 
+            // create the popup and then trigger the egg moves function
+            // it searches for the popup in order to work, so it has to be after
             popup(zoom);
             eggMoveBox.appendChild(displayEggmoves());
             
@@ -1575,14 +1713,21 @@
                 // part 2: change the data
                 function addQueue() {
 
+                    // find the values on the form
                     const num = parseInt(document.getElementById("add-q-eggs").value);
                     const pkmn = document.getElementById("add-q-pkmn").value;
+
+                    // simple validation
                     if (num !== "" && pkmn !== "SELECT:") {
+
+                        // change the data and then change the display
                         queueEggs = num;
                         queuePokemon = pkmn;
                         queue.innerText = num;
                         queue.dataset.pkmn = pkmn;
                     }
+
+                    // close the popup
                     popdown();
                 } 
 
@@ -1590,23 +1735,27 @@
                 // part 1: gather input
                 function addQueueDialog() {
 
+                    // create popup container
                     const Qcheck = document.createElement("div");
                     Qcheck.id = "zoom";
 
+                    // title
                     const Qtitle = document.createElement("h2");
                     Qtitle.innerText = "Add pokemon eggs to hatching queue";
                     Qcheck.appendChild(Qtitle);
 
+                    // two simple fields
                     Qcheck.appendChild(createFormField("Eggs", "add-q-eggs", "number"));
-
                     Qcheck.appendChild(createDrop("Pokemon", "add-q-pkmn", pkmnList));
 
+                    // if there's an existing queue, remind the user that they will be overwriting it
                     if (queueEggs > 0) {
                         const overwrite = document.createElement("p");
                         overwrite.innerText = "Overwrite queue?";
                         Qcheck.appendChild(overwrite);
                     }
 
+                    // confirm or deny controls
                     const controlRow = document.createElement("div");
                     controlRow.classList.add("nav-row");
                     Qcheck.appendChild(controlRow);
@@ -1616,13 +1765,18 @@
 
                 }
 
+                // listener
                 const addButton = document.getElementById("add-queue");
                 addButton.addEventListener("click", addQueueDialog);
 
                 // confirm queue hatched
                 // part 2: change the data
                 function confirmHatch() {
+
+                    // add queue number to the "eggs since last shiny" count
                     since += queueEggs;
+
+                    // parse the id
                     const pkmnArr = queuePokemon.split("-");
                     const ball = pkmnArr[0];
                     const name = pkmnArr[1];
@@ -1631,15 +1785,21 @@
                         suffix = pkmnArr[2];
                     }
 
+                    // find the pokemon in the data and add to its egg count
                     json.forEach(function(pkmn){
                         if (pkmn.pokemon.name === name && pkmn.ball === ball && (suffix === null || pkmn.pokemon.form.substr(0, 1) === suffix)) {
                             pkmn.eggs = parseInt(pkmn.eggs) + parseInt(queueEggs);
                         }
                     });
+
+                    // reset the queue count
                     queueEggs = 0;
 
+                    // change the display fields
                     queue.innerText = queueEggs;
                     document.getElementById("since").innerText = since;
+
+                    // close the popup, redraw the tiles, and recalculate the totals
                     popdown();
                     displayCards(json);
                     apriTotals();
@@ -1650,22 +1810,30 @@
                 // part 1: gather input
                 function confirmHatchDialog() {
 
+                    // create the popup container
                     const confirm = document.createElement("div");
                     confirm.classList.add("popup");
+
+                    // add label
                     const text = document.createElement("p");
                     text.innerText = "Confirm queue eggs as hatched?";
                     confirm.appendChild(text);
 
+                    // add controls
                     confirmOrDeny(confirm, confirmHatch);
                     popup(confirm);
 
                 }
+
+                // listener
                 const checkButton = document.getElementById("queue-hatched");
                 checkButton.addEventListener("click", confirmHatchDialog);
 
                 // announce shiny
                 // part 2: change the data
                 function confirmShiny() {
+
+                    // find out which pokemon had eggs in the queue
                     const queuePokemon = document.getElementById("queue").dataset.pkmn;
                     const pkmnArr = queuePokemon.split("-");
                     const ball = pkmnArr[0];
@@ -1674,17 +1842,25 @@
                     if (pkmnArr[2]) {
                         suffix = "-" + pkmnArr[2];
                     }
+
+                    // get today's date and stringify it
                     const date = new Date();
                     const dateStr = `${months[date.getMonth()]} ${date.getDate()}, ${date.getFullYear()}`;
+
+                    // find the pokemon in the data and add the shiny date to it
                     json.forEach(function(pkmn){
                         if (pkmn.pokemon.name === name && pkmn.ball === ball && (suffix === null || pkmn.pokemon.form.substr(0, 1) === suffix)) {
                             pkmn.final = dateStr;
                         }
                     });
 
+                    // reset the "eggs since last shiny" counter
                     since = 0;
+
+                    // update the since display
                     document.getElementById("since").innerText = since;
 
+                    // close the popup, redraw the tiles, and recalculate the totals
                     popdown();
                     displayCards(json);
                     apriTotals();
@@ -1694,23 +1870,37 @@
                 // announce shiny
                 // part 1: gather input
                 function confirmShinyDialog() {
+
+                    // create popup container
                     const confirm = document.createElement("div");
                     confirm.classList.add("popup");
+
+                    // create the popup text
                     const text = document.createElement("p");
+
+                    // parse the pokemon id into a title
+                    // not that this does not display the full name of the form, if there is one
                     const pokemon = document.getElementById("queue").dataset.pkmn;
                     const pokemonTitle = capitalize(pokemon.replace(/-/g, " "));
                     text.innerText = `Did you hatch a shiny ${pokemonTitle}?`;
                     confirm.appendChild(text);
 
+                    // confirm or deny controls
                     confirmOrDeny(confirm, confirmShiny);
+
+                    // add to the page
                     popup(confirm);
                 }
+
+                // listener
                 const shinyButton = document.getElementById("shiny-hatched");
                 shinyButton.addEventListener("click", confirmShinyDialog);
 
                 // save your progress
                 // part 2: send data to server
                 function save() {
+
+                    // get the data currently active on the page
                     const fieldQueueEggs = document.getElementById("in-queue-eggs");
                     const fieldQueuePokemon = document.getElementById("in-queue-pokemon");
                     const fieldSince = document.getElementById("in-since-last");
@@ -1719,6 +1909,7 @@
                     const fieldPass = document.getElementById("in-password");
                     const otherPass = document.getElementById("password");
 
+                    // place it into the hidden form fields
                     fieldQueueEggs.value = queueEggs;
                     fieldQueuePokemon.value = queuePokemon;
                     fieldSince.value = since;
@@ -1726,35 +1917,48 @@
                     fieldUser.value = userInfo.name;
                     fieldPass.value = otherPass.value;
 
+                    // "click" the hidden submit button
                     const submit = document.getElementById("submit");
                     submit.click();
+
+                    // close the popup
                     popdown();
                 }
 
                 // save your progress
                 // part 1: gather input
                 function saveDialog() {
+
+                    // create popup container
                     const box = document.createElement("div");
                     box.classList.add("popup");
 
+                    // create text
                     const text = document.createElement("p");
                     text.innerText = "Enter your password to save:";
                     box.appendChild(text);
 
+                    // create password field
                     const field = document.createElement("input");
                     field.type = "password";
                     field.id = "password";
                     field.name = "password";
                     box.appendChild(field);
 
+                    // add controls
                     confirmOrDeny(box, save);
+
+                    // place the popup on the page
                     popup(box);
                 }
 
+                // listener
                 const saveButton = document.getElementById("save");
                 saveButton.addEventListener("click", saveDialog);
             })
         }
+
+        // activate the display functions on page load
         insertTallies();
         displayCards(json);
     });
