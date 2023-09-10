@@ -1480,6 +1480,12 @@
 
             // find the pokemon in the data (only one)
             const pkmnIndv = activeSort.filter(function(pkmn){
+
+                // I should make a checkSuffix function
+                // false conditions:
+                // * active pokemon has a suffix but the current pokemon in the array does not
+                // * active pokemon has a suffix that does not match the current pokemon in the array
+                // * active pokemon does not have a suffix but the array pokemon does
                 let check1 = true;
                 if (suffix !== null) {
                     if (pkmn.pokemon.form === null) {
@@ -1490,8 +1496,10 @@
                             check1 = false;
                         }
                     }
+                } else if (pkmn.pokemon.form !== null) {
+                    check1 = false;
                 }
-                return (pkmn.pokemon.name === name && pkmn.ball === ball && check1);
+                return (pkmn.pokemon.name === name && pkmn.ball === ball && check1 === true);
             })[0];
 
             // find the pokemon species info
@@ -1506,8 +1514,10 @@
                             check1 = false;
                         }
                     }
+                } else if (pkmn.form !== null) {
+                    check1 = false;
                 }
-                return (pkmn.name === name && check1);
+                return (pkmn.name === name && check1 === true);
             })[0];
 
             // pokemon name and, if applicable, form
