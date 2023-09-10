@@ -592,6 +592,8 @@
             });
         }
 
+        // wishlist button toggles display of wishlist pokemon
+        // wishlist pokemon are never displayed alongside the collection
         const wishButton = document.getElementById("wish");
         function displayWishlist() {
             if (!wishButton.classList.contains("shiny")){
@@ -607,6 +609,8 @@
         } 
         wishButton.addEventListener("click", displayWishlist);
 
+        // displayPokemon was originally displayCards
+        // but needed to be adjusted when wishlist cards were added
         function displayCards(input) {
             const noWish = input.filter(function(pkmn){
                 return !pkmn.wishlist || pkmn.wishlist === false;
@@ -678,8 +682,15 @@
 
         // reads the state of the browse buttons and generates simple tiles
         function displayBrowse() {
-            const buttons = document.getElementsByClassName("browse-button");
+            
+
+            // bf = browse filter
             const bf = {};
+
+            // each button is a game or gen in which specific pokemon may have been included
+            // clicking them toggles through "include pokemon from this gen" "exclude" "either way"
+            // this information is passed by the styling class
+            const buttons = document.getElementsByClassName("browse-button");
             for (btn of buttons) {
                 if (btn.classList.contains("include")) {
                     bf[btn.id] = true;
@@ -690,33 +701,51 @@
                 }
             }
 
+            // possible is all the pokemon available in gen9
             let filteredPossible = possible.filter(function(pkmn){
+
+                // include them by default
                 let check = true;
-                console.log(pkmn);
+
+                // for each game
                 for (game in bf) {
-                    console.log(game);
+
+                    // if we're not checking for it, leave check alone
                     if (bf[game] === null) {
-                        console.log("not looking");
                         check = true;
+                    
+                    // if we are checking for it, make sure it matches
+                    // this will catch both true or both false
                     } else if (bf[game] === pkmn[game]) {
-                        console.log("match");
                         check = true;
+
+                    // if one is true and the other is false, don't include the pokemon
                     } else {
-                        console.log("no match");
                         check = false;
+
+                        // break the loop: it doesn't matter if the pokemon passes other checks
                         break;
                     }
                 }
-                console.log(check);
+
+                // return check to the filter
                 return check;
             });
+
+            // if the "all" button is checked, overwrite the filter with the full list
             if (bf["all-possible"] === true) {
                 filteredPossible = possible;
             }
  
+            // find and empty the card container
             const cardRow = document.getElementById("browse-row");
             cardRow.innerHTML = "";
+
+            // for each pokemon that passed the check
             filteredPossible.forEach(function(pkmn){
+                
+                // i don't think id is used, but it matches the id format of the collection cards
+                // title is for the alt text
                 let id;
                 let title;
                 if (pkmn.form) {
@@ -727,6 +756,7 @@
                     title = capitalize(pkmn.name);
                 }
 
+                // create a very simple tile with the pokemon's image
                 const card = document.createElement("div");
                 card.classList.add("browse-card");
                 card.id = id;
@@ -738,6 +768,8 @@
                 }
                 image.src += ".png";
                 image.alt = title;
+
+                // add the tile to the container
                 card.appendChild(image);
                 cardRow.appendChild(card);
             })
@@ -748,6 +780,7 @@
         function changeBrowseFilter(e) {
             const target = e.target;
 
+            // if the all button was clicked, strip active classes from the other buttons
             if (target.id === "all-possible" && !target.classList.contains("include")) {
                 const browseBtns = document.getElementsByClassName("browse-button");
                 for (btn of browseBtns) {
@@ -755,9 +788,13 @@
                     btn.classList.remove("exclude");
                 }
                 target.classList.add("include");
+
+            // otherwise, strip active classes from the all button
             } else {
                 const viewAll = document.getElementById("all-possible");
                 viewAll.classList.remove("include");
+
+                // flip through states: exclude, neutral, include
                 if (target.classList.contains("include")) {
                     target.classList.remove("include");
                     target.classList.add("exclude");
@@ -768,6 +805,7 @@
                 }
             }
 
+            // once the buttons are all in their new states, activate the display function
             displayBrowse();
         }
 
@@ -776,14 +814,17 @@
             const browse = document.createElement("div");
             browse.id = "browse-display";
 
+            // title
             const browseTitle = document.createElement("h2");
             browseTitle.innerText = "Browse Pokemon by generation(s) available";
             browse.appendChild(browseTitle);
 
+            // container for buttons
             const browseControls = document.createElement("div");
             browseControls.classList.add("nav-row", "wide-row");
             browse.appendChild(browseControls);
 
+            // four buttons
             const prevGen = document.createElement("div");
             prevGen.id = "prevgen";
             prevGen.classList.add("small-button", "browse-button");
@@ -824,6 +865,7 @@
                 changeBrowseFilter(e);
             });
 
+            // cancel button
             const Qcancel = document.createElement("div");
             Qcancel.id = "cancel";
             Qcancel.classList.add("small-button");
@@ -836,11 +878,13 @@
             Qcancel.appendChild(Qx);
             addHover(Qx);
 
+            // container for tiles
             const cardRow = document.createElement("div");
             cardRow.classList.add("nav-row");
             cardRow.id = "browse-row";
             browse.appendChild(cardRow);
 
+            // put the whole thing in a popup and call the function to populate it
             popup(browse);
             displayBrowse();
 
@@ -854,6 +898,7 @@
         // part 2: change the data
         function addPokemon() {
 
+            // gather information from the form
             let pkmnName = document.getElementById("pokemon").value.toLowerCase();
             const pkmnBall = document.getElementById("ball").value;
             const pkmnNature = document.getElementById("nature").value;
@@ -862,12 +907,15 @@
             const targetCheck = document.getElementById("target-pk").checked;
             const wishlistCheck = document.getElementById("wishlist").checked;
 
+            // if the pokemon name is blank, give an error message and close the popup
             if (pkmnName === "") {
                 alert("Pokemon name required.");
                 popdown();
                 return;
             }
 
+            // pokemon names can be typed in or selected from the autofill menu
+            // the autofill menu lists form first, then name: "Hisuian Zorua" etc
             let pkmnForm;
             if (pkmnName.includes(" ")) {
                 pkmnArr = pkmnName.split(" ");
@@ -877,16 +925,19 @@
                 pkmnForm = null;
             }
 
+            // find the pokemon selected on the list of possible pokemon
             const pkmnDetails = possible.filter(function(pkmn){
                 return (pkmn.name === pkmnName && pkmn.form === pkmnForm);
             })[0];
 
+            // if it can't be found, give an error message and close the popup
             if (pkmnDetails === undefined) {
                 alert("Pokemon not found.");
                 popdown();
                 return;
             }
 
+            // format the data into an object
             const entry = {
                 "pokemon": {
                     "name": pkmnName,
@@ -904,13 +955,14 @@
                 "wishlist": wishlistCheck
             };
             
+            // add it to the working dataset, redraw the tiles, and close the popup
             json.push(entry);
             displayCards(json);
             popdown();
 
         }
 
-        // creates a standardized field with label and container
+        // creates and returns a standardized field with label and container
         // text or number
         function createFormField(name, id, type, value) {
             const nameField = document.createElement("div");
@@ -933,7 +985,7 @@
             return nameField;
         }
 
-        // creates a standardized checkbox with label and container
+        // creates and returns a standardized checkbox with label and container
         function createCheck(title, id, state) {
             const loc = document.createElement("div");
             loc.classList.add("field");
@@ -953,8 +1005,11 @@
             return loc;
         }
 
-        // creates a standardized drop-down menu with label and container
+        // creates and returns a standardized drop-down menu with label and container
         function createDrop(title, id, list) {
+
+            // this function was originally written for the list of balls
+            // but it can take any kind of list
             const ballField = document.createElement("div");
             ballField.classList.add("field");
 
@@ -981,25 +1036,43 @@
         }
 
         // when the user clicks on an auto-suggestion, fill it in as the field value
+        // this only works for the pokemon text field currently
         function acceptSuggestion(e) {
             const sug = e.target.innerText;
             const field = document.getElementById("pokemon");
             field.value = sug;
 
+            // hides the autoselect menu when a suggestion is chosen
             const location = document.getElementById("auto-suggest");
             location.classList.add("hidden");
         }
 
         // when the user is typing into a field, generate and display auto-complete suggestions
+        // this event fires every time the field value changes
         function autoComplete(e, list) {
+
+            // convert the value to lower case
             const value = e.target.value.toLowerCase();
             const length = value.length;
+
+            // find the autofill container
             const location = document.getElementById("auto-suggest");
 
+            // if a value is found
             if (value !== null && value !== "") {
+
+                // wipe whatever was in the autofill menu before
                 location.innerHTML = "";
+
+                // the list is generated from "titles" of pokemon, which have correct capitalization
+                // if the value, with upper case first letter, is found anywhere in the title
+                // it passes the filter
                 const suggests = list.filter(function(pkmn){
                     return pkmn.includes(capitalize(value));
+
+                // sort the suggestions so that list items that start with the typed value
+                // are ranked higher than list items that contain, but do not start with, the typed value
+                // the reason mid-string matches are counted is to account for forms
                 }).sort(function(a, b){
                     if (a.substr(0, length) === capitalize(value)) {
                         return -1;
@@ -1007,16 +1080,25 @@
                         return 1;
                     }
                 });
+
+                // add each suggestion to the autofill suggestions container
                 suggests.forEach(function(sug){
                     const disp = document.createElement("div");
                     disp.classList.add("suggest");
                     disp.innerText = sug;
                     location.appendChild(disp);
+
+                    // give them event listeners
                     disp.addEventListener("click", function(e){
                         acceptSuggestion(e);
                     });
                 });
+
+                // show the suggestions
                 location.classList.remove("hidden");
+
+            // if the typed value is a blank string or null
+            // hide the suggestions container
             } else {
                 location.classList.add("hidden");
             }
@@ -1027,16 +1109,20 @@
         // part 1: gather input
         function addPokemonDialog() {
 
+            // create a popup window and style it
             const box = document.createElement("div");
             box.id = "zoom";
 
+            // add a title
             const title = document.createElement("h2");
             title.innerText = "Add an aprimon to your collection";
             box.appendChild(title);
             
+            // create the form
             const form = document.createElement("form");
             box.appendChild(form);
 
+            // create the list of possible pokemon names
             const nameList = possible.map(function(pkmn){
                 if (pkmn.form === null) {
                     return capitalize(pkmn.name);
@@ -1045,46 +1131,58 @@
                 }
             });
 
+            // create it as a text field
             const nameField = createFormField("pokemon name", "pokemon", "text");
             nameField.id = "name-field";
+
+            // make sure that pressing "enter" does not submit the form
             nameField.addEventListener("keydown", function(e){
                 if (e.key === "Enter") {
                     e.preventDefault();
                     return false;
                   }
             });
+
+            // add the autofill listener to the field
             nameField.addEventListener("input", function(e) {
                 autoComplete(e, nameList);
             });
+
+            // add it to the popup
             form.appendChild(nameField);
 
+            // create the container for autofill suggestions
             const autoSuggest = document.createElement("div");
             autoSuggest.id = "auto-suggest";
             autoSuggest.classList.add("hidden");
             nameField.appendChild(autoSuggest);
 
+            // create drop-down menus for the pokeball and nature
             form.appendChild(createDrop("pokeball", "ball", ballTypes));
-
             form.appendChild(createDrop("nature", "nature", natures));
 
+            // container for the yes/no options
             const checksRow = document.createElement("div");
             form.appendChild(checksRow);
 
+            // the yes/no options
             checksRow.appendChild(createCheck("5+ IVs?", "five-iv"));
             checksRow.appendChild(createCheck("Hidden ability?", "hidden-ab"));
             checksRow.appendChild(createCheck("Shiny target?", "target-pk"));
             checksRow.appendChild(createCheck("Wishlist only?", "wishlist"));
 
+            // decision is the container for the confirm or cancel buttons
             const decision = document.createElement("div");
             decision.classList.add("nav-row");
             confirmOrDeny(decision, addPokemon);
             box.appendChild(decision);
 
+            // once everything is in place, add the popup to the window
             popup(box);
 
         }
 
-        // listeners
+        // listener
         const addPkmnBtn = document.getElementById("add-pkmn");
         addPkmnBtn.addEventListener("click", addPokemonDialog);
 
@@ -1579,7 +1677,7 @@
                     const date = new Date();
                     const dateStr = `${months[date.getMonth()]} ${date.getDate()}, ${date.getFullYear()}`;
                     json.forEach(function(pkmn){
-                        if (pkmn.pokemon.name === name && pkmn.ball === ball && pkmn.pokemon['form-suffix'] === suffix) {
+                        if (pkmn.pokemon.name === name && pkmn.ball === ball && (suffix === null || pkmn.pokemon.form.substr(0, 1) === suffix)) {
                             pkmn.final = dateStr;
                         }
                     });
