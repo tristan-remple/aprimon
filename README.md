@@ -14,5 +14,5 @@ duplicate checking
 validity checking
 compare collections
 search
-
-add bdsp to possible
+delete pokemon
+move pokemon from wishlist to main collection

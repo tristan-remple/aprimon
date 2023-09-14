@@ -16,9 +16,14 @@
         "types": [
             "poison"
         ],
-        "hidden": "",
+        "hidden": "unnerve",
         "eggmoves": [
-
+            "spite",
+            "scary face",
+            "poison fang",
+            "poison tail",
+            "sucker punch",
+            "switcheroo"
         ]
     },
     {
@@ -35,13 +40,16 @@
         "scarvi": true,
         "expac": true,
         "apri": true,
-        "cycles": 20,
+        "cycles": 10,
         "types": [
             "fairy"
         ],
-        "hidden": "",
+        "hidden": "friend guard",
         "eggmoves": [
-
+            "present",
+            "wish", 
+            "tickle",
+            "heal pulse"
         ]
     },
     {
@@ -86,9 +94,16 @@
         "types": [
             "fire"
         ],
-        "hidden": "",
+        "hidden": "drought",
         "eggmoves": [
-
+            "roar",
+            "hypnosis",
+            "flail",
+            "memento",
+            "howl",
+            "healing wish",
+            "flame charge",
+            "baby-doll eyes"
         ]
     },
     {
@@ -109,9 +124,14 @@
             "ice",
             "fairy"
         ],
-        "hidden": "",
+        "hidden": "snow warning",
         "eggmoves": [
-
+            "roar",
+            "hypnosis",
+            "flail",
+            "howl",
+            "baby-doll eyes",
+            "moonblast"
         ]
     },
     {
@@ -134,9 +154,13 @@
             "water",
             "fighting"
         ],
-        "hidden": "",
+        "hidden": "swift swim",
         "eggmoves": [
-
+            "mist",
+            "splash",
+            "endeavor",
+            "muddy water",
+            "water pulse"
         ]
     },
     {
@@ -152,13 +176,17 @@
         "scarvi": true,
         "expac": true,
         "apri": true,
-        "cycles": 20,
+        "cycles": 40,
         "types": [
             "normal"
         ],
-        "hidden": "",
+        "hidden": "gluttony",
         "eggmoves": [
-
+            "double-edge",
+            "counter",
+            "fissure",
+            "curse",
+            "belch"
         ]
     },
     {
@@ -174,13 +202,18 @@
         "scarvi": true,
         "expac": true,
         "apri": true,
-        "cycles": 20,
+        "cycles": 15,
         "types": [
             "normal"
         ],
-        "hidden": "",
+        "hidden": "frisk",
         "eggmoves": [
-
+            "focus energy",
+            "slash",
+            "reversal",
+            "last resort",
+            "baby-doll eyes",
+            "tidy up"
         ]
     },
     {
@@ -196,14 +229,18 @@
         "scarvi": true,
         "expac": true,
         "apri": true,
-        "cycles": 20,
+        "cycles": 15,
         "types": [
             "normal",
             "flying"
         ],
-        "hidden": "",
+        "hidden": "tinted lens",
         "eggmoves": [
-
+            "wing attack",
+            "whirlwind",
+            "supersonic",
+            "night shade",
+            "feather dance"
         ]
     },
     {
@@ -223,9 +260,17 @@
         "types": [
             "normal"
         ],
-        "hidden": "",
+        "hidden": "skill link",
         "eggmoves": [
-
+            "slam",
+            "counter",
+            "iron tail",
+            "beat up",
+            "fake out",
+            "bounce",
+            "covet",
+            "switcheroo",
+            "quick guard"
         ]
     },
     {
@@ -246,9 +291,11 @@
             "bug",
             "flying"
         ],
-        "hidden": "",
+        "hidden": "frisk",
         "eggmoves": [
-
+            "whirlwind",
+            "double-edge",
+            "feint"
         ]
     },
     {
@@ -269,9 +316,14 @@
             "ground",
             "flying"
         ],
-        "hidden": "",
+        "hidden": "immunity",
         "eggmoves": [
-
+            "wing attack",
+            "double-edge",
+            "counter",
+            "feint",
+            "night slash",
+            "cross poison"
         ]
     },
     {
@@ -315,13 +367,19 @@
             "ice",
             "ground"
         ],
-        "hidden": "",
+        "hidden": "thick fat",
         "eggmoves": [
-
+            "double-edge",
+            "bite",
+            "fissure",
+            "curse",
+            "ancient power",
+            "icicle crash",
+            "freeze-dry"
         ]
     },
     {
-        "name": "poliwag",
+        "name": "poochyena",
         "natdex": 261,
         "form": null,
         "evo": [
@@ -333,13 +391,15 @@
         "scarvi": true,
         "expac": true,
         "apri": true,
-        "cycles": 20,
+        "cycles": 15,
         "types": [
             "dark"
         ],
-        "hidden": "",
+        "hidden": "rattled",
         "eggmoves": [
-
+            "poison fang",
+            "astonish",
+            "covet"
         ]
     },
     {
@@ -356,14 +416,19 @@
         "scarvi": true,
         "expac": true,
         "apri": true,
-        "cycles": 20,
+        "cycles": 15,
         "types": [
             "grass",
             "dark"
         ],
-        "hidden": "",
+        "hidden": "pickpocket",
         "eggmoves": [
-
+            "take down",
+            "leech seed",
+            "quick attack",
+            "worry seed",
+            "night slash",
+            "defog"
         ]
     },
     {
@@ -379,14 +444,19 @@
         "scarvi": true,
         "expac": true,
         "apri": true,
-        "cycles": 20,
+        "cycles": 15,
         "types": [
             "water",
             "dark"
         ],
-        "hidden": "",
+        "hidden": "adaptability",
         "eggmoves": [
-
+            "double-edge",
+            "slash",
+            "metal claw",
+            "ancient power",
+            "switcheroo",
+            "aqua jet"
         ]
     },
     {
@@ -402,13 +472,20 @@
         "scarvi": true,
         "expac": true,
         "apri": true,
-        "cycles": 20,
+        "cycles": 25,
         "types": [
             "psychic"
         ],
-        "hidden": "",
+        "hidden": null,
         "eggmoves": [
-
+            "disable",
+            "hypnosis",
+            "recover",
+            "curse",
+            "wish",
+            "recycle",
+            "cosmic power",
+            "ally switch"
         ]
     },
     {
@@ -428,9 +505,15 @@
         "types": [
             "water"
         ],
-        "hidden": "",
+        "hidden": "adaptability",
         "eggmoves": [
-
+            "mist",
+            "hypnosis",
+            "confuse ray",
+            "haze",
+            "dragon breath",
+            "mirror coat",
+            "tickle"
         ]
     },
     {
@@ -451,9 +534,11 @@
             "ghost",
             "grass"
         ],
-        "hidden": "",
+        "hidden": "harvest",
         "eggmoves": [
-
+            "disable",
+            "sucker punch",
+            "ally switch"
         ]
     },
     {
@@ -470,14 +555,15 @@
         "scarvi": true,
         "expac": true,
         "apri": true,
-        "cycles": 20,
+        "cycles": 15,
         "types": [
             "bug",
             "electric"
         ],
-        "hidden": "",
+        "hidden": null,
         "eggmoves": [
-
+            "harden",
+            "discharge"
         ]
     },
     {
@@ -494,14 +580,16 @@
         "scarvi": true,
         "expac": true,
         "apri": true,
-        "cycles": 20,
+        "cycles": 40,
         "types": [
             "dragon",
             "fighting"
         ],
-        "hidden": "",
+        "hidden": "overcoat",
         "eggmoves": [
-
+            "counter",
+            "dragon breath",
+            "focus punch"
         ]
     },
     {
@@ -522,9 +610,14 @@
             "flying",
             "water"
         ],
-        "hidden": "",
+        "hidden": null,
         "eggmoves": [
-
+            "feather dance",
+            "aerial ace",
+            "roost",
+            "aqua ring",
+            "defog",
+            "aqua cutter"
         ]
     },
     {
@@ -591,9 +684,14 @@
         "types": [
             "ground"
         ],
-        "hidden": "",
+        "hidden": "sand rush",
         "eggmoves": [
-
+            "counter",
+            "flail",
+            "mud-slap",
+            "metal claw",
+            "night slash",
+            "hone claws"
         ]
     },
     {
@@ -614,9 +712,16 @@
             "ice",
             "steel"
         ],
-        "hidden": "",
+        "hidden": "slush rush",
         "eggmoves": [
-
+            "counter",
+            "flail",
+            "night slash",
+            "hone claws",
+            "curse",
+            "mirror coat",
+            "crush claw",
+            "ice shard"
         ]
     },
     {
@@ -1266,9 +1371,12 @@
         "types": [
             "ground"
         ],
-        "hidden": "",
+        "hidden": "infiltrator",
         "eggmoves": [
-
+            "haze",
+            "acid armor",
+            "power split",
+            "clear smog"
         ]
     },
     {
@@ -1312,9 +1420,11 @@
             "dark",
             "flying"
         ],
-        "hidden": "",
+        "hidden": "weak armor",
         "eggmoves": [
-
+            "toxic",
+            "mean look",
+            "roost"
         ]
     },
     {
@@ -1424,14 +1534,19 @@
         "scarvi": true,
         "expac": true,
         "apri": true,
-        "cycles": 20,
+        "cycles": 15,
         "types": [
             "rock",
             "ground"
         ],
-        "hidden": "",
+        "hidden": "sand veil",
         "eggmoves": [
-
+            "mega punch",
+            "curse",
+            "flail",
+            "dynamic punch",
+            "block",
+            "hammer arm"
         ]
     },
     {
@@ -1448,14 +1563,20 @@
         "scarvi": true,
         "expac": true,
         "apri": true,
-        "cycles": 20,
+        "cycles": 15,
         "types": [
             "rock",
             "electric"
         ],
-        "hidden": "",
+        "hidden": "galvanize",
         "eggmoves": [
-
+            "curse",
+            "flail",
+            "block",
+            "wide guard",
+            "screech",
+            "zap cannon",
+            "endure"
         ]
     },
     {
