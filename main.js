@@ -855,6 +855,16 @@
                 changeBrowseFilter(e);
             });
 
+            const expac = document.createElement("div");
+            expac.id = "expac";
+            expac.classList.add("small-button", "browse-button");
+            expac.innerText = "DLC";
+            expac.title = "Expansions: Teal Mask and Indigo Disk";
+            browseControls.appendChild(expac);
+            expac.addEventListener("click", function(e){
+                changeBrowseFilter(e);
+            });
+
             const viewAll = document.createElement("div");
             viewAll.id = "all-possible";
             viewAll.classList.add("small-button", "browse-button", "include");
@@ -1036,14 +1046,14 @@
         }
 
         // when the user clicks on an auto-suggestion, fill it in as the field value
-        // this only works for the pokemon text field currently
         function acceptSuggestion(e) {
             const sug = e.target.innerText;
-            const field = document.getElementById("pokemon");
+            const fieldContainer = e.target.parentNode.parentNode;
+            const field = fieldContainer.getElementsByClassName("autofill-field")[0];
             field.value = sug;
 
             // hides the autoselect menu when a suggestion is chosen
-            const location = document.getElementById("auto-suggest");
+            const location = e.target.parentNode
             location.classList.add("hidden");
         }
 
@@ -1132,7 +1142,21 @@
             });
 
             // create it as a text field
-            const nameField = createFormField("pokemon name", "pokemon", "text");
+            const nameField = document.createElement("div");
+            nameField.classList.add("field");
+
+            const nameLabel = document.createElement("label");
+            nameLabel.setAttribute("for", "pokemon");
+            nameLabel.innerText = capitalize("pokemon name") + ":";
+            nameField.appendChild(nameLabel);
+
+            const nameEntry = document.createElement("input");
+            nameEntry.name = "pokemon";
+            nameEntry.id = "pokemon";
+            nameEntry.classList.add("autofill-field");
+            nameEntry.type = "text";
+            nameField.appendChild(nameEntry);
+
             nameField.id = "name-field";
 
             // make sure that pressing "enter" does not submit the form
@@ -1726,15 +1750,30 @@
                     // find the values on the form
                     const num = parseInt(document.getElementById("add-q-eggs").value);
                     const pkmn = document.getElementById("add-q-pkmn").value;
+                    const pkmnArr = pkmn.split(" ");
+                    const ball = pkmnArr[0].toLowerCase();
+                    let suffix;
+                    let pkmnName;
+                    if (pkmnArr[2]) {
+                        suffix = pkmnArr[1].toLowerCase().split("")[0];
+                        pkmnName = pkmnArr[2].toLowerCase();
+                    } else {
+                        suffix = null;
+                        pkmnName = pkmnArr[1].toLowerCase();
+                    }
+                    let pkmnID = ball + "-" + pkmnName;
+                    if (suffix) {
+                        pkmnID += "-" + suffix;
+                    }
 
                     // simple validation
-                    if (num !== "" && pkmn !== "SELECT:") {
+                    if (num !== "" && pkmn !== "") {
 
                         // change the data and then change the display
                         queueEggs = num;
-                        queuePokemon = pkmn;
+                        queuePokemon = pkmnID;
                         queue.innerText = num;
-                        queue.dataset.pkmn = pkmn;
+                        queue.dataset.pkmn = pkmnID;
                     }
 
                     // close the popup
@@ -1754,9 +1793,57 @@
                     Qtitle.innerText = "Add pokemon eggs to hatching queue";
                     Qcheck.appendChild(Qtitle);
 
-                    // two simple fields
+                    // simple number field
                     Qcheck.appendChild(createFormField("Eggs", "add-q-eggs", "number"));
-                    Qcheck.appendChild(createDrop("Pokemon", "add-q-pkmn", pkmnList));
+
+                    // create the list of possible pokemon names
+                    const nameList = activeSort.map(function(pkmn){
+                        if (pkmn.pokemon.form === null) {
+                            return capitalize(pkmn.ball + " " + pkmn.pokemon.name);
+                        } else {
+                            return capitalize(pkmn.ball + " " + pkmn.pokemon.form + " " + pkmn.pokemon.name);
+                        }
+                    });
+
+                    // create it as a text field
+                    const nameField = document.createElement("div");
+                    nameField.classList.add("field");
+
+                    const nameLabel = document.createElement("label");
+                    nameLabel.setAttribute("for", "aprimon");
+                    nameLabel.innerText = capitalize("aprimon") + ":";
+                    nameField.appendChild(nameLabel);
+
+                    const nameEntry = document.createElement("input");
+                    nameEntry.name = "aprimon";
+                    nameEntry.id = "add-q-pkmn";
+                    nameEntry.classList.add("autofill-field");
+                    nameEntry.type = "text";
+                    nameField.appendChild(nameEntry);
+
+                    nameField.id = "name-field";
+
+                    // make sure that pressing "enter" does not submit the form
+                    nameField.addEventListener("keydown", function(e){
+                        if (e.key === "Enter") {
+                            e.preventDefault();
+                            return false;
+                        }
+                    });
+
+                    // add the autofill listener to the field
+                    nameField.addEventListener("input", function(e) {
+                        autoComplete(e, nameList);
+                    });
+
+                    // add it to the popup
+                    Qcheck.appendChild(nameField);
+
+                    // create the container for autofill suggestions
+                    const autoSuggest = document.createElement("div");
+                    autoSuggest.id = "auto-suggest";
+                    autoSuggest.classList.add("hidden");
+                    nameField.appendChild(autoSuggest);
 
                     // if there's an existing queue, remind the user that they will be overwriting it
                     if (queueEggs > 0) {
