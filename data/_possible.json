@@ -2,6 +2,7 @@
     {
         "name": "sprigatito",
         "natdex": 906,
+        "paldex": 1,
         "form": null,
         "evo": [
             "floragato",
@@ -9,7 +10,7 @@
         ],
         "prevgen": false,
         "swsh": false,
-        "scarvi": true,
+        "bdsp": false,
         "apri": false,
         "cycles": 20,
         "types": [
@@ -28,6 +29,7 @@
     {
         "name": "fuecoco",
         "natdex": 909,
+        "paldex": 4,
         "form": null,
         "evo": [
             "crocolor",
@@ -35,7 +37,7 @@
         ],
         "prevgen": false,
         "swsh": false,
-        "scarvi": true,
+        "bdsp": false,
         "apri": false,
         "cycles": 20,
         "types": [
@@ -53,6 +55,7 @@
     {
         "name": "quaxly",
         "natdex": 912,
+        "paldex": 7,
         "form": null,
         "evo": [
             "quaxwell",
@@ -60,7 +63,7 @@
         ],
         "prevgen": false,
         "swsh": false,
-        "scarvi": true,
+        "bdsp": false,
         "apri": false,
         "cycles": 20,
         "types": [
@@ -78,14 +81,14 @@
     {
         "name": "lechonk",
         "natdex": 915,
+        "paldex": 10,
         "form": null,
         "evo": [
             "oinkologne"
         ],
         "prevgen": false,
         "swsh": false,
-        "scarvi": true,
-        "apri": true,
+        "bdsp": false,
         "cycles": 15,
         "types": [
             "normal"
@@ -102,14 +105,14 @@
     {
         "name": "tarountula",
         "natdex": 917,
+        "paldex": 12,
         "form": null,
         "evo": [
             "spidops"
         ],
         "prevgen": false,
         "swsh": false,
-        "scarvi": true,
-        "apri": true,
+        "bdsp": false,
         "cycles": 15,
         "types": [
             "bug"
@@ -125,14 +128,14 @@
     {
         "name": "nymble",
         "natdex": 919,
+        "paldex": 14,
         "form": null,
         "evo": [
             "lokix"
         ],
         "prevgen": false,
         "swsh": false,
-        "scarvi": true,
-        "apri": true,
+        "bdsp": false,
         "cycles": 15,
         "types": [
             "bug",
@@ -147,6 +150,7 @@
     {
         "name": "hoppip",
         "natdex": 187,
+        "paldex": 16,
         "form": null,
         "evo": [
             "skiploom",
@@ -154,8 +158,7 @@
         ],
         "prevgen": true,
         "swsh": false,
-        "scarvi": true,
-        "apri": true,
+        "bdsp": true,
         "cycles": 20,
         "types": [
             "grass",
@@ -176,6 +179,8 @@
     {
         "name": "fletchling",
         "natdex": 661,
+        "paldex": 19,
+        "bludex": 87,
         "form": null,
         "evo": [
             "fletchinder",
@@ -183,8 +188,7 @@
         ],
         "prevgen": true,
         "swsh": true,
-        "scarvi": true,
-        "apri": true,
+        "bdsp": false,
         "cycles": 15,
         "types": [
             "normal",
@@ -201,6 +205,7 @@
     {
         "name": "pawmi",
         "natdex": 921,
+        "paldex": 22,
         "form": null,
         "evo": [
             "pawmo",
@@ -208,8 +213,7 @@
         ],
         "prevgen": false,
         "swsh": false,
-        "scarvi": true,
-        "apri": true,
+        "bdsp": false,
         "cycles": 15,
         "types": [
             "electric",
@@ -226,14 +230,15 @@
     {
         "name": "houndour",
         "natdex": 228,
+        "paldex": 25,
+        "kitdex": 123,
         "form": null,
         "evo": [
             "houndoom"
         ],
         "prevgen": true,
         "swsh": false,
-        "scarvi": true,
-        "apri": true,
+        "bdsp": true,
         "cycles": 20,
         "types": [
             "dark",
@@ -254,14 +259,14 @@
     {
         "name": "yungoos",
         "natdex": 734,
+        "paldex": 27,
         "form": null,
         "evo": [
             "gumshoos"
         ],
         "prevgen": false,
         "swsh": true,
-        "scarvi": true,
-        "apri": true,
+        "bdsp": false,
         "cycles": 15,
         "types": [
             "normal"
@@ -278,14 +283,15 @@
     {
         "name": "skwovet",
         "natdex": 819,
+        "paldex": 29,
+        "kitdex": 72,
         "form": null,
         "evo": [
             "greedent"
         ],
         "prevgen": false,
         "swsh": true,
-        "scarvi": true,
-        "apri": true,
+        "bdsp": false,
         "cycles": 15,
         "types": [
             "normal"
@@ -301,14 +307,14 @@
     {
         "name": "sunkern",
         "natdex": 191,
+        "paldex": 31,
         "form": null,
         "evo": [
             "sunflora"
         ],
         "prevgen": true,
         "swsh": false,
-        "scarvi": true,
-        "apri": true,
+        "bdsp": true,
         "cycles": 20,
         "types": [
             "grass"
@@ -324,16 +330,17 @@
         ]
     },
     {
-        "name": "kriketot",
+        "name": "kricketot",
         "natdex": 401,
+        "kitdex": 5,
+        "paldex": 61,
         "form": null,
         "evo": [
             "kricketune"
         ],
         "prevgen": true,
         "swsh": false,
-        "scarvi": true,
-        "apri": true,
+        "bdsp": true,
         "cycles": 15,
         "types": [
             "bug"
@@ -346,6 +353,7 @@
     {
         "name": "scatterbug",
         "natdex": 664,
+        "paldex": 35,
         "form": null,
         "evo": [
             "spewpa",
@@ -353,8 +361,7 @@
         ],
         "prevgen": true,
         "swsh": false,
-        "scarvi": true,
-        "apri": true,
+        "bdsp": false,
         "cycles": 15,
         "types": [
             "bug",
@@ -369,14 +376,14 @@
     {
         "name": "combee",
         "natdex": 415,
+        "paldex": 38,
         "form": null,
         "evo": [
             "vespiquen"
         ],
         "prevgen": true,
         "swsh": true,
-        "scarvi": true,
-        "apri": true,
+        "bdsp": true,
         "cycles": 15,
         "types": [
             "bug",
@@ -390,6 +397,7 @@
     {
         "name": "rookidee",
         "natdex": 821,
+        "paldex": 40,
         "form": null,
         "evo": [
             "corvisquire",
@@ -397,8 +405,7 @@
         ],
         "prevgen": false,
         "swsh": true,
-        "scarvi": true,
-        "apri": true,
+        "bdsp": false,
         "cycles": 15,
         "types": [
             "flying",
@@ -418,6 +425,8 @@
     {
         "name": "happiny",
         "natdex": 440,
+        "paldex": 43,
+        "bludex": 16,
         "form": null,
         "evo": [
             "chansey",
@@ -425,8 +434,7 @@
         ],
         "prevgen": true,
         "swsh": true,
-        "scarvi": true,
-        "apri": true,
+        "bdsp": true,
         "cycles": 15,
         "types": [
             "normal"
@@ -442,6 +450,7 @@
     {
         "name": "azurill",
         "natdex": 298,
+        "paldex": 46,
         "form": null,
         "evo": [
             "marill",
@@ -449,8 +458,7 @@
         ],
         "prevgen": true,
         "swsh": true,
-        "scarvi": true,
-        "apri": true,
+        "bdsp": true,
         "cycles": 10,
         "types": [
             "water",
@@ -472,6 +480,8 @@
     {
         "name": "surskit",
         "natdex": 283,
+        "paldex": 49,
+        "kitdex": 149,
         "form": null,
         "evo": [
             "masquerain"
@@ -479,8 +489,6 @@
         "prevgen": true,
         "swsh": false,
         "bdsp": true,
-        "scarvi": true,
-        "apri": true,
         "cycles": 15,
         "types": [
             "bug",
@@ -501,6 +509,7 @@
     {
         "name": "buizel",
         "natdex": 418,
+        "paldex": 51,
         "form": null,
         "evo": [
             "floatzel"
@@ -508,8 +517,6 @@
         "prevgen": true,
         "swsh": false,
         "bdsp": true,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "water"
@@ -529,6 +536,8 @@
     {
         "name": "wooper",
         "natdex": 194,
+        "paldex": 53,
+        "kitdex": 5,
         "form": "paldean",
         "evo": [
             "clodsire"
@@ -536,8 +545,6 @@
         "prevgen": false,
         "swsh": false,
         "bdsp": false,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "poison",
@@ -562,6 +569,8 @@
     {
         "name": "wooper",
         "natdex": 194,
+        "paldex": 53,
+        "kitdex": 5,
         "form": null,
         "evo": [
             "quagsire"
@@ -569,8 +578,6 @@
         "prevgen": true,
         "swsh": true,
         "bdsp": true,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "water",
@@ -593,6 +600,7 @@
     {
         "name": "psyduck",
         "natdex": 54,
+        "paldex": 55,
         "form": null,
         "evo": [
             "golduck"
@@ -600,8 +608,6 @@
         "prevgen": true,
         "swsh": true,
         "bdsp": true,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "water"
@@ -620,6 +626,8 @@
     {
         "name": "chewtle",
         "natdex": 833,
+        "paldex": 57,
+        "kitdex": 183,
         "form": null,
         "evo": [
             "drednaw"
@@ -627,8 +635,6 @@
         "prevgen": false,
         "swsh": true,
         "bdsp": false,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "water"
@@ -643,6 +649,7 @@
     {
         "name": "igglybuff",
         "natdex": 174,
+        "paldex": 59,
         "form": null,
         "evo": [
             "jigglypuff",
@@ -651,8 +658,6 @@
         "prevgen": true,
         "swsh": true,
         "bdsp": true,
-        "scarvi": true,
-        "apri": true,
         "cycles": 10,
         "types": [
             "normal",
@@ -673,6 +678,8 @@
     {
         "name": "ralts",
         "natdex": 280,
+        "paldex": 62,
+        "kitdex": 57,
         "form": null,
         "evo": [
             "kirlia",
@@ -682,8 +689,6 @@
         "prevgen": true,
         "swsh": true,
         "bdsp": true,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "psychic",
@@ -705,6 +710,7 @@
     {
         "name": "drowzee",
         "natdex": 96,
+        "paldex": 66,
         "form": null,
         "evo": [
             "hypno"
@@ -712,8 +718,6 @@
         "prevgen": true,
         "swsh": false,
         "bdsp": true,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "psychic"
@@ -733,6 +737,8 @@
     {
         "name": "gastly",
         "natdex": 92,
+        "paldex": 68,
+        "kitdex": 118,
         "form": null,
         "evo": [
             "haunter",
@@ -741,8 +747,6 @@
         "prevgen": true,
         "swsh": true,
         "bdsp": true,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "ghost",
@@ -763,6 +767,8 @@
     {
         "name": "tandemaus",
         "natdex": 924,
+        "paldex": 71,
+        "kitdex": 97,
         "form": null,
         "evo": [
             "maushold"
@@ -770,8 +776,6 @@
         "prevgen": false,
         "swsh": false,
         "bdsp": false,
-        "scarvi": true,
-        "apri": true,
         "cycles": 10,
         "types": [
             "normal"
@@ -787,8 +791,38 @@
         ]
     },
     {
+        "name": "pichu",
+        "natdex": 172,
+        "paldex": 73,
+        "kitdex": 20,
+        "form": null,
+        "evo": [
+            "pikachu",
+            "raichu"
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": true,
+        "cycles": 10,
+        "types": [
+            "electric",
+            "psychic"
+        ],
+        "hidden": "lightning rod",
+        "eggmoves": [
+            "flail",
+            "present",
+            "fake out",
+            "charge",
+            "wish",
+            "tickle",
+            "disarming voice"
+        ]
+    },
+    {
         "name": "fidough",
         "natdex": 926,
+        "paldex": 76,
         "form": null,
         "evo": [
             "dachsbun"
@@ -796,8 +830,6 @@
         "prevgen": false,
         "swsh": false,
         "bdsp": false,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "fairy"
@@ -814,6 +846,8 @@
     {
         "name": "slakoth",
         "natdex": 287,
+        "paldex": 78,
+        "bludex": 59,
         "form": null,
         "evo": [
             "vigoroth",
@@ -822,8 +856,6 @@
         "prevgen": true,
         "swsh": false,
         "bdsp": true,
-        "scarvi": true,
-        "apri": true,
         "cycles": 15,
         "types": [
             "normal"
@@ -844,6 +876,7 @@
     {
         "name": "bounsweet",
         "natdex": 761,
+        "paldex": 81,
         "form": null,
         "evo": [
             "steenee",
@@ -852,8 +885,6 @@
         "prevgen": true,
         "swsh": true,
         "bdsp": false,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "grass"
@@ -868,6 +899,7 @@
     {
         "name": "smoliv",
         "natdex": 928,
+        "paldex": 85,
         "form": null,
         "evo": [
             "dolliv",
@@ -876,8 +908,6 @@
         "prevgen": false,
         "swsh": false,
         "bdsp": false,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "grass",
@@ -894,6 +924,8 @@
     {
         "name": "bonsly",
         "natdex": 438,
+        "paldex": 87,
+        "kitdex": 83,
         "form": null,
         "evo": [
             "sudowoodo"
@@ -901,8 +933,6 @@
         "prevgen": true,
         "swsh": true,
         "bdsp": true,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "rock"
@@ -920,6 +950,8 @@
     {
         "name": "rockruff",
         "natdex": 744,
+        "paldex": 89,
+        "kitdex": 70,
         "form": null,
         "evo": [
             "lycanroc"
@@ -927,8 +959,6 @@
         "prevgen": true,
         "swsh": true,
         "bdsp": false,
-        "scarvi": true,
-        "apri": true,
         "cycles": 15,
         "types": [
             "rock"
@@ -943,6 +973,7 @@
     {
         "name": "rolycoly",
         "natdex": 837,
+        "paldex": 91,
         "form": null,
         "evo": [
             "carkol",
@@ -951,8 +982,6 @@
         "prevgen": false,
         "swsh": true,
         "bdsp": false,
-        "scarvi": true,
-        "apri": true,
         "cycles": 15,
         "types": [
             "rock",
@@ -968,6 +997,8 @@
     {
         "name": "shinx",
         "natdex": 403,
+        "paldex": 94,
+        "kitdex": 109,
         "form": null,
         "evo": [
             "luxio",
@@ -976,8 +1007,6 @@
         "prevgen": true,
         "swsh": true,
         "bdsp": false,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "electric"
@@ -996,6 +1025,8 @@
     {
         "name": "starly",
         "natdex": 396,
+        "paldex": 97,
+        "kitdex": 28,
         "form": null,
         "evo": [
             "staravia",
@@ -1004,8 +1035,6 @@
         "prevgen": true,
         "swsh": false,
         "bdsp": true,
-        "scarvi": true,
-        "apri": true,
         "cycles": 15,
         "types": [
             "normal",
@@ -1024,6 +1053,9 @@
     {
         "name": "oricorio",
         "natdex": 741,
+        "paldex": 100,
+        "kitdex": 115,
+        "bludex": 74,
         "form": null,
         "evo": [
 
@@ -1031,8 +1063,6 @@
         "prevgen": true,
         "swsh": false,
         "bdsp": false,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "flying",
@@ -1053,6 +1083,7 @@
     {
         "name": "mareep",
         "natdex": 179,
+        "paldex": 101,
         "form": null,
         "evo": [
             "flaafy",
@@ -1061,8 +1092,6 @@
         "prevgen": true,
         "swsh": false,
         "bdsp": false,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "electric"
@@ -1080,6 +1109,8 @@
     {
         "name": "petilil",
         "natdex": 548,
+        "paldex": 104,
+        "kitdex": 66,
         "form": null,
         "evo": [
             "lilligant"
@@ -1087,8 +1118,6 @@
         "prevgen": true,
         "swsh": true,
         "bdsp": false,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "grass",
@@ -1105,6 +1134,7 @@
     {
         "name": "shroomish",
         "natdex": 285,
+        "paldex": 106,
         "form": null,
         "evo": [
             "breloom"
@@ -1112,8 +1142,6 @@
         "prevgen": true,
         "swsh": false,
         "bdsp": true,
-        "scarvi": true,
-        "apri": true,
         "cycles": 15,
         "types": [
             "grass",
@@ -1130,6 +1158,8 @@
     {
         "name": "applin",
         "natdex": 840,
+        "paldex": 108,
+        "kitdex": 33,
         "form": null,
         "evo": [
             "flapple",
@@ -1139,8 +1169,6 @@
         "prevgen": false,
         "swsh": true,
         "bdsp": false,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "grass",
@@ -1157,6 +1185,8 @@
     {
         "name": "spoink",
         "natdex": 325,
+        "paldex": 111,
+        "kitdex": 125,
         "form": null,
         "evo": [
             "grumpig"
@@ -1164,8 +1194,6 @@
         "prevgen": true,
         "swsh": false,
         "bdsp": true,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "psychic"
@@ -1185,6 +1213,7 @@
     {
         "name": "squawkabilly",
         "natdex": 931,
+        "paldex": 113,
         "form": "green",
         "evo": [
             
@@ -1192,8 +1221,6 @@
         "prevgen": false,
         "swsh": false,
         "bdsp": false,
-        "scarvi": true,
-        "apri": true,
         "cycles": 15,
         "types": [
             "normal",
@@ -1210,6 +1237,7 @@
     {
         "name": "squawkabilly",
         "natdex": 931,
+        "paldex": 113,
         "form": "blue",
         "evo": [
             
@@ -1217,8 +1245,6 @@
         "prevgen": false,
         "swsh": false,
         "bdsp": false,
-        "scarvi": true,
-        "apri": true,
         "cycles": 15,
         "types": [
             "normal",
@@ -1235,6 +1261,7 @@
     {
         "name": "squawkabilly",
         "natdex": 931,
+        "paldex": 113,
         "form": "yellow",
         "evo": [
             
@@ -1242,8 +1269,6 @@
         "prevgen": false,
         "swsh": false,
         "bdsp": false,
-        "scarvi": true,
-        "apri": true,
         "cycles": 15,
         "types": [
             "normal",
@@ -1260,6 +1285,7 @@
     {
         "name": "squawkabilly",
         "natdex": 931,
+        "paldex": 113,
         "form": "white",
         "evo": [
             
@@ -1267,8 +1293,6 @@
         "prevgen": false,
         "swsh": false,
         "bdsp": false,
-        "scarvi": true,
-        "apri": true,
         "cycles": 15,
         "types": [
             "normal",
@@ -1285,6 +1309,7 @@
     {
         "name": "misdreavus",
         "natdex": 200,
+        "paldex": 114,
         "form": null,
         "evo": [
             "mismagius"
@@ -1292,8 +1317,6 @@
         "prevgen": true,
         "swsh": false,
         "bdsp": true,
-        "scarvi": true,
-        "apri": true,
         "cycles": 25,
         "types": [
             "ghost"
@@ -1314,6 +1337,7 @@
     {
         "name": "makuhita",
         "natdex": 296,
+        "paldex": 116,
         "form": null,
         "evo": [
             "hariyama"
@@ -1321,8 +1345,6 @@
         "prevgen": true,
         "swsh": false,
         "bdsp": true,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "fighting"
@@ -1341,6 +1363,8 @@
     {
         "name": "crabrawler",
         "natdex": 739,
+        "paldex": 118,
+        "bludex": 72,
         "form": null,
         "evo": [
             "crabominable"
@@ -1348,8 +1372,6 @@
         "prevgen": true,
         "swsh": false,
         "bdsp": false,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "fighting",
@@ -1366,6 +1388,8 @@
     {
         "name": "salandit",
         "natdex": 757,
+        "paldex": 120,
+        "kitdex": 168,
         "form": null,
         "evo": [
             "salazzle"
@@ -1373,8 +1397,6 @@
         "prevgen": true,
         "swsh": true,
         "bdsp": false,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "poison",
@@ -1391,6 +1413,7 @@
     {
         "name": "phanpy",
         "natdex": 231,
+        "paldex": 122,
         "form": null,
         "evo": [
             "donphan"
@@ -1398,8 +1421,6 @@
         "prevgen": true,
         "swsh": false,
         "bdsp": true,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "ground"
@@ -1422,6 +1443,7 @@
     {
         "name": "cufant",
         "natdex": 878,
+        "paldex": 124,
         "form": null,
         "evo": [
             "copperajah"
@@ -1429,8 +1451,6 @@
         "prevgen": false,
         "swsh": true,
         "bdsp": false,
-        "scarvi": true,
-        "apri": true,
         "cycles": 25,
         "types": [
             "steel"
@@ -1450,6 +1470,8 @@
     {
         "name": "gible",
         "natdex": 443,
+        "paldex": 126,
+        "kitdex": 164,
         "form": null,
         "evo": [
             "gabite",
@@ -1458,8 +1480,6 @@
         "prevgen": true,
         "swsh": true,
         "bdsp": true,
-        "scarvi": true,
-        "apri": true,
         "cycles": 40,
         "types": [
             "dragon",
@@ -1476,6 +1496,7 @@
     {
         "name": "nacli",
         "natdex": 932,
+        "paldex": 129,
         "form": null,
         "evo": [
             "naclstack",
@@ -1484,8 +1505,6 @@
         "prevgen": false,
         "swsh": false,
         "bdsp": false,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "rock"
@@ -1501,6 +1520,7 @@
     {
         "name": "wingull",
         "natdex": 278,
+        "paldex": 132,
         "form": null,
         "evo": [
             "pelipper"
@@ -1508,8 +1528,6 @@
         "prevgen": true,
         "swsh": true,
         "bdsp": true,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "water",
@@ -1530,6 +1548,8 @@
     {
         "name": "magikarp",
         "natdex": 129,
+        "paldex": 134,
+        "kitdex": 43,
         "form": null,
         "evo": [
             "gyarados"
@@ -1537,8 +1557,6 @@
         "prevgen": true,
         "swsh": true,
         "bdsp": true,
-        "scarvi": true,
-        "apri": true,
         "cycles": 5,
         "types": [
             "water",
@@ -1552,6 +1570,8 @@
     {
         "name": "arrokuda",
         "natdex": 846,
+        "paldex": 136,
+        "kitdex": 90,
         "form": null,
         "evo": [
             "barraskewda"
@@ -1559,8 +1579,6 @@
         "prevgen": false,
         "swsh": true,
         "bdsp": false,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "water"
@@ -1576,6 +1594,8 @@
     {
         "name": "basculin",
         "natdex": 550,
+        "paldex": 138,
+        "kitdex": 194,
         "form": "red",
         "evo": [
 
@@ -1583,8 +1603,6 @@
         "prevgen": true,
         "swsh": true,
         "bdsp": false,
-        "scarvi": true,
-        "apri": true,
         "cycles": 40,
         "types": [
             "water"
@@ -1598,6 +1616,8 @@
     {
         "name": "basculin",
         "natdex": 550,
+        "paldex": 138,
+        "kitdex": 194,
         "form": "blue",
         "evo": [
 
@@ -1605,8 +1625,6 @@
         "prevgen": true,
         "swsh": true,
         "bdsp": false,
-        "scarvi": true,
-        "apri": true,
         "cycles": 40,
         "types": [
             "water"
@@ -1620,6 +1638,8 @@
     {
         "name": "basculin",
         "natdex": 550,
+        "paldex": 138,
+        "kitdex": 194,
         "form": "white",
         "evo": [
             "basculegion"
@@ -1627,8 +1647,6 @@
         "prevgen": false,
         "swsh": false,
         "bdsp": false,
-        "scarvi": true,
-        "apri": true,
         "cycles": 40,
         "types": [
             "water"
@@ -1642,6 +1660,7 @@
     {
         "name": "gulpin",
         "natdex": 316,
+        "paldex": 139,
         "form": null,
         "evo": [
             "swalot"
@@ -1649,8 +1668,6 @@
         "prevgen": true,
         "swsh": false,
         "bdsp": true,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "poison"
@@ -1669,6 +1686,7 @@
     {
         "name": "meowth",
         "natdex": 52,
+        "paldex": 141,
         "form": null,
         "evo": [
             "persian"
@@ -1676,8 +1694,6 @@
         "prevgen": true,
         "swsh": true,
         "bdsp": true,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "normal"
@@ -1695,6 +1711,7 @@
     {
         "name": "meowth",
         "natdex": 52,
+        "paldex": 141,
         "form": "alolan",
         "evo": [
             "persian"
@@ -1702,8 +1719,6 @@
         "prevgen": true,
         "swsh": true,
         "bdsp": false,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "dark"
@@ -1720,6 +1735,7 @@
     {
         "name": "meowth",
         "natdex": 52,
+        "paldex": 141,
         "form": "galarian",
         "evo": [
             "perrserker"
@@ -1727,8 +1743,6 @@
         "prevgen": false,
         "swsh": true,
         "bdsp": false,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "steel"
@@ -1746,6 +1760,7 @@
     {
         "name": "drifloon",
         "natdex": 425,
+        "paldex": 143,
         "form": null,
         "evo": [
             "drifblim"
@@ -1753,8 +1768,6 @@
         "prevgen": true,
         "swsh": true,
         "bdsp": true,
-        "scarvi": true,
-        "apri": true,
         "cycles": 30,
         "types": [
             "ghost",
@@ -1773,6 +1786,7 @@
     {
         "name": "flabébé",
         "natdex": 669,
+        "paldex": 145,
         "form": "red",
         "evo": [
             "floette",
@@ -1781,8 +1795,6 @@
         "prevgen": true,
         "swsh": false,
         "bdsp": false,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "fairy"
@@ -1797,6 +1809,7 @@
     {
         "name": "flabébé",
         "natdex": 669,
+        "paldex": 145,
         "form": "blue",
         "evo": [
             "floette",
@@ -1805,8 +1818,6 @@
         "prevgen": true,
         "swsh": false,
         "bdsp": false,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "fairy"
@@ -1821,6 +1832,7 @@
     {
         "name": "flabébé",
         "natdex": 669,
+        "paldex": 145,
         "form": "orange",
         "evo": [
             "floette",
@@ -1829,8 +1841,6 @@
         "prevgen": true,
         "swsh": false,
         "bdsp": false,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "fairy"
@@ -1845,6 +1855,7 @@
     {
         "name": "flabébé",
         "natdex": 669,
+        "paldex": 145,
         "form": "white",
         "evo": [
             "floette",
@@ -1853,8 +1864,6 @@
         "prevgen": true,
         "swsh": false,
         "bdsp": false,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "fairy"
@@ -1869,6 +1878,7 @@
     {
         "name": "flabébé",
         "natdex": 669,
+        "paldex": 145,
         "form": "yellow",
         "evo": [
             "floette",
@@ -1877,8 +1887,6 @@
         "prevgen": true,
         "swsh": false,
         "bdsp": false,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "fairy"
@@ -1893,6 +1901,8 @@
     {
         "name": "diglett",
         "natdex": 50,
+        "paldex": 149,
+        "bludex": 66,
         "form": null,
         "evo": [
             "dugtrio"
@@ -1900,8 +1910,6 @@
         "prevgen": true,
         "swsh": true,
         "bdsp": true,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "ground"
@@ -1918,6 +1926,8 @@
     {
         "name": "diglett",
         "natdex": 50,
+        "paldex": 149,
+        "bludex": 66,
         "form": "alolan",
         "evo": [
             "dugtrio"
@@ -1925,8 +1935,6 @@
         "prevgen": true,
         "swsh": true,
         "bdsp": true,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "ground",
@@ -1946,6 +1954,8 @@
     {
         "name": "torkoal",
         "natdex": 324,
+        "paldex": 150,
+        "bludex": 86,
         "form": null,
         "evo": [
 
@@ -1953,8 +1963,6 @@
         "prevgen": true,
         "swsh": true,
         "bdsp": true,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "fire"
@@ -1970,6 +1978,8 @@
     {
         "name": "numel",
         "natdex": 322,
+        "paldex": 151,
+        "bludex": 125,
         "form": null,
         "evo": [
             "dugtrio"
@@ -1977,8 +1987,6 @@
         "prevgen": true,
         "swsh": false,
         "bdsp": true,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "fire",
@@ -2006,6 +2014,8 @@
     {
         "name": "bronzor",
         "natdex": 436,
+        "paldex": 153,
+        "kitdex": 154,
         "form": null,
         "evo": [
             "bronzong"
@@ -2013,8 +2023,6 @@
         "prevgen": true,
         "swsh": true,
         "bdsp": true,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "steel",
@@ -2029,6 +2037,8 @@
     {
         "name": "axew",
         "natdex": 610,
+        "paldex": 155,
+        "bludex": 140,
         "form": null,
         "evo": [
             "fraxure",
@@ -2037,8 +2047,6 @@
         "prevgen": true,
         "swsh": true,
         "bdsp": false,
-        "scarvi": true,
-        "apri": true,
         "cycles": 40,
         "types": [
             "dragon"
@@ -2056,6 +2064,8 @@
     {
         "name": "mankey",
         "natdex": 56,
+        "paldex": 158,
+        "kitdex": 99,
         "form": null,
         "evo": [
             "primeape",
@@ -2064,8 +2074,6 @@
         "prevgen": true,
         "swsh": false,
         "bdsp": true,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "fighting",
@@ -2084,6 +2092,7 @@
     {
         "name": "meditite",
         "natdex": 307,
+        "paldex": 161,
         "form": null,
         "evo": [
             "medicham"
@@ -2091,8 +2100,6 @@
         "prevgen": true,
         "swsh": false,
         "bdsp": true,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "fighting",
@@ -2116,6 +2123,8 @@
     {
         "name": "riolu",
         "natdex": 447,
+        "paldex": 163,
+        "kitdex": 64,
         "form": null,
         "evo": [
             "lucario"
@@ -2123,8 +2132,6 @@
         "prevgen": true,
         "swsh": true,
         "bdsp": true,
-        "scarvi": true,
-        "apri": true,
         "cycles": 25,
         "types": [
             "fighting",
@@ -2144,6 +2151,7 @@
     {
         "name": "charcadet",
         "natdex": 935,
+        "paldex": 165,
         "form": null,
         "evo": [
             "armarouge",
@@ -2152,8 +2160,6 @@
         "prevgen": false,
         "swsh": false,
         "bdsp": false,
-        "scarvi": true,
-        "apri": true,
         "cycles": 35,
         "types": [
             "fire",
@@ -2170,6 +2176,8 @@
     {
         "name": "barboach",
         "natdex": 339,
+        "paldex": 168,
+        "kitdex": 62,
         "form": null,
         "evo": [
             "whiscash"
@@ -2177,8 +2185,6 @@
         "prevgen": true,
         "swsh": true,
         "bdsp": true,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "water",
@@ -2195,6 +2201,7 @@
     {
         "name": "tadbulb",
         "natdex": 938,
+        "paldex": 170,
         "form": null,
         "evo": [
             "bellibot"
@@ -2202,8 +2209,6 @@
         "prevgen": false,
         "swsh": false,
         "bdsp": false,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "electric"
@@ -2218,6 +2223,8 @@
     {
         "name": "goomy",
         "natdex": 704,
+        "paldex": 172,
+        "kitdex": 179,
         "form": null,
         "evo": [
             "sliggoo",
@@ -2226,8 +2233,6 @@
         "prevgen": true,
         "swsh": true,
         "bdsp": false,
-        "scarvi": true,
-        "apri": true,
         "cycles": 40,
         "types": [
             "dragon"
@@ -2241,6 +2246,7 @@
     {
         "name": "croagunk",
         "natdex": 453,
+        "paldex": 175,
         "form": null,
         "evo": [
             "toxicroak"
@@ -2248,8 +2254,6 @@
         "prevgen": true,
         "swsh": true,
         "bdsp": true,
-        "scarvi": true,
-        "apri": true,
         "cycles": 10,
         "types": [
             "poison",
@@ -2271,6 +2275,7 @@
     {
         "name": "wattrel",
         "natdex": 940,
+        "paldex": 177,
         "form": null,
         "evo": [
             "kilowattrel"
@@ -2278,8 +2283,6 @@
         "prevgen": false,
         "swsh": false,
         "bdsp": false,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "electric",
@@ -2298,6 +2301,7 @@
     {
         "name": "eevee",
         "natdex": 133,
+        "paldex": 179,
         "form": null,
         "evo": [
             "leafeon",
@@ -2312,8 +2316,6 @@
         "prevgen": true,
         "swsh": true,
         "bdsp": true,
-        "scarvi": true,
-        "apri": true,
         "cycles": 35,
         "types": [
             "normal",
@@ -2341,6 +2343,8 @@
     {
         "name": "dunsparce",
         "natdex": 206,
+        "paldex": 188,
+        "kitdex": 160,
         "form": null,
         "evo": [
             "dudunsparce"
@@ -2348,8 +2352,6 @@
         "prevgen": true,
         "swsh": true,
         "bdsp": true,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "normal"
@@ -2367,6 +2369,8 @@
     {
         "name": "deerling",
         "natdex": 585,
+        "paldex": 190,
+        "bludex": 38,
         "form": null,
         "evo": [
             "sawsbuck"
@@ -2374,8 +2378,6 @@
         "prevgen": true,
         "swsh": false,
         "bdsp": false,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "normal",
@@ -2395,6 +2397,8 @@
     {
         "name": "girafarig",
         "natdex": 203,
+        "paldex": 192,
+        "bludex": 25,
         "form": null,
         "evo": [
             "farigiraf"
@@ -2402,8 +2406,6 @@
         "prevgen": true,
         "swsh": false,
         "bdsp": true,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "normal",
@@ -2425,6 +2427,8 @@
     {
         "name": "grimer",
         "natdex": 88,
+        "paldex": 194,
+        "bludex": 68,
         "form": null,
         "evo": [
             "muk"
@@ -2432,8 +2436,6 @@
         "prevgen": true,
         "swsh": false,
         "bdsp": true,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "poison"
@@ -2454,6 +2456,8 @@
     {
         "name": "grimer",
         "natdex": 88,
+        "paldex": 194,
+        "bludex": 68,
         "form": "alolan",
         "evo": [
             "muk"
@@ -2461,8 +2465,6 @@
         "prevgen": true,
         "swsh": false,
         "bdsp": true,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "poison",
@@ -2476,6 +2478,7 @@
     {
         "name": "maschiff",
         "natdex": 942,
+        "paldex": 196,
         "form": null,
         "evo": [
             "mabosstiff"
@@ -2483,8 +2486,6 @@
         "prevgen": false,
         "swsh": false,
         "bdsp": false,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "dark"
@@ -2500,6 +2501,7 @@
     {
         "name": "toxel",
         "natdex": 848,
+        "paldex": 198,
         "form": null,
         "evo": [
             "toxtricity"
@@ -2507,8 +2509,6 @@
         "prevgen": false,
         "swsh": true,
         "bdsp": false,
-        "scarvi": true,
-        "apri": true,
         "cycles": 25,
         "types": [
             "electric",
@@ -2523,6 +2523,7 @@
     {
         "name": "dedenne",
         "natdex": 702,
+        "paldex": 200,
         "form": null,
         "evo": [
 
@@ -2530,8 +2531,6 @@
         "prevgen": true,
         "swsh": true,
         "bdsp": false,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "electric",
@@ -2547,6 +2546,8 @@
     {
         "name": "pachirisu",
         "natdex": 417,
+        "paldex": 201,
+        "kitdex": 63,
         "form": null,
         "evo": [
 
@@ -2554,8 +2555,6 @@
         "prevgen": true,
         "swsh": false,
         "bdsp": true,
-        "scarvi": true,
-        "apri": true,
         "cycles": 10,
         "types": [
             "electric"
@@ -2578,6 +2577,7 @@
     {
         "name": "shroodle",
         "natdex": 944,
+        "paldex": 202,
         "form": null,
         "evo": [
             "grafaiai"
@@ -2585,8 +2585,6 @@
         "prevgen": false,
         "swsh": false,
         "bdsp": false,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "poison",
@@ -2605,6 +2603,8 @@
     {
         "name": "stantler",
         "natdex": 234,
+        "paldex": 204,
+        "kitdex": 53,
         "form": null,
         "evo": [
             "wyrdeer"
@@ -2612,8 +2612,6 @@
         "prevgen": true,
         "swsh": false,
         "bdsp": true,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "normal",
@@ -2634,6 +2632,7 @@
     {
         "name": "foongus",
         "natdex": 590,
+        "paldex": 205,
         "form": null,
         "evo": [
             "amoongus"
@@ -2641,8 +2640,6 @@
         "prevgen": true,
         "swsh": true,
         "bdsp": false,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "grass",
@@ -2659,6 +2656,7 @@
     {
         "name": "voltorb",
         "natdex": 100,
+        "paldex": 207,
         "form": null,
         "evo": [
             "electrode"
@@ -2666,8 +2664,6 @@
         "prevgen": true,
         "swsh": false,
         "bdsp": true,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "electric"
@@ -2681,6 +2677,7 @@
     {
         "name": "voltorb",
         "natdex": 100,
+        "paldex": 207,
         "form": "hisuian",
         "evo": [
             "electrode"
@@ -2688,8 +2685,6 @@
         "prevgen": false,
         "swsh": false,
         "bdsp": true,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "electric",
@@ -2705,6 +2700,8 @@
     {
         "name": "magnemite",
         "natdex": 81,
+        "paldex": 209,
+        "bludex": 116,
         "form": null,
         "evo": [
             "magneton",
@@ -2713,8 +2710,6 @@
         "prevgen": true,
         "swsh": true,
         "bdsp": true,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "electric",
@@ -2729,6 +2724,8 @@
     {
         "name": "growlithe",
         "natdex": 58,
+        "paldex": 213,
+        "kitdex": 78,
         "form": null,
         "evo": [
             "arcanine"
@@ -2736,8 +2733,6 @@
         "prevgen": true,
         "swsh": true,
         "bdsp": true,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "fire"
@@ -2755,6 +2750,8 @@
     {
         "name": "growlithe",
         "natdex": 58,
+        "paldex": 213,
+        "kitdex": 78,
         "form": "hisuian",
         "evo": [
             "arcanine"
@@ -2762,8 +2759,6 @@
         "prevgen": false,
         "swsh": false,
         "bdsp": false,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "fire",
@@ -2782,6 +2777,7 @@
     {
         "name": "teddiursa",
         "natdex": 216,
+        "paldex": 215,
         "form": null,
         "evo": [
             "arcanine"
@@ -2789,8 +2785,6 @@
         "prevgen": true,
         "swsh": false,
         "bdsp": true,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "normal",
@@ -2815,6 +2809,8 @@
     {
         "name": "zangoose",
         "natdex": 335,
+        "paldex": 217,
+        "bludex": 70,
         "form": null,
         "evo": [
 
@@ -2822,8 +2818,6 @@
         "prevgen": true,
         "swsh": false,
         "bdsp": true,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "normal"
@@ -2836,6 +2830,8 @@
     {
         "name": "seviper",
         "natdex": 336,
+        "paldex": 218,
+        "bludex": 71,
         "form": null,
         "evo": [
 
@@ -2843,8 +2839,6 @@
         "prevgen": true,
         "swsh": false,
         "bdsp": true,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "poison"
@@ -2865,6 +2859,8 @@
     {
         "name": "swablu",
         "natdex": 333,
+        "paldex": 219,
+        "bludex": 114,
         "form": null,
         "evo": [
             "altaria"
@@ -2872,8 +2868,6 @@
         "prevgen": true,
         "swsh": true,
         "bdsp": true,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "normal",
@@ -2894,6 +2888,7 @@
     {
         "name": "skiddo",
         "natdex": 672,
+        "paldex": 221,
         "form": null,
         "evo": [
             "gogoat"
@@ -2901,8 +2896,6 @@
         "prevgen": true,
         "swsh": false,
         "bdsp": false,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "grass"
@@ -2918,6 +2911,8 @@
     {
         "name": "tauros",
         "natdex": 128,
+        "paldex": 223,
+        "bludex": 22,
         "form": null,
         "evo": [
 
@@ -2925,8 +2920,6 @@
         "prevgen": true,
         "swsh": true,
         "bdsp": true,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "normal"
@@ -2940,6 +2933,8 @@
     {
         "name": "tauros",
         "natdex": 128,
+        "paldex": 223,
+        "bludex": 22,
         "form": "paldean",
         "evo": [
 
@@ -2947,8 +2942,6 @@
         "prevgen": false,
         "swsh": false,
         "bdsp": false,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "fighting"
@@ -2962,6 +2955,8 @@
     {
         "name": "tauros",
         "natdex": 128,
+        "paldex": 223,
+        "bludex": 22,
         "form": "blaze",
         "evo": [
 
@@ -2969,8 +2964,6 @@
         "prevgen": false,
         "swsh": false,
         "bdsp": false,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "fighting",
@@ -2985,6 +2978,8 @@
     {
         "name": "tauros",
         "natdex": 128,
+        "paldex": 223,
+        "bludex": 22,
         "form": "aqua",
         "evo": [
 
@@ -2992,8 +2987,6 @@
         "prevgen": false,
         "swsh": false,
         "bdsp": false,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "fighting",
@@ -3008,6 +3001,8 @@
     {
         "name": "litleo",
         "natdex": 667,
+        "paldex": 224,
+        "bludex": 36,
         "form": null,
         "evo": [
             "pyroar"
@@ -3015,8 +3010,6 @@
         "prevgen": true,
         "swsh": false,
         "bdsp": false,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "fire",
@@ -3033,6 +3026,7 @@
     {
         "name": "stunky",
         "natdex": 434,
+        "paldex": 226,
         "form": null,
         "evo": [
             "skuntank"
@@ -3040,8 +3034,6 @@
         "prevgen": true,
         "swsh": true,
         "bdsp": true,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "poison",
@@ -3060,6 +3052,7 @@
     {
         "name": "zorua",
         "natdex": 570,
+        "paldex": 228,
         "form": null,
         "evo": [
             "zoroark"
@@ -3067,8 +3060,6 @@
         "prevgen": true,
         "swsh": true,
         "bdsp": false,
-        "scarvi": true,
-        "apri": true,
         "cycles": 25,
         "types": [
             "dark"
@@ -3086,6 +3077,7 @@
     {
         "name": "zorua",
         "natdex": 570,
+        "paldex": 228,
         "form": "hisuian",
         "evo": [
             "zoroark"
@@ -3093,8 +3085,6 @@
         "prevgen": false,
         "swsh": false,
         "bdsp": false,
-        "scarvi": true,
-        "apri": true,
         "cycles": 25,
         "types": [
             "normal",
@@ -3111,6 +3101,8 @@
     {
         "name": "sneasel",
         "natdex": 215,
+        "paldex": 230,
+        "kitdex": 170,
         "form": null,
         "evo": [
             "weavile"
@@ -3118,8 +3110,6 @@
         "prevgen": true,
         "swsh": true,
         "bdsp": true,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "dark",
@@ -3140,6 +3130,8 @@
     {
         "name": "sneasel",
         "natdex": 215,
+        "paldex": 230,
+        "kitdex": 170,
         "form": "hisuian",
         "evo": [
             "sneasler"
@@ -3147,8 +3139,6 @@
         "prevgen": false,
         "swsh": false,
         "bdsp": false,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "fighting",
@@ -3168,6 +3158,7 @@
     {
         "name": "murkrow",
         "natdex": 198,
+        "paldex": 232,
         "form": null,
         "evo": [
             "honchkrow"
@@ -3175,8 +3166,6 @@
         "prevgen": true,
         "swsh": false,
         "bdsp": true,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "dark",
@@ -3198,6 +3187,8 @@
     {
         "name": "gothita",
         "natdex": 574,
+        "paldex": 234,
+        "bludex": 102,
         "form": null,
         "evo": [
             "gothorita",
@@ -3206,8 +3197,6 @@
         "prevgen": true,
         "swsh": true,
         "bdsp": false,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "psychic"
@@ -3224,6 +3213,8 @@
     {
         "name": "sinistea",
         "natdex": 854,
+        "paldex": 237,
+        "bludex": 127,
         "form": null,
         "evo": [
             "polteageist"
@@ -3231,8 +3222,6 @@
         "prevgen": false,
         "swsh": true,
         "bdsp": false,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "ghost"
@@ -3245,6 +3234,8 @@
     {
         "name": "mimikyu",
         "natdex": 778,
+        "paldex": 239,
+        "kitdex": 189,
         "form": null,
         "evo": [
 
@@ -3252,8 +3243,6 @@
         "prevgen": true,
         "swsh": true,
         "bdsp": false,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "ghost",
@@ -3268,6 +3257,7 @@
     {
         "name": "klefki",
         "natdex": 707,
+        "paldex": 240,
         "form": null,
         "evo": [
 
@@ -3275,8 +3265,6 @@
         "prevgen": true,
         "swsh": true,
         "bdsp": false,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "steel",
@@ -3291,6 +3279,8 @@
     {
         "name": "indeedee",
         "natdex": 876,
+        "paldex": 241,
+        "kitdex": 193,
         "form": null,
         "evo": [
 
@@ -3298,8 +3288,6 @@
         "prevgen": false,
         "swsh": true,
         "bdsp": false,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "psychic",
@@ -3316,6 +3304,7 @@
     {
         "name": "bramblin",
         "natdex": 946,
+        "paldex": 242,
         "form": null,
         "evo": [
             "brambleghast"
@@ -3323,8 +3312,6 @@
         "prevgen": false,
         "swsh": false,
         "bdsp": false,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "grass",
@@ -3342,6 +3329,8 @@
     {
         "name": "toedscool",
         "natdex": 948,
+        "paldex": 244,
+        "kitdex": 74,
         "form": null,
         "evo": [
             "toedscruel"
@@ -3349,8 +3338,6 @@
         "prevgen": false,
         "swsh": false,
         "bdsp": false,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "ground",
@@ -3371,6 +3358,7 @@
     {
         "name": "tropius",
         "natdex": 357,
+        "paldex": 246,
         "form": null,
         "evo": [
 
@@ -3378,8 +3366,6 @@
         "prevgen": true,
         "swsh": false,
         "bdsp": true,
-        "scarvi": true,
-        "apri": true,
         "cycles": 25,
         "types": [
             "grass",
@@ -3398,6 +3384,8 @@
     {
         "name": "fomantis",
         "natdex": 753,
+        "paldex": 247,
+        "kitdex": 31,
         "form": null,
         "evo": [
             "lurantis"
@@ -3405,8 +3393,6 @@
         "prevgen": true,
         "swsh": true,
         "bdsp": false,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "grass"
@@ -3420,6 +3406,7 @@
     {
         "name": "klawf",
         "natdex": 950,
+        "paldex": 249,
         "form": null,
         "evo": [
 
@@ -3427,8 +3414,6 @@
         "prevgen": false,
         "swsh": false,
         "bdsp": false,
-        "scarvi": true,
-        "apri": true,
         "cycles": 35,
         "types": [
             "rock"
@@ -3444,6 +3429,7 @@
     {
         "name": "capsakid",
         "natdex": 951,
+        "paldex": 250,
         "form": null,
         "evo": [
             "scovillain"
@@ -3451,8 +3437,6 @@
         "prevgen": false,
         "swsh": false,
         "bdsp": false,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "grass",
@@ -3470,6 +3454,7 @@
     {
         "name": "cacnea",
         "natdex": 331,
+        "paldex": 252,
         "form": null,
         "evo": [
             "cacturne"
@@ -3477,8 +3462,6 @@
         "prevgen": true,
         "swsh": false,
         "bdsp": true,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "grass",
@@ -3492,6 +3475,8 @@
     {
         "name": "rellor",
         "natdex": 953,
+        "paldex": 254,
+        "bludex": 30,
         "form": null,
         "evo": [
             "rabsca"
@@ -3499,8 +3484,6 @@
         "prevgen": false,
         "swsh": false,
         "bdsp": false,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "bug",
@@ -3517,6 +3500,8 @@
     {
         "name": "venonat",
         "natdex": 48,
+        "paldex": 256,
+        "bludex": 8,
         "form": null,
         "evo": [
             "venomoth"
@@ -3524,8 +3509,6 @@
         "prevgen": true,
         "swsh": false,
         "bdsp": true,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "bug",
@@ -3546,6 +3529,7 @@
     {
         "name": "pineco",
         "natdex": 204,
+        "paldex": 258,
         "form": null,
         "evo": [
             "forretress"
@@ -3553,8 +3537,6 @@
         "prevgen": true,
         "swsh": false,
         "bdsp": true,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "bug",
@@ -3574,6 +3556,8 @@
     {
         "name": "scyther",
         "natdex": 123,
+        "paldex": 260,
+        "bludex": 19,
         "form": null,
         "evo": [
             "scizor",
@@ -3582,8 +3566,6 @@
         "prevgen": true,
         "swsh": true,
         "bdsp": true,
-        "scarvi": true,
-        "apri": true,
         "cycles": 25,
         "types": [
             "bug",
@@ -3603,6 +3585,8 @@
     {
         "name": "heracross",
         "natdex": 214,
+        "paldex": 262,
+        "kitdex": 49,
         "form": null,
         "evo": [
 
@@ -3610,8 +3594,6 @@
         "prevgen": true,
         "swsh": true,
         "bdsp": true,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "bug",
@@ -3630,6 +3612,7 @@
     {
         "name": "flittle",
         "natdex": 955,
+        "paldex": 263,
         "form": null,
         "evo": [
             "espathra"
@@ -3637,8 +3620,6 @@
         "prevgen": false,
         "swsh": false,
         "bdsp": false,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "psychic"
@@ -3653,6 +3634,7 @@
     {
         "name": "hippopotas",
         "natdex": 449,
+        "paldex": 265,
         "form": null,
         "evo": [
             "hippowdon"
@@ -3660,8 +3642,6 @@
         "prevgen": true,
         "swsh": true,
         "bdsp": true,
-        "scarvi": true,
-        "apri": true,
         "cycles": 30,
         "types": [
             "ground"
@@ -3678,6 +3658,8 @@
     {
         "name": "sandile",
         "natdex": 551,
+        "paldex": 267,
+        "bludex": 28,
         "form": null,
         "evo": [
             "krokorok",
@@ -3686,8 +3668,6 @@
         "prevgen": true,
         "swsh": true,
         "bdsp": false,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "ground",
@@ -3704,6 +3684,7 @@
     {
         "name": "silicobra",
         "natdex": 843,
+        "paldex": 270,
         "form": null,
         "evo": [
             "sandaconda"
@@ -3711,8 +3692,6 @@
         "prevgen": false,
         "swsh": true,
         "bdsp": false,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "ground"
@@ -3729,6 +3708,8 @@
     {
         "name": "mudbray",
         "natdex": 749,
+        "paldex": 272,
+        "kitdex": 129,
         "form": null,
         "evo": [
             "mudsdale"
@@ -3736,8 +3717,6 @@
         "prevgen": true,
         "swsh": true,
         "bdsp": false,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "ground"
@@ -3754,6 +3733,7 @@
     {
         "name": "larvesta",
         "natdex": 636,
+        "paldex": 274,
         "form": null,
         "evo": [
             "volcarona"
@@ -3761,8 +3741,6 @@
         "prevgen": true,
         "swsh": true,
         "bdsp": false,
-        "scarvi": true,
-        "apri": true,
         "cycles": 40,
         "types": [
             "bug",
@@ -3779,6 +3757,7 @@
     {
         "name": "bagon",
         "natdex": 371,
+        "paldex": 276,
         "form": null,
         "evo": [
             "shelgon",
@@ -3787,8 +3766,6 @@
         "prevgen": true,
         "swsh": true,
         "bdsp": true,
-        "scarvi": true,
-        "apri": true,
         "cycles": 40,
         "types": [
             "dragon",
@@ -3805,6 +3782,7 @@
     {
         "name": "tinkatink",
         "natdex": 957,
+        "paldex": 279,
         "form": null,
         "evo": [
             "tinkatuff",
@@ -3813,8 +3791,6 @@
         "prevgen": false,
         "swsh": false,
         "bdsp": false,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "fairy",
@@ -3830,6 +3806,8 @@
     {
         "name": "hatenna",
         "natdex": 856,
+        "paldex": 282,
+        "kitdex": 92,
         "form": null,
         "evo": [
             "hattrem",
@@ -3838,8 +3816,6 @@
         "prevgen": false,
         "swsh": true,
         "bdsp": false,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "psychic",
@@ -3856,6 +3832,8 @@
     {
         "name": "impidimp",
         "natdex": 859,
+        "paldex": 285,
+        "kitdex": 190,
         "form": null,
         "evo": [
             "morgrem",
@@ -3864,8 +3842,6 @@
         "prevgen": false,
         "swsh": true,
         "bdsp": false,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "dark",
@@ -3879,6 +3855,7 @@
     {
         "name": "wiglett",
         "natdex": 960,
+        "paldex": 288,
         "form": null,
         "evo": [
             "wugtrio"
@@ -3886,8 +3863,6 @@
         "prevgen": false,
         "swsh": false,
         "bdsp": false,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "water"
@@ -3901,6 +3876,8 @@
     {
         "name": "bombirdier",
         "natdex": 962,
+        "paldex": 290,
+        "kitdex": 134,
         "form": null,
         "evo": [
 
@@ -3908,8 +3885,6 @@
         "prevgen": false,
         "swsh": false,
         "bdsp": false,
-        "scarvi": true,
-        "apri": true,
         "cycles": 35,
         "types": [
             "flying",
@@ -3927,6 +3902,7 @@
     {
         "name": "finizen",
         "natdex": 963,
+        "paldex": 291,
         "form": null,
         "evo": [
             "palafin"
@@ -3934,8 +3910,6 @@
         "prevgen": false,
         "swsh": false,
         "bdsp": false,
-        "scarvi": true,
-        "apri": true,
         "cycles": 40,
         "types": [
             "water"
@@ -3952,6 +3926,7 @@
     {
         "name": "varoom",
         "natdex": 965,
+        "paldex": 293,
         "form": null,
         "evo": [
             "revraroom"
@@ -3959,8 +3934,6 @@
         "prevgen": false,
         "swsh": false,
         "bdsp": false,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "steel",
@@ -3978,6 +3951,7 @@
     {
         "name": "cyclizar",
         "natdex": 967,
+        "paldex": 295,
         "form": null,
         "evo": [
 
@@ -3985,8 +3959,6 @@
         "prevgen": false,
         "swsh": false,
         "bdsp": false,
-        "scarvi": true,
-        "apri": true,
         "cycles": 30,
         "types": [
             "dragon",
@@ -4003,6 +3975,8 @@
     {
         "name": "orthworm",
         "natdex": 968,
+        "paldex": 296,
+        "kitdex": 96,
         "form": null,
         "evo": [
             
@@ -4010,8 +3984,6 @@
         "prevgen": false,
         "swsh": false,
         "bdsp": false,
-        "scarvi": true,
-        "apri": true,
         "cycles": 35,
         "types": [
             "steel"
@@ -4026,6 +3998,7 @@
     {
         "name": "sableye",
         "natdex": 302,
+        "paldex": 297,
         "form": null,
         "evo": [
 
@@ -4033,8 +4006,6 @@
         "prevgen": true,
         "swsh": true,
         "bdsp": true,
-        "scarvi": true,
-        "apri": true,
         "cycles": 25,
         "types": [
             "dark",
@@ -4053,6 +4024,7 @@
     {
         "name": "shuppet",
         "natdex": 353,
+        "paldex": 298,
         "form": null,
         "evo": [
             "banette"
@@ -4060,8 +4032,6 @@
         "prevgen": true,
         "swsh": false,
         "bdsp": true,
-        "scarvi": true,
-        "apri": true,
         "cycles": 25,
         "types": [
             "ghost"
@@ -4078,6 +4048,7 @@
     {
         "name": "falinks",
         "natdex": 870,
+        "paldex": 300,
         "form": null,
         "evo": [
 
@@ -4085,8 +4056,6 @@
         "prevgen": false,
         "swsh": true,
         "bdsp": false,
-        "scarvi": true,
-        "apri": true,
         "cycles": 25,
         "types": [
             "fighting"
@@ -4099,6 +4068,7 @@
     {
         "name": "hawlucha",
         "natdex": 701,
+        "paldex": 301,
         "form": null,
         "evo": [
 
@@ -4106,8 +4076,6 @@
         "prevgen": true,
         "swsh": true,
         "bdsp": false,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "fighting",
@@ -4126,6 +4094,7 @@
     {
         "name": "spiritomb",
         "natdex": 442,
+        "paldex": 302,
         "form": null,
         "evo": [
 
@@ -4133,8 +4102,6 @@
         "prevgen": true,
         "swsh": true,
         "bdsp": true,
-        "scarvi": true,
-        "apri": true,
         "cycles": 30,
         "types": [
             "ghost",
@@ -4152,6 +4119,8 @@
     {
         "name": "noibat",
         "natdex": 714,
+        "paldex": 303,
+        "kitdex": 88,
         "form": null,
         "evo": [
             "noivern"
@@ -4159,8 +4128,6 @@
         "prevgen": true,
         "swsh": true,
         "bdsp": false,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "flying",
@@ -4175,6 +4142,7 @@
     {
         "name": "dreepy",
         "natdex": 885,
+        "paldex": 305,
         "form": null,
         "evo": [
             "drakloak",
@@ -4183,8 +4151,6 @@
         "prevgen": false,
         "swsh": true,
         "bdsp": false,
-        "scarvi": true,
-        "apri": true,
         "cycles": 40,
         "types": [
             "dragon",
@@ -4203,6 +4169,8 @@
     {
         "name": "glimmet",
         "natdex": 969,
+        "paldex": 308,
+        "kitdex": 157,
         "form": null,
         "evo": [
             "glimmora"
@@ -4210,8 +4178,6 @@
         "prevgen": false,
         "swsh": false,
         "bdsp": false,
-        "scarvi": true,
-        "apri": true,
         "cycles": 30,
         "types": [
             "rock",
@@ -4227,6 +4193,8 @@
     {
         "name": "rotom",
         "natdex": 479,
+        "paldex": 310,
+        "bludex": 41,
         "form": null,
         "evo": [
 
@@ -4234,8 +4202,6 @@
         "prevgen": true,
         "swsh": true,
         "bdsp": true,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "electric",
@@ -4254,6 +4220,7 @@
     {
         "name": "greavard",
         "natdex": 971,
+        "paldex": 311,
         "form": null,
         "evo": [
             "houndstone"
@@ -4261,8 +4228,6 @@
         "prevgen": false,
         "swsh": false,
         "bdsp": false,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "ghost"
@@ -4281,6 +4246,7 @@
     {
         "name": "oranguru",
         "natdex": 765,
+        "paldex": 313,
         "form": null,
         "evo": [
 
@@ -4288,8 +4254,6 @@
         "prevgen": true,
         "swsh": true,
         "bdsp": false,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "normal",
@@ -4305,6 +4269,7 @@
     {
         "name": "passimian",
         "natdex": 766,
+        "paldex": 314,
         "form": null,
         "evo": [
 
@@ -4312,8 +4277,6 @@
         "prevgen": true,
         "swsh": true,
         "bdsp": false,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "fighting"
@@ -4331,6 +4294,7 @@
     {
         "name": "komala",
         "natdex": 775,
+        "paldex": 315,
         "form": null,
         "evo": [
 
@@ -4338,8 +4302,6 @@
         "prevgen": true,
         "swsh": false,
         "bdsp": false,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "normal"
@@ -4356,6 +4318,7 @@
     {
         "name": "larvitar",
         "natdex": 246,
+        "paldex": 316,
         "form": null,
         "evo": [
             "pupitar",
@@ -4364,8 +4327,6 @@
         "prevgen": true,
         "swsh": true,
         "bdsp": true,
-        "scarvi": true,
-        "apri": true,
         "cycles": 40,
         "types": [
             "rock",
@@ -4387,6 +4348,7 @@
     {
         "name": "stonjourner",
         "natdex": 874,
+        "paldex": 319,
         "form": null,
         "evo": [
 
@@ -4394,8 +4356,6 @@
         "prevgen": false,
         "swsh": true,
         "bdsp": false,
-        "scarvi": true,
-        "apri": true,
         "cycles": 25,
         "types": [
             "rock"
@@ -4409,6 +4369,7 @@
     {
         "name": "eiscue",
         "natdex": 875,
+        "paldex": 320,
         "form": null,
         "evo": [
 
@@ -4416,8 +4377,6 @@
         "prevgen": false,
         "swsh": true,
         "bdsp": false,
-        "scarvi": true,
-        "apri": true,
         "cycles": 25,
         "types": [
             "ice"
@@ -4435,6 +4394,7 @@
     {
         "name": "pinchurchin",
         "natdex": 871,
+        "paldex": 321,
         "form": null,
         "evo": [
 
@@ -4442,8 +4402,6 @@
         "prevgen": false,
         "swsh": true,
         "bdsp": false,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "electric"
@@ -4457,6 +4415,7 @@
     {
         "name": "sandyghast",
         "natdex": 769,
+        "paldex": 322,
         "form": null,
         "evo": [
             "palossand"
@@ -4464,8 +4423,6 @@
         "prevgen": true,
         "swsh": true,
         "bdsp": false,
-        "scarvi": true,
-        "apri": true,
         "cycles": 15,
         "types": [
             "ghost",
@@ -4484,6 +4441,8 @@
     {
         "name": "slowpoke",
         "natdex": 79,
+        "paldex": 324,
+        "bludex": 75,
         "form": null,
         "evo": [
             "slowbro",
@@ -4492,8 +4451,6 @@
         "prevgen": true,
         "swsh": true,
         "bdsp": true,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "water",
@@ -4510,6 +4467,8 @@
     {
         "name": "slowpoke",
         "natdex": 79,
+        "paldex": 324,
+        "bludex": 75,
         "form": "galarian",
         "evo": [
             "slowbro",
@@ -4518,8 +4477,6 @@
         "prevgen": false,
         "swsh": true,
         "bdsp": true,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "psychic"
@@ -4535,6 +4492,7 @@
     {
         "name": "shellos",
         "natdex": 422,
+        "paldex": 327,
         "form": "west",
         "evo": [
             "gastrodon"
@@ -4542,8 +4500,6 @@
         "prevgen": true,
         "swsh": true,
         "bdsp": true,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "water",
@@ -4567,6 +4523,7 @@
     {
         "name": "shellos",
         "natdex": 422,
+        "paldex": 327,
         "form": "east",
         "evo": [
             "gastrodon"
@@ -4574,8 +4531,6 @@
         "prevgen": true,
         "swsh": true,
         "bdsp": true,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "water",
@@ -4599,6 +4554,7 @@
     {
         "name": "shellder",
         "natdex": 90,
+        "paldex": 329,
         "form": null,
         "evo": [
             "gastrodon"
@@ -4606,8 +4562,6 @@
         "prevgen": true,
         "swsh": true,
         "bdsp": true,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "water"
@@ -4623,14 +4577,14 @@
     {
         "name": "qwilfish",
         "natdex": 211,
+        "paldex": 331,
+        "bludex": 146,
         "form": null,
         "evo": [
         ],
         "prevgen": true,
         "swsh": true,
         "bdsp": true,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "water",
@@ -4653,6 +4607,8 @@
     {
         "name": "qwilfish",
         "natdex": 211,
+        "paldex": 331,
+        "bludex": 146,
         "form": "hisuian",
         "evo": [
             "overqwil"
@@ -4660,8 +4616,6 @@
         "prevgen": false,
         "swsh": false,
         "bdsp": false,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "dark",
@@ -4684,6 +4638,8 @@
     {
         "name": "luvdisc",
         "natdex": 370,
+        "paldex": 332,
+        "bludex": 82,
         "form": null,
         "evo": [
 
@@ -4691,8 +4647,6 @@
         "prevgen": true,
         "swsh": false,
         "bdsp": true,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "water"
@@ -4705,6 +4659,8 @@
     {
         "name": "finneon",
         "natdex": 456,
+        "paldex": 333,
+        "bludex": 83,
         "form": null,
         "evo": [
             "lumineon"
@@ -4712,8 +4668,6 @@
         "prevgen": true,
         "swsh": false,
         "bdsp": true,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "water"
@@ -4734,14 +4688,14 @@
     {
         "name": "bruxish",
         "natdex": 779,
+        "paldex": 335,
+        "bludex": 55,
         "form": null,
         "evo": [
         ],
         "prevgen": true,
         "swsh": false,
         "bdsp": false,
-        "scarvi": true,
-        "apri": true,
         "cycles": 15,
         "types": [
             "water",
@@ -4758,14 +4712,14 @@
     {
         "name": "alomomola",
         "natdex": 594,
+        "paldex": 336,
+        "bludex": 85,
         "form": null,
         "evo": [
         ],
         "prevgen": true,
         "swsh": false,
         "bdsp": false,
-        "scarvi": true,
-        "apri": true,
         "cycles": 40,
         "types": [
             "water"
@@ -4783,6 +4737,7 @@
     {
         "name": "skrelp",
         "natdex": 690,
+        "paldex": 337,
         "form": null,
         "evo": [
             "draglage"
@@ -4790,8 +4745,6 @@
         "prevgen": true,
         "swsh": true,
         "bdsp": false,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "water",
@@ -4809,6 +4762,7 @@
     {
         "name": "clauncher",
         "natdex": 692,
+        "paldex": 339,
         "form": null,
         "evo": [
             "clawitzer"
@@ -4816,8 +4770,6 @@
         "prevgen": true,
         "swsh": true,
         "bdsp": false,
-        "scarvi": true,
-        "apri": true,
         "cycles": 15,
         "types": [
             "water"
@@ -4832,6 +4784,9 @@
     {
         "name": "tynamo",
         "natdex": 602,
+        "paldex": 341,
+        "kitdex": 175,
+        "bludex": 134,
         "form": null,
         "evo": [
             "electrik",
@@ -4840,8 +4795,6 @@
         "prevgen": true,
         "swsh": false,
         "bdsp": false,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "electric"
@@ -4854,6 +4807,7 @@
     {
         "name": "mareanie",
         "natdex": 747,
+        "paldex": 344,
         "form": null,
         "evo": [
             "toxapex"
@@ -4861,8 +4815,6 @@
         "prevgen": true,
         "swsh": true,
         "bdsp": false,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "water",
@@ -4880,14 +4832,13 @@
     {
         "name": "flamigo",
         "natdex": 973,
+        "paldex": 346,
         "form": null,
         "evo": [
         ],
         "prevgen": false,
         "swsh": false,
         "bdsp": false,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "flying",
@@ -4903,6 +4854,7 @@
     {
         "name": "dratini",
         "natdex": 147,
+        "paldex": 347,
         "form": null,
         "evo": [
             "dragonair",
@@ -4911,8 +4863,6 @@
         "prevgen": true,
         "swsh": true,
         "bdsp": true,
-        "scarvi": true,
-        "apri": true,
         "cycles": 40,
         "types": [
             "dragon",
@@ -4931,6 +4881,7 @@
     {
         "name": "snom",
         "natdex": 872,
+        "paldex": 350,
         "form": null,
         "evo": [
             "frosmoth"
@@ -4938,8 +4889,6 @@
         "prevgen": false,
         "swsh": true,
         "bdsp": false,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "ice",
@@ -4955,6 +4904,8 @@
     {
         "name": "snover",
         "natdex": 459,
+        "paldex": 352,
+        "bludex": 159,
         "form": null,
         "evo": [
             "abomasnow"
@@ -4962,8 +4913,6 @@
         "prevgen": true,
         "swsh": true,
         "bdsp": true,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "grass",
@@ -4981,14 +4930,13 @@
     {
         "name": "delibird",
         "natdex": 225,
+        "paldex": 354,
         "form": null,
         "evo": [
         ],
         "prevgen": true,
         "swsh": true,
         "bdsp": true,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "ice",
@@ -5011,6 +4959,8 @@
     {
         "name": "cubchoo",
         "natdex": 613,
+        "paldex": 355,
+        "bludex": 153,
         "form": null,
         "evo": [
             "beartic"
@@ -5018,8 +4968,6 @@
         "prevgen": true,
         "swsh": true,
         "bdsp": false,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "ice"
@@ -5034,6 +4982,8 @@
     {
         "name": "snorunt",
         "natdex": 361,
+        "paldex": 357,
+        "kitdex": 172,
         "form": null,
         "evo": [
             "glalie",
@@ -5042,8 +4992,6 @@
         "prevgen": true,
         "swsh": true,
         "bdsp": true,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "ice",
@@ -5061,14 +5009,13 @@
     {
         "name": "cryogonal",
         "natdex": 615,
+        "paldex": 360,
         "form": null,
         "evo": [
         ],
         "prevgen": true,
         "swsh": true,
         "bdsp": false,
-        "scarvi": true,
-        "apri": true,
         "cycles": 25,
         "types": [
             "ice"
@@ -5083,6 +5030,7 @@
     {
         "name": "cetoddle",
         "natdex": 974,
+        "paldex": 361,
         "form": null,
         "evo": [
             "cetitan"
@@ -5090,8 +5038,6 @@
         "prevgen": false,
         "swsh": false,
         "bdsp": false,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "ice"
@@ -5108,6 +5054,7 @@
     {
         "name": "bergmite",
         "natdex": 712,
+        "paldex": 363,
         "form": null,
         "evo": [
             "avalugg"
@@ -5115,8 +5062,6 @@
         "prevgen": true,
         "swsh": true,
         "bdsp": false,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "ice",
@@ -5132,6 +5077,8 @@
     {
         "name": "rufflet",
         "natdex": 627,
+        "paldex": 365,
+        "bludex": 32,
         "form": null,
         "evo": [
             "braviary"
@@ -5139,8 +5086,6 @@
         "prevgen": true,
         "swsh": true,
         "bdsp": false,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "normal",
@@ -5156,6 +5101,8 @@
     {
         "name": "pawniard",
         "natdex": 624,
+        "paldex": 367,
+        "kitdex": 186,
         "form": null,
         "evo": [
             "bisharp",
@@ -5164,8 +5111,6 @@
         "prevgen": true,
         "swsh": true,
         "bdsp": false,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "dark",
@@ -5182,6 +5127,7 @@
     {
         "name": "deino",
         "natdex": 633,
+        "paldex": 370,
         "form": null,
         "evo": [
             "zweilous",
@@ -5190,8 +5136,6 @@
         "prevgen": true,
         "swsh": true,
         "bdsp": false,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "dark",
@@ -5208,14 +5152,13 @@
     {
         "name": "veluza",
         "natdex": 976,
+        "paldex": 373,
         "form": null,
         "evo": [
         ],
         "prevgen": false,
         "swsh": false,
         "bdsp": false,
-        "scarvi": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "water",
@@ -5230,14 +5173,13 @@
     {
         "name": "dondozo",
         "natdex": 977,
+        "paldex": 374,
         "form": null,
         "evo": [
         ],
         "prevgen": false,
         "swsh": false,
         "bdsp": false,
-        "scarvi": true,
-        "apri": true,
         "cycles": 40,
         "types": [
             "water"
@@ -5253,14 +5195,13 @@
     {
         "name": "tatsugiri",
         "natdex": 978,
+        "paldex": 375,
         "form": "curly",
         "evo": [
         ],
         "prevgen": false,
         "swsh": false,
         "bdsp": false,
-        "scarvi": true,
-        "apri": true,
         "cycles": 35,
         "types": [
             "dragon",
@@ -5276,14 +5217,13 @@
     {
         "name": "tatsugiri",
         "natdex": 978,
+        "paldex": 375,
         "form": "droopy",
         "evo": [
         ],
         "prevgen": false,
         "swsh": false,
         "bdsp": false,
-        "scarvi": true,
-        "apri": true,
         "cycles": 35,
         "types": [
             "dragon",
@@ -5299,14 +5239,13 @@
     {
         "name": "tatsugiri",
         "natdex": 978,
+        "paldex": 375,
         "form": "stretch",
         "evo": [
         ],
         "prevgen": false,
         "swsh": false,
         "bdsp": false,
-        "scarvi": true,
-        "apri": true,
         "cycles": 35,
         "types": [
             "dragon",
@@ -5322,6 +5261,7 @@
     {
         "name": "frigibax",
         "natdex": 996,
+        "paldex": 388,
         "form": null,
         "evo": [
             "actibax",
@@ -5330,8 +5270,6 @@
         "prevgen": false,
         "swsh": false,
         "bdsp": false,
-        "scarvi": true,
-        "apri": true,
         "cycles": 40,
         "types": [
             "dragon",
@@ -5348,6 +5286,7 @@
     {
         "name": "charmander",
         "natdex": 4,
+        "bludex": 167,
         "form": null,
         "evo": [
             "charmeleon",
@@ -5356,8 +5295,6 @@
         "prevgen": true,
         "swsh": true,
         "bdsp": true,
-        "scarvi": false,
-        "apri": true,
         "cycles": 20,
         "types": [
             "fire",
@@ -5378,6 +5315,7 @@
     {
         "name": "cyndaquil",
         "natdex": 155,
+        "bludex": 176,
         "form": null,
         "evo": [
             "quilava",
@@ -5386,8 +5324,6 @@
         "prevgen": true,
         "swsh": false,
         "bdsp": true,
-        "scarvi": false,
-        "apri": true,
         "cycles": 20,
         "types": [
             "fire",
@@ -5406,6 +5342,7 @@
     {
         "name": "fennekin",
         "natdex": 653,
+        "bludex": 212,
         "form": null,
         "evo": [
             "braixen",
@@ -5414,8 +5351,6 @@
         "prevgen": true,
         "swsh": false,
         "bdsp": false,
-        "scarvi": false,
-        "apri": true,
         "cycles": 20,
         "types": [
             "fire",
@@ -5433,6 +5368,7 @@
     {
         "name": "scorbunny",
         "natdex": 813,
+        "bludex": 230,
         "form": null,
         "evo": [
             "raboot",
@@ -5441,8 +5377,6 @@
         "prevgen": false,
         "swsh": true,
         "bdsp": false,
-        "scarvi": false,
-        "apri": true,
         "cycles": 20,
         "types": [
             "fire"
@@ -5458,6 +5392,7 @@
     {
         "name": "oshawott",
         "natdex": 501,
+        "bludex": 206,
         "form": null,
         "evo": [
             "dewott",
@@ -5466,8 +5401,6 @@
         "prevgen": true,
         "swsh": false,
         "bdsp": false,
-        "scarvi": false,
-        "apri": true,
         "cycles": 20,
         "types": [
             "water",
@@ -5488,6 +5421,7 @@
     {
         "name": "froakie",
         "natdex": 656,
+        "bludex": 215,
         "form": null,
         "evo": [
             "frogadier",
@@ -5496,8 +5430,6 @@
         "prevgen": true,
         "swsh": false,
         "bdsp": false,
-        "scarvi": false,
-        "apri": true,
         "cycles": 20,
         "types": [
             "water",
@@ -5515,6 +5447,7 @@
     {
         "name": "sobble",
         "natdex": 816,
+        "bludex": 233,
         "form": null,
         "evo": [
             "drizzile",
@@ -5523,8 +5456,6 @@
         "prevgen": false,
         "swsh": true,
         "bdsp": false,
-        "scarvi": false,
-        "apri": true,
         "cycles": 20,
         "types": [
             "water"
@@ -5543,6 +5474,7 @@
     {
         "name": "chespin",
         "natdex": 650,
+        "bludex": 209,
         "form": null,
         "evo": [
             "quilladin",
@@ -5551,8 +5483,6 @@
         "prevgen": true,
         "swsh": false,
         "bdsp": false,
-        "scarvi": false,
-        "apri": true,
         "cycles": 20,
         "types": [
             "grass",
@@ -5572,6 +5502,7 @@
     {
         "name": "rowlet",
         "natdex": 722,
+        "bludex": 218,
         "form": null,
         "evo": [
             "dartrix",
@@ -5580,8 +5511,6 @@
         "prevgen": true,
         "swsh": true,
         "bdsp": false,
-        "scarvi": false,
-        "apri": true,
         "cycles": 15,
         "types": [
             "grass",
@@ -5600,6 +5529,7 @@
     {
         "name": "grookey",
         "natdex": 810,
+        "bludex": 227,
         "form": null,
         "evo": [
             "thwackey",
@@ -5608,8 +5538,6 @@
         "prevgen": false,
         "swsh": true,
         "bdsp": false,
-        "scarvi": false,
-        "apri": true,
         "cycles": 20,
         "types": [
             "grass"
@@ -5627,6 +5555,7 @@
     {
         "name": "spinarak",
         "natdex": 167,
+        "kitdex": 1,
         "form": null,
         "evo": [
             "ariados"
@@ -5634,9 +5563,6 @@
         "prevgen": true,
         "swsh": false,
         "bdsp": true,
-        "scarvi": true,
-        "expac": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "bug",
@@ -5654,6 +5580,7 @@
     {
         "name": "yanma",
         "natdex": 193,
+        "kitdex": 3,
         "form": null,
         "evo": [
             "yanmega"
@@ -5661,9 +5588,6 @@
         "prevgen": true,
         "swsh": false,
         "bdsp": true,
-        "scarvi": true,
-        "expac": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "bug",
@@ -5679,6 +5603,7 @@
     {
         "name": "poochyena",
         "natdex": 261,
+        "kitdex": 7,
         "form": null,
         "evo": [
             "mightyena"
@@ -5686,9 +5611,6 @@
         "prevgen": true,
         "swsh": false,
         "bdsp": true,
-        "scarvi": true,
-        "expac": true,
-        "apri": true,
         "cycles": 15,
         "types": [
             "dark"
@@ -5703,17 +5625,14 @@
     {
         "name": "volbeat",
         "natdex": 313,
+        "kitdex": 9,
         "form": null,
         "evo": [
-            "volbeat",
             "illumise"
         ],
         "prevgen": true,
         "swsh": false,
         "bdsp": true,
-        "scarvi": true,
-        "expac": true,
-        "apri": true,
         "cycles": 15,
         "types": [
             "bug"
@@ -5729,6 +5648,7 @@
     {
         "name": "corphish",
         "natdex": 341,
+        "kitdex": 11,
         "form": null,
         "evo": [
             "crawdaunt"
@@ -5736,9 +5656,6 @@
         "prevgen": true,
         "swsh": true,
         "bdsp": true,
-        "scarvi": true,
-        "expac": true,
-        "apri": true,
         "cycles": 15,
         "types": [
             "water",
@@ -5757,6 +5674,7 @@
     {
         "name": "sewaddle",
         "natdex": 540,
+        "kitdex": 13,
         "form": null,
         "evo": [
             "swadloon",
@@ -5765,9 +5683,6 @@
         "prevgen": true,
         "swsh": false,
         "bdsp": false,
-        "scarvi": true,
-        "expac": true,
-        "apri": true,
         "cycles": 15,
         "types": [
             "bug",
@@ -5785,6 +5700,7 @@
     {
         "name": "cutiefly",
         "natdex": 742,
+        "kitdex": 16,
         "form": null,
         "evo": [
             "ribombee"
@@ -5792,9 +5708,6 @@
         "prevgen": true,
         "swsh": true,
         "bdsp": false,
-        "scarvi": true,
-        "expac": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "bug",
@@ -5810,6 +5723,7 @@
     {
         "name": "ekans",
         "natdex": 23,
+        "kitdex": 18,
         "form": null,
         "evo": [
             "arbok"
@@ -5817,9 +5731,6 @@
         "prevgen": true,
         "swsh": false,
         "bdsp": true,
-        "scarvi": true,
-        "expac": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "poison"
@@ -5837,6 +5748,7 @@
     {
         "name": "bellsprout",
         "natdex": 69,
+        "kitdex": 23,
         "form": null,
         "evo": [
             "weepinbell",
@@ -5845,9 +5757,6 @@
         "prevgen": true,
         "swsh": false,
         "bdsp": true,
-        "scarvi": true,
-        "expac": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "grass",
@@ -5867,6 +5776,7 @@
     {
         "name": "sentret",
         "natdex": 161,
+        "kitdex": 26,
         "form": null,
         "evo": [
             "furret"
@@ -5874,9 +5784,6 @@
         "prevgen": true,
         "swsh": false,
         "bdsp": true,
-        "scarvi": true,
-        "expac": true,
-        "apri": true,
         "cycles": 15,
         "types": [
             "normal"
@@ -5894,6 +5801,8 @@
     {
         "name": "vulpix",
         "natdex": 37,
+        "kitdex": 37,
+        "bludex": 157,
         "form": null,
         "evo": [
             "ninetales"
@@ -5901,9 +5810,6 @@
         "prevgen": true,
         "swsh": true,
         "bdsp": true,
-        "scarvi": true,
-        "expac": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "fire"
@@ -5923,6 +5829,8 @@
     {
         "name": "vulpix",
         "natdex": 37,
+        "kitdex": 37,
+        "bludex": 157,
         "form": "alolan",
         "evo": [
             "ninetales"
@@ -5930,9 +5838,6 @@
         "prevgen": true,
         "swsh": true,
         "bdsp": true,
-        "scarvi": true,
-        "expac": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "ice",
@@ -5951,6 +5856,7 @@
     {
         "name": "poliwag",
         "natdex": 60,
+        "kitdex": 39,
         "form": null,
         "evo": [
             "poliwhirl",
@@ -5960,9 +5866,6 @@
         "prevgen": true,
         "swsh": true,
         "bdsp": true,
-        "scarvi": true,
-        "expac": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "water",
@@ -5980,6 +5883,7 @@
     {
         "name": "hoothoot",
         "natdex": 163,
+        "kitdex": 45,
         "form": null,
         "evo": [
             "noctowl"
@@ -5987,9 +5891,6 @@
         "prevgen": true,
         "swsh": true,
         "bdsp": true,
-        "scarvi": true,
-        "expac": true,
-        "apri": true,
         "cycles": 15,
         "types": [
             "normal",
@@ -6007,6 +5908,7 @@
     {
         "name": "aipom",
         "natdex": 190,
+        "kitdex": 47,
         "form": null,
         "evo": [
             "ambipom"
@@ -6014,9 +5916,6 @@
         "prevgen": true,
         "swsh": false,
         "bdsp": true,
-        "scarvi": true,
-        "expac": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "normal"
@@ -6037,6 +5936,7 @@
     {
         "name": "swinub",
         "natdex": 220,
+        "kitdex": 50,
         "form": null,
         "evo": [
             "piloswine",
@@ -6045,9 +5945,6 @@
         "prevgen": true,
         "swsh": true,
         "bdsp": true,
-        "scarvi": true,
-        "expac": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "ice",
@@ -6067,6 +5964,7 @@
     {
         "name": "seedot",
         "natdex": 273,
+        "kitdex": 54,
         "form": null,
         "evo": [
             "nuzleaf",
@@ -6075,9 +5973,6 @@
         "prevgen": true,
         "swsh": true,
         "bdsp": true,
-        "scarvi": true,
-        "expac": true,
-        "apri": true,
         "cycles": 15,
         "types": [
             "grass",
@@ -6096,6 +5991,7 @@
     {
         "name": "phantump",
         "natdex": 708,
+        "kitdex": 68,
         "form": null,
         "evo": [
             "trevenant"
@@ -6103,9 +5999,6 @@
         "prevgen": true,
         "swsh": true,
         "bdsp": false,
-        "scarvi": true,
-        "expac": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "ghost",
@@ -6121,6 +6014,7 @@
     {
         "name": "poltchageist",
         "natdex": 1012,
+        "kitdex": 76,
         "form": null,
         "evo": [
             "sinistcha"
@@ -6128,9 +6022,6 @@
         "prevgen": false,
         "swsh": false,
         "bdsp": false,
-        "scarvi": true,
-        "expac": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "grass",
@@ -6144,6 +6035,8 @@
     {
         "name": "geodude",
         "natdex": 74,
+        "kitdex": 80,
+        "bludex": 96,
         "form": null,
         "evo": [
             "graveler",
@@ -6152,9 +6045,6 @@
         "prevgen": true,
         "swsh": false,
         "bdsp": true,
-        "scarvi": true,
-        "expac": true,
-        "apri": true,
         "cycles": 15,
         "types": [
             "rock",
@@ -6173,6 +6063,8 @@
     {
         "name": "geodude",
         "natdex": 74,
+        "kitdex": 80,
+        "bludex": 96,
         "form": "alolan",
         "evo": [
             "graveler",
@@ -6181,9 +6073,6 @@
         "prevgen": true,
         "swsh": false,
         "bdsp": false,
-        "scarvi": true,
-        "expac": true,
-        "apri": true,
         "cycles": 15,
         "types": [
             "rock",
@@ -6203,6 +6092,7 @@
     {
         "name": "timburr",
         "natdex": 532,
+        "kitdex": 85,
         "form": null,
         "evo": [
             "gurdurr",
@@ -6211,9 +6101,6 @@
         "prevgen": true,
         "swsh": true,
         "bdsp": false,
-        "scarvi": true,
-        "expac": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "fighting"
@@ -6230,6 +6117,7 @@
     {
         "name": "morpeko",
         "natdex": 877,
+        "kitdex": 95,
         "form": null,
         "evo": [
 
@@ -6237,9 +6125,6 @@
         "prevgen": false,
         "swsh": true,
         "bdsp": false,
-        "scarvi": true,
-        "expac": true,
-        "apri": true,
         "cycles": 15,
         "types": [
             "electric",
@@ -6260,6 +6145,7 @@
     {
         "name": "munchlax",
         "natdex": 446,
+        "kitdex": 102,
         "form": null,
         "evo": [
             "snorlax"
@@ -6267,9 +6153,6 @@
         "prevgen": true,
         "swsh": true,
         "bdsp": true,
-        "scarvi": true,
-        "expac": true,
-        "apri": true,
         "cycles": 40,
         "types": [
             "normal"
@@ -6286,6 +6169,7 @@
     {
         "name": "lotad",
         "natdex": 270,
+        "kitdex": 104,
         "form": null,
         "evo": [
             "lombre",
@@ -6294,9 +6178,6 @@
         "prevgen": true,
         "swsh": true,
         "bdsp": true,
-        "scarvi": true,
-        "expac": true,
-        "apri": true,
         "cycles": 15,
         "types": [
             "water",
@@ -6315,6 +6196,7 @@
     {
         "name": "nosepass",
         "natdex": 299,
+        "kitdex": 107,
         "form": null,
         "evo": [
             "probopass"
@@ -6322,9 +6204,6 @@
         "prevgen": true,
         "swsh": false,
         "bdsp": true,
-        "scarvi": true,
-        "expac": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "rock",
@@ -6341,6 +6220,7 @@
     {
         "name": "grubbin",
         "natdex": 736,
+        "kitdex": 112,
         "form": null,
         "evo": [
             "charjabug",
@@ -6349,9 +6229,6 @@
         "prevgen": true,
         "swsh": true,
         "bdsp": false,
-        "scarvi": true,
-        "expac": true,
-        "apri": true,
         "cycles": 15,
         "types": [
             "bug",
@@ -6366,6 +6243,8 @@
     {
         "name": "sandshrew",
         "natdex": 27,
+        "kitdex": 116,
+        "bludex": 155,
         "form": null,
         "evo": [
             "sandslash"
@@ -6373,9 +6252,6 @@
         "prevgen": true,
         "swsh": true,
         "bdsp": true,
-        "scarvi": true,
-        "expac": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "ground"
@@ -6393,6 +6269,8 @@
     {
         "name": "sandshrew",
         "natdex": 27,
+        "kitdex": 116,
+        "bludex": 155,
         "form": "alolan",
         "evo": [
             "sandslash"
@@ -6400,9 +6278,6 @@
         "prevgen": true,
         "swsh": true,
         "bdsp": true,
-        "scarvi": true,
-        "expac": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "ice",
@@ -6423,6 +6298,7 @@
     {
         "name": "gligar",
         "natdex": 207,
+        "kitdex": 121,
         "form": null,
         "evo": [
             "gliscor"
@@ -6430,9 +6306,6 @@
         "prevgen": true,
         "swsh": false,
         "bdsp": true,
-        "scarvi": true,
-        "expac": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "ground",
@@ -6451,6 +6324,8 @@
     {
         "name": "vullaby",
         "natdex": 629,
+        "kitdex": 127,
+        "bludex": 34,
         "form": null,
         "evo": [
             "mandibuzz"
@@ -6458,9 +6333,6 @@
         "prevgen": true,
         "swsh": true,
         "bdsp": false,
-        "scarvi": true,
-        "expac": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "dark",
@@ -6476,6 +6348,7 @@
     {
         "name": "jangmo'o",
         "natdex": 782,
+        "kitdex": 131,
         "form": null,
         "evo": [
             "hakamo-o",
@@ -6484,9 +6357,6 @@
         "prevgen": true,
         "swsh": true,
         "bdsp": false,
-        "scarvi": true,
-        "expac": true,
-        "apri": true,
         "cycles": 40,
         "types": [
             "dragon",
@@ -6502,6 +6372,7 @@
     {
         "name": "koffing",
         "natdex": 109,
+        "kitdex": 135,
         "form": null,
         "evo": [
             "weezing"
@@ -6509,9 +6380,6 @@
         "prevgen": true,
         "swsh": true,
         "bdsp": true,
-        "scarvi": true,
-        "expac": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "poison"
@@ -6529,6 +6397,7 @@
     {
         "name": "mienfoo",
         "natdex": 619,
+        "kitdex": 137,
         "form": null,
         "evo": [
             "mienshao"
@@ -6536,9 +6405,6 @@
         "prevgen": true,
         "swsh": true,
         "bdsp": false,
-        "scarvi": true,
-        "expac": true,
-        "apri": true,
         "cycles": 25,
         "types": [
             "dragon",
@@ -6554,6 +6420,7 @@
     {
         "name": "duskull",
         "natdex": 355,
+        "kitdex": 139,
         "form": null,
         "evo": [
             "dusclops",
@@ -6562,9 +6429,6 @@
         "prevgen": true,
         "swsh": true,
         "bdsp": true,
-        "scarvi": true,
-        "expac": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "ghost"
@@ -6577,6 +6441,7 @@
     {
         "name": "chingling",
         "natdex": 433,
+        "kitdex": 142,
         "form": null,
         "evo": [
             "chimecho"
@@ -6584,9 +6449,6 @@
         "prevgen": true,
         "swsh": false,
         "bdsp": true,
-        "scarvi": true,
-        "expac": true,
-        "apri": true,
         "cycles": 25,
         "types": [
             "psychic"
@@ -6606,6 +6468,7 @@
     {
         "name": "slugma",
         "natdex": 218,
+        "kitdex": 144,
         "form": null,
         "evo": [
             "magcargo"
@@ -6613,9 +6476,6 @@
         "prevgen": true,
         "swsh": false,
         "bdsp": true,
-        "scarvi": true,
-        "expac": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "fire"
@@ -6635,6 +6495,7 @@
     {
         "name": "litwick",
         "natdex": 607,
+        "kitdex": 146,
         "form": null,
         "evo": [
             "lampent",
@@ -6643,9 +6504,6 @@
         "prevgen": true,
         "swsh": true,
         "bdsp": false,
-        "scarvi": true,
-        "expac": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "ground"
@@ -6661,6 +6519,7 @@
     {
         "name": "cleffa",
         "natdex": 173,
+        "kitdex": 151,
         "form": null,
         "evo": [
             "clefairy",
@@ -6669,9 +6528,6 @@
         "prevgen": true,
         "swsh": true,
         "bdsp": true,
-        "scarvi": true,
-        "expac": true,
-        "apri": true,
         "cycles": 10,
         "types": [
             "fairy"
@@ -6687,6 +6543,7 @@
     {
         "name": "feebas",
         "natdex": 349,
+        "kitdex": 158,
         "form": null,
         "evo": [
             "milotic"
@@ -6694,9 +6551,6 @@
         "prevgen": true,
         "swsh": true,
         "bdsp": true,
-        "scarvi": true,
-        "expac": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "water"
@@ -6713,8 +6567,30 @@
         ]
     },
     {
+        "name": "carbink",
+        "natdex": 703,
+        "kitdex": 167,
+        "form": null,
+        "evo": [
+
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": false,
+        "cycles": 25,
+        "types": [
+            "rock",
+            "fairy"
+        ],
+        "hidden": "sturdy",
+        "eggmoves": [
+
+        ]
+    },
+    {
         "name": "ducklett",
         "natdex": 580,
+        "kitdex": 181,
         "form": null,
         "evo": [
             "swanna"
@@ -6722,9 +6598,6 @@
         "prevgen": true,
         "swsh": false,
         "bdsp": false,
-        "scarvi": true,
-        "expac": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "water",
@@ -6743,6 +6616,7 @@
     {
         "name": "cramorant",
         "natdex": 845,
+        "kitdex": 185,
         "form": null,
         "evo": [
 
@@ -6750,9 +6624,6 @@
         "prevgen": false,
         "swsh": true,
         "bdsp": false,
-        "scarvi": true,
-        "expac": true,
-        "apri": true,
         "cycles": 20,
         "types": [
             "flying",
@@ -6766,6 +6637,1446 @@
             "aqua ring",
             "defog",
             "aqua cutter"
+        ]
+    },
+    {
+        "name": "oddish",
+        "natdex": 43,
+        "bludex": 62,
+        "form": null,
+        "evo": [
+            "gloom",
+            "vileplume",
+            "bellossom"
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": true,
+        "cycles": 20,
+        "types": [
+            "grass",
+            "poison"
+        ],
+        "hidden": "run away",
+        "eggmoves": [
+            "leech seed",
+            "razor leaf",
+            "flail",
+            "synthesis",
+            "ingrain",
+            "teeter dance",
+            "tickle",
+            "after you",
+            "strength sap"
+        ]
+    },
+    {
+        "name": "smeargle",
+        "natdex": 235,
+        "bludex": 40,
+        "form": null,
+        "evo": [
+
+        ],
+        "prevgen": true,
+        "swsh": false,
+        "bdsp": true,
+        "cycles": 20,
+        "types": [
+            "normal"
+        ],
+        "hidden": "moody",
+        "eggmoves": [
+
+        ]
+    },
+    {
+        "name": "bulbasaur",
+        "natdex": 1,
+        "bludex": 165,
+        "form": null,
+        "evo": [
+            "ivysaur",
+            "venusaur"
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": true,
+        "cycles": 20,
+        "types": [
+            "grass",
+            "poison"
+        ],
+        "hidden": "chlorophyll",
+        "eggmoves": [
+            "petal dance",
+            "toxic",
+            "curse",
+            "ingrain"
+        ]
+    },
+    {
+        "name": "squirtle",
+        "natdex": 7,
+        "bludex": 170,
+        "form": null,
+        "evo": [
+            "wartortle",
+            "blastoise"
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": true,
+        "cycles": 20,
+        "types": [
+            "water"
+        ],
+        "hidden": "rain dish",
+        "eggmoves": [
+            "mist",
+            "flail",
+            "mirror coat",
+            "fake out",
+            "yawn",
+            "water spout",
+            "aqua ring",
+            "aqua jet",
+            "life dew"
+        ]
+    },
+    {
+        "name": "doduo",
+        "natdex": 84,
+        "bludex": 1,
+        "form": null,
+        "evo": [
+            "dotrio"
+        ],
+        "prevgen": true,
+        "swsh": false,
+        "bdsp": true,
+        "cycles": 20,
+        "types": [
+            "normal",
+            "flying"
+        ],
+        "hidden": "tangled feet",
+        "eggmoves": [
+            "whirlwind",
+            "sky attack",
+            "flail",
+            "assurance"
+        ]
+    },
+    {
+        "name": "seel",
+        "natdex": 86,
+        "bludex": 143,
+        "form": null,
+        "evo": [
+            "dewgong"
+        ],
+        "prevgen": true,
+        "swsh": false,
+        "bdsp": true,
+        "cycles": 20,
+        "types": [
+            "water",
+            "ice"
+        ],
+        "hidden": "ice body",
+        "eggmoves": [
+            "horn drill",
+            "disable",
+            "lick",
+            "perish song",
+            "fake out",
+            "stockpile",
+            "spit up",
+            "swallow",
+            "entrainment",
+            "belch"
+        ]
+    },
+    {
+        "name": "exeggcute",
+        "natdex": 102,
+        "bludex": 3,
+        "form": null,
+        "evo": [
+            "exeggutor"
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": true,
+        "cycles": 20,
+        "types": [
+            "grass",
+            "psychic",
+            "dragon"
+        ],
+        "hidden": "harvest",
+        "eggmoves": [
+            "poison powder",
+            "sleep powder",
+            "stun spore",
+            "curse",
+            "moonlight",
+            "ancient power",
+            "ingrain",
+            "block"
+        ]
+    },
+    {
+        "name": "tyrogue",
+        "natdex": 236,
+        "bludex": 92,
+        "form": null,
+        "evo": [
+            "hitmonchan",
+            "hitmonlee",
+            "hitmontop"
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": true,
+        "cycles": 20,
+        "types": [
+            "fighting"
+        ],
+        "hidden": "vital spirit",
+        "eggmoves": [
+            "counter",
+            "high jump kick",
+            "mach punch",
+            "rapid spin",
+            "feint",
+            "vaccuum wave",
+            "bullet punch"
+        ]
+    },
+    {
+        "name": "magby",
+        "natdex": 240,
+        "bludex": 13,
+        "form": null,
+        "evo": [
+            "magmar",
+            "magmortar"
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": true,
+        "cycles": 20,
+        "types": [
+            "fire"
+        ],
+        "hidden": "vital spirit",
+        "eggmoves": [
+            "mach punch",
+            "belly drum",
+            "dynamic punch",
+            "cross chop",
+            "focus punch",
+            "follow me",
+            "belch"
+        ]
+    },
+    {
+        "name": "rhyhorn",
+        "natdex": 111,
+        "bludex": 5,
+        "form": null,
+        "evo": [
+            "rhydon",
+            "rhyperior"
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": true,
+        "cycles": 20,
+        "types": [
+            "ground",
+            "rock"
+        ],
+        "hidden": "reckless",
+        "eggmoves": [
+            "counter",
+            "curse",
+            "metal burst",
+            "rock polish",
+            "dragon rush",
+            "guard split"
+        ]
+    },
+    {
+        "name": "lapras",
+        "natdex": 131,
+        "form": null,
+        "evo": [
+
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": true,
+        "cycles": 20,
+        "types": [
+            "water",
+            "ice"
+        ],
+        "hidden": "hydration",
+        "eggmoves": [
+            "horn drill",
+            "fissure",
+            "curse",
+            "ancient power",
+            "tickle",
+            "freeze-dry",
+            "sparkling aria"
+        ]
+    },
+    {
+        "name": "chikorita",
+        "natdex": 152,
+        "bludex": 173,
+        "form": null,
+        "evo": [
+            "bayleef",
+            "meganium"
+        ],
+        "prevgen": true,
+        "swsh": false,
+        "bdsp": true,
+        "cycles": 20,
+        "types": [
+            "grass"
+        ],
+        "hidden": "leaf guard",
+        "eggmoves": [
+            "vine whip",
+            "counter",
+            "flail",
+            "ancient power",
+            "ingrain",
+            "heal pulse"
+        ]
+    },
+    {
+        "name": "totodile",
+        "natdex": 158,
+        "bludex": 179,
+        "form": null,
+        "evo": [
+            "croconaw",
+            "feraligatr"
+        ],
+        "prevgen": true,
+        "swsh": false,
+        "bdsp": true,
+        "cycles": 20,
+        "types": [
+            "water"
+        ],
+        "hidden": "sheer force",
+        "eggmoves": [
+            "counter",
+            "ancient power",
+            "flatter",
+            "block",
+            "aqua jet"
+        ]
+    },
+    {
+        "name": "skarmory",
+        "natdex": 227,
+        "bludex": 113,
+        "form": null,
+        "evo": [
+
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": true,
+        "cycles": 20,
+        "types": [
+            "steel",
+            "flying"
+        ],
+        "hidden": "weak armor",
+        "eggmoves": [
+            "whirlwind",
+            "sky attack",
+            "curse",
+            "air cutter",
+            "roost",
+            "feint",
+            "night slash"
+        ]
+    },
+    {
+        "name": "treecko",
+        "natdex": 252,
+        "bludex": 182,
+        "form": null,
+        "evo": [
+            "grovyle",
+            "sceptile"
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": true,
+        "cycles": 20,
+        "types": [
+            "grass"
+        ],
+        "hidden": "unburden",
+        "eggmoves": [
+            "double kick",
+            "absorb",
+            "leech seed",
+            "slash",
+            "dragon breath",
+            "synthesis",
+            "worry seed",
+            "night slash"
+        ]
+    },
+    {
+        "name": "torchic",
+        "natdex": 255,
+        "bludex": 185,
+        "form": null,
+        "evo": [
+            "combusken",
+            "blaziken"
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": true,
+        "cycles": 20,
+        "types": [
+            "fire",
+            "fighting"
+        ],
+        "hidden": "speed boost",
+        "eggmoves": [
+            "peck",
+            "counter",
+            "crush claw",
+            "feint",
+            "last resort",
+            "night slash"
+        ]
+    },
+    {
+        "name": "mudkip",
+        "natdex": 258,
+        "bludex": 188,
+        "form": null,
+        "evo": [
+            "marshtomp",
+            "swampert"
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": true,
+        "cycles": 20,
+        "types": [
+            "water",
+            "ground"
+        ],
+        "hidden": "damp",
+        "eggmoves": [
+            "stomp",
+            "double-edge",
+            "bite",
+            "counter",
+            "sludge",
+            "curse",
+            "mud-slap",
+            "mirror coat",
+            "ancient power",
+            "yawn",
+            "wide guard"
+        ]
+    },
+    {
+        "name": "trapinch",
+        "natdex": 328,
+        "bludex": 44,
+        "form": null,
+        "evo": [
+            "vibrava",
+            "flygon"
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": true,
+        "cycles": 20,
+        "types": [
+            "ground",
+            "dragon"
+        ],
+        "hidden": "sheer force",
+        "eggmoves": [
+            "gust",
+            "quick attack",
+            "flail",
+            "fury cutter",
+            "feint",
+            "bug bite",
+            "first impression"
+        ]
+    },
+    {
+        "name": "beldum",
+        "natdex": 374,
+        "bludex": 137,
+        "form": null,
+        "evo": [
+            "metang",
+            "metagross"
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": true,
+        "cycles": 20,
+        "types": [
+            "steel",
+            "psychic"
+        ],
+        "hidden": "light metal",
+        "eggmoves": [
+
+        ]
+    },
+    {
+        "name": "turtwig",
+        "natdex": 387,
+        "bludex": 191,
+        "form": null,
+        "evo": [
+            "grotle",
+            "torterra"
+        ],
+        "prevgen": true,
+        "swsh": false,
+        "bdsp": true,
+        "cycles": 20,
+        "types": [
+            "grass",
+            "ground"
+        ],
+        "hidden": "shell armor",
+        "eggmoves": [
+            "thrash",
+            "double-edge",
+            "growth",
+            "stockpile",
+            "spit up",
+            "swallow",
+            "superpower",
+            "tickle",
+            "worry seed",
+            "wide guard",
+            "shell smash"
+        ]
+    },
+    {
+        "name": "piplup",
+        "natdex": 393,
+        "bludex": 197,
+        "form": null,
+        "evo": [
+            "prinplup",
+            "empoleon"
+        ],
+        "prevgen": true,
+        "swsh": false,
+        "bdsp": true,
+        "cycles": 20,
+        "types": [
+            "water",
+            "steel"
+        ],
+        "hidden": "competitive",
+        "eggmoves": [
+            "supersonic",
+            "snore",
+            "yawn",
+            "feather dance",
+            "roost",
+            "aqua ring",
+            "power trip"
+        ]
+    },
+    {
+        "name": "chimchar",
+        "natdex": 390,
+        "bludex": 194,
+        "form": null,
+        "evo": [
+            "monferno",
+            "infernape"
+        ],
+        "prevgen": true,
+        "swsh": false,
+        "bdsp": true,
+        "cycles": 20,
+        "types": [
+            "fire",
+            "fighting"
+        ],
+        "hidden": "iron fist",
+        "eggmoves": [
+            "fire punch",
+            "thunder punch",
+            "double kick",
+            "counter",
+            "focus energy",
+            "encore",
+            "fake out",
+            "heat wave",
+            "helping hand",
+            "switcheroo"
+        ]
+    },
+    {
+        "name": "cranidos",
+        "natdex": 408,
+        "bludex": 107,
+        "form": null,
+        "evo": [
+            "rampardos"
+        ],
+        "prevgen": true,
+        "swsh": false,
+        "bdsp": true,
+        "cycles": 20,
+        "types": [
+            "rock"
+        ],
+        "hidden": "sheer force",
+        "eggmoves": [
+            "whirlwind",
+            "stomp",
+            "thrash",
+            "hammer arm"
+        ]
+    },
+    {
+        "name": "shieldon",
+        "natdex": 410,
+        "bludex": 109,
+        "form": null,
+        "evo": [
+            "bastiodon"
+        ],
+        "prevgen": true,
+        "swsh": false,
+        "bdsp": true,
+        "cycles": 20,
+        "types": [
+            "rock",
+            "steel"
+        ],
+        "hidden": "soundproof",
+        "eggmoves": [
+            "headbutt",
+            "counter",
+            "fissure",
+            "screech",
+            "focus energy",
+            "guard split"
+        ]
+    },
+    {
+        "name": "snivy",
+        "natdex": 495,
+        "bludex": 200,
+        "form": null,
+        "evo": [
+            "servine",
+            "serperior"
+        ],
+        "prevgen": true,
+        "swsh": false,
+        "bdsp": false,
+        "cycles": 20,
+        "types": [
+            "grass"
+        ],
+        "hidden": "contrary",
+        "eggmoves": [
+            "glare",
+            "mean look",
+            "sweet scent",
+            "iron tail",
+            "synthesis",
+            "twister",
+            "mirror coat"
+        ]
+    },
+    {
+        "name": "tepig",
+        "natdex": 498,
+        "bludex": 203,
+        "form": null,
+        "evo": [
+            "pignite",
+            "emboar"
+        ],
+        "prevgen": true,
+        "swsh": false,
+        "bdsp": false,
+        "cycles": 20,
+        "types": [
+            "fire",
+            "fighting"
+        ],
+        "hidden": "thick fat",
+        "eggmoves": [
+            "thrash",
+            "superpower",
+            "yawn",
+            "sucker punch"
+        ]
+    },
+    {
+        "name": "blitzle",
+        "natdex": 522,
+        "bludex": 23,
+        "form": null,
+        "evo": [
+            "zebstrika"
+        ],
+        "prevgen": true,
+        "swsh": false,
+        "bdsp": false,
+        "cycles": 20,
+        "types": [
+            "electric"
+        ],
+        "hidden": "sap sipper",
+        "eggmoves": [
+            "double kick",
+            "sand attack",
+            "screech",
+            "feint"
+        ]
+    },
+    {
+        "name": "cottonee",
+        "natdex": 546,
+        "bludex": 56,
+        "form": null,
+        "evo": [
+            "whimsicott"
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": false,
+        "cycles": 20,
+        "types": [
+            "grass",
+            "fairy"
+        ],
+        "hidden": "chlorophyll",
+        "eggmoves": [
+            "beat up",
+            "memento",
+            "tickle",
+            "worry seed",
+            "switcheroo"
+        ]
+    },
+    {
+        "name": "minccino",
+        "natdex": 572,
+        "bludex": 111,
+        "form": null,
+        "evo": [
+            "cinccino"
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": false,
+        "cycles": 20,
+        "types": [
+            "normal"
+        ],
+        "hidden": "skill link",
+        "eggmoves": [
+            "tail whip",
+            "flail",
+            "knock off",
+            "aqua tail",
+            "tidy up"
+        ]
+    },
+    {
+        "name": "solosis",
+        "natdex": 577,
+        "bludex": 148,
+        "form": null,
+        "evo": [
+            "duosion",
+            "reuniclus"
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": false,
+        "cycles": 20,
+        "types": [
+            "psychic"
+        ],
+        "hidden": "regenerator",
+        "eggmoves": [
+            "confuse ray",
+            "acid armor",
+            "astonish"
+        ]
+    },
+    {
+        "name": "golett",
+        "natdex": 622,
+        "bludex": 123,
+        "form": null,
+        "evo": [
+            "golurk"
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": false,
+        "cycles": 20,
+        "types": [
+            "ground",
+            "ghost"
+        ],
+        "hidden": "no guard",
+        "eggmoves": [
+
+        ]
+    },
+    {
+        "name": "litten",
+        "natdex": 725,
+        "bludex": 221,
+        "form": null,
+        "evo": [
+            "torracat",
+            "incineroar"
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": false,
+        "cycles": 20,
+        "types": [
+            "fire",
+            "dark"
+        ],
+        "hidden": "intimidate",
+        "eggmoves": [
+            "fake out",
+            "parting shot",
+            "power trip"
+        ]
+    },
+    {
+        "name": "popplio",
+        "natdex": 728,
+        "bludex": 224,
+        "form": null,
+        "evo": [
+            "brionne",
+            "primarina"
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": false,
+        "cycles": 20,
+        "types": [
+            "water",
+            "fairy"
+        ],
+        "hidden": "liquid voice",
+        "eggmoves": [
+            "perish song",
+            "aqua ring",
+            "life dew"
+        ]
+    },
+    {
+        "name": "espurr",
+        "natdex": 677,
+        "bludex": 104,
+        "form": null,
+        "evo": [
+            "mewostic"
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": false,
+        "cycles": 20,
+        "types": [
+            "psychic"
+        ],
+        "hidden": "own tempo",
+        "eggmoves": [
+            "yawn",
+            "tickle"
+        ]
+    },
+    {
+        "name": "inkay",
+        "natdex": 686,
+        "bludex": 80,
+        "form": null,
+        "evo": [
+            "malamar"
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": false,
+        "cycles": 20,
+        "types": [
+            "dark",
+            "psychic"
+        ],
+        "hidden": "infiltrator",
+        "eggmoves": [
+            "disable",
+            "destiny bond",
+            "acupressure"
+        ]
+    },
+    {
+        "name": "milcery",
+        "natdex": 868,
+        "bludex": 42,
+        "form": null,
+        "evo": [
+            "alcremie"
+        ],
+        "prevgen": false,
+        "swsh": true,
+        "bdsp": false,
+        "cycles": 20,
+        "types": [
+            "fairy"
+        ],
+        "hidden": "aroma veil",
+        "eggmoves": [
+            "last resort",
+            "baby-doll eyes"
+        ]
+    },
+    {
+        "name": "horsea",
+        "natdex": 116,
+        "bludex": 52,
+        "form": null,
+        "evo": [
+            "seadra",
+            "kingdra"
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": false,
+        "cycles": 20,
+        "types": [
+            "water",
+            "dragon"
+        ],
+        "hidden": "damp",
+        "eggmoves": [
+            "disable",
+            "aurora beam",
+            "splash",
+            "flail",
+            "clear smog"
+        ]
+    },
+    {
+        "name": "duraludon",
+        "natdex": 884,
+        "bludex": 161,
+        "form": null,
+        "evo": [
+            "archaludon"
+        ],
+        "prevgen": false,
+        "swsh": true,
+        "bdsp": false,
+        "cycles": 30,
+        "types": [
+            "steel",
+            "dragon"
+        ],
+        "hidden": "stalwart",
+        "eggmoves": [
+            "slash",
+            "mirror coat",
+            "night slash"
+        ]
+    },
+    {
+        "name": "tentacool",
+        "natdex": 72,
+        "bludex": 50,
+        "form": null,
+        "evo": [
+            "tentacruel"
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": true,
+        "cycles": 20,
+        "types": [
+            "water",
+            "poison"
+        ],
+        "hidden": "rain dish",
+        "eggmoves": [
+            "aurora beam",
+            "confuse ray",
+            "haze",
+            "rapid spin",
+            "mirror coat",
+            "knock off",
+            "tickle",
+            "acupressure",
+            "aqua ring"
+        ]
+    },
+    {
+        "name": "joltik",
+        "natdex": 595,
+        "bludex": 132,
+        "form": null,
+        "evo": [
+            "galvantula"
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": false,
+        "cycles": 20,
+        "types": [
+            "bug",
+            "electric"
+        ],
+        "hidden": "swarm",
+        "eggmoves": [
+            "poison sting",
+            "double team",
+            "struggle bug",
+            "infestation",
+            "lunge"
+        ]
+    },
+    {
+        "name": "porygon",
+        "natdex": 137,
+        "bludex": 129,
+        "form": null,
+        "evo": [
+            "porygon2",
+            "porygon-z"
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": true,
+        "cycles": 20,
+        "types": [
+            "normal"
+        ],
+        "hidden": "analytic",
+        "eggmoves": [
+            
+        ]
+    },
+    {
+        "name": "snubbull",
+        "natdex": 209,
+        "bludex": 151,
+        "form": null,
+        "evo": [
+            "granbull"
+        ],
+        "prevgen": true,
+        "swsh": false,
+        "bdsp": true,
+        "cycles": 20,
+        "types": [
+            "fairy"
+        ],
+        "hidden": "rattled",
+        "eggmoves": [
+            "counter",
+            "mimic",
+            "snore",
+            "present",
+            "retaliate"
+        ]
+    },
+    {
+        "name": "pikipek",
+        "natdex": 731,
+        "bludex": 47,
+        "form": null,
+        "evo": [
+            "trumbeak",
+            "toucannon"
+        ],
+        "prevgen": true,
+        "swsh": false,
+        "bdsp": false,
+        "cycles": 15,
+        "types": [
+            "normal",
+            "flying"
+        ],
+        "hidden": "pickup",
+        "eggmoves": [
+            "sky attack",
+            "gunk shot",
+            "boomburst"
+        ]
+    },
+    {
+        "name": "comfey",
+        "natdex": 764,
+        "bludex": 58,
+        "form": null,
+        "evo": [
+            
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": false,
+        "cycles": 20,
+        "types": [
+            "fairy"
+        ],
+        "hidden": "natural cure",
+        "eggmoves": [
+            "worry seed",
+            "after you"
+        ]
+    },
+    {
+        "name": "chinchou",
+        "natdex": 170,
+        "bludex": 78,
+        "form": null,
+        "evo": [
+            "lanturn"
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": true,
+        "cycles": 20,
+        "types": [
+            "water",
+            "electric"
+        ],
+        "hidden": "water absorb",
+        "eggmoves": [
+            "mist",
+            "psybeam",
+            "water pulse",
+            "sucker punch",
+            "soak"
+        ]
+    },
+    {
+        "name": "dewpider",
+        "natdex": 751,
+        "bludex": 90,
+        "form": null,
+        "evo": [
+            "araquanid"
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": false,
+        "cycles": 15,
+        "types": [
+            "water",
+            "bug"
+        ],
+        "hidden": "water absorb",
+        "eggmoves": [
+            "stockpile",
+            "spit up",
+            "power split",
+            "sticky web"
+        ]
+    },
+    {
+        "name": "drilbur",
+        "natdex": 529,
+        "bludex": 99,
+        "form": null,
+        "evo": [
+            "excadrill"
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": false,
+        "cycles": 20,
+        "types": [
+            "ground",
+            "steel"
+        ],
+        "hidden": "mold breaker",
+        "eggmoves": [
+            "slash",
+            "metal sound"
+        ]
+    },
+    {
+        "name": "minior",
+        "natdex": 774,
+        "bludex": 106,
+        "form": "blue",
+        "evo": [
+            
+        ],
+        "prevgen": true,
+        "swsh": false,
+        "bdsp": false,
+        "cycles": 25,
+        "types": [
+            "rock",
+            "flying"
+        ],
+        "hidden": null,
+        "eggmoves": [
+            
+        ]
+    },
+    {
+        "name": "minior",
+        "natdex": 774,
+        "bludex": 106,
+        "form": "green",
+        "evo": [
+            
+        ],
+        "prevgen": true,
+        "swsh": false,
+        "bdsp": false,
+        "cycles": 25,
+        "types": [
+            "rock",
+            "flying"
+        ],
+        "hidden": null,
+        "eggmoves": [
+            
+        ]
+    },
+    {
+        "name": "minior",
+        "natdex": 774,
+        "bludex": 106,
+        "form": "indigo",
+        "evo": [
+            
+        ],
+        "prevgen": true,
+        "swsh": false,
+        "bdsp": false,
+        "cycles": 25,
+        "types": [
+            "rock",
+            "flying"
+        ],
+        "hidden": null,
+        "eggmoves": [
+            
+        ]
+    },
+    {
+        "name": "minior",
+        "natdex": 774,
+        "bludex": 106,
+        "form": "orange",
+        "evo": [
+            
+        ],
+        "prevgen": true,
+        "swsh": false,
+        "bdsp": false,
+        "cycles": 25,
+        "types": [
+            "rock",
+            "flying"
+        ],
+        "hidden": null,
+        "eggmoves": [
+            
+        ]
+    },
+    {
+        "name": "minior",
+        "natdex": 774,
+        "bludex": 106,
+        "form": "red",
+        "evo": [
+            
+        ],
+        "prevgen": true,
+        "swsh": false,
+        "bdsp": false,
+        "cycles": 25,
+        "types": [
+            "rock",
+            "flying"
+        ],
+        "hidden": null,
+        "eggmoves": [
+            
+        ]
+    },
+    {
+        "name": "minior",
+        "natdex": 774,
+        "bludex": 106,
+        "form": "violet",
+        "evo": [
+            
+        ],
+        "prevgen": true,
+        "swsh": false,
+        "bdsp": false,
+        "cycles": 25,
+        "types": [
+            "rock",
+            "flying"
+        ],
+        "hidden": null,
+        "eggmoves": [
+            
+        ]
+    },
+    {
+        "name": "minior",
+        "natdex": 774,
+        "bludex": 106,
+        "form": "yellow",
+        "evo": [
+            
+        ],
+        "prevgen": true,
+        "swsh": false,
+        "bdsp": false,
+        "cycles": 25,
+        "types": [
+            "rock",
+            "flying"
+        ],
+        "hidden": null,
+        "eggmoves": [
+            
+        ]
+    },
+    {
+        "name": "plusle",
+        "natdex": 311,
+        "bludex": 119,
+        "form": null,
+        "evo": [
+            
+        ],
+        "prevgen": true,
+        "swsh": false,
+        "bdsp": true,
+        "cycles": 20,
+        "types": [
+            "electric"
+        ],
+        "hidden": "lightning rod",
+        "eggmoves": [
+            "sing",
+            "sweet kiss",
+            "charm",
+            "wish"
+        ]
+    },
+    {
+        "name": "minun",
+        "natdex": 312,
+        "bludex": 120,
+        "form": null,
+        "evo": [
+            
+        ],
+        "prevgen": true,
+        "swsh": false,
+        "bdsp": true,
+        "cycles": 20,
+        "types": [
+            "electric"
+        ],
+        "hidden": "volt absorb",
+        "eggmoves": [
+            "sing",
+            "sweet kiss",
+            "charm",
+            "wish",
+            "fake tears"
+        ]
+    },
+    {
+        "name": "scraggy",
+        "natdex": 559,
+        "bludex": 121,
+        "form": null,
+        "evo": [
+            "scrafty"
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": false,
+        "cycles": 15,
+        "types": [
+            "dark",
+            "fighting"
+        ],
+        "hidden": "intimidate",
+        "eggmoves": [
+            "counter",
+            "detect",
+            "fake out",
+            "quick guard"
+        ]
+    },
+    {
+        "name": "elekid",
+        "natdex": 239,
+        "bludex": 10,
+        "form": null,
+        "evo": [
+            "electabuzz",
+            "electivire"
+        ],
+        "prevgen": true,
+        "swsh": true,
+        "bdsp": true,
+        "cycles": 25,
+        "types": [
+            "electric"
+        ],
+        "hidden": "vital spirit",
+        "eggmoves": [
+            "dynamic punch",
+            "cross chop",
+            "focus punch",
+            "follow me",
+            "hammer arm",
+            "feint"
         ]
     }
 ]
