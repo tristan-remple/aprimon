@@ -1,0 +1,9 @@
+version: "3.8"
+services:
+  pkmn:
+    image: php:8.2-apache
+    container_name: pkmn
+    volumes:
+      - .:/var/www/html
+    ports:
+      - "1025:80"

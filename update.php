@@ -2,7 +2,7 @@
 
 // var_dump($_POST);
 
-include('../data/pkmn.php');
+include('pkmn.php');
 
 $user = $_POST['in-user'];
 if (hash($algo, $_POST['in-password']) === $users[$user]) {
